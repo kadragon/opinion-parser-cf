@@ -6,7 +6,7 @@ export function createCorsMiddleware() {
 		origin: (requestOrigin, c) => {
 			const allowed = (c.env as Env).ALLOWED_ORIGIN;
 			if (!allowed) return requestOrigin;
-			return requestOrigin === allowed ? allowed : "";
+			return requestOrigin === allowed ? allowed : null;
 		},
 	});
 }

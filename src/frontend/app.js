@@ -89,7 +89,7 @@
 				const items = Array.isArray(data) ? data : data.bookmarks || [];
 				state.bookmarks = new Set(items.map((b) => b.articleId || b.id || b));
 			})
-			.catch(() => {});
+			.catch((error) => console.error("Failed to fetch bookmarks:", error));
 	}
 
 	function toggleBookmark(articleId) {
@@ -104,7 +104,8 @@
 			method: "POST",
 			headers: { "Content-Type": "application/json", "X-Client-Token": clientToken },
 			body: JSON.stringify({ articleId: articleId }),
-		}).catch(() => {
+		}).catch((error) => {
+			console.error("Failed to toggle bookmark:", error);
 			if (state.bookmarks.has(articleId)) {
 				state.bookmarks.delete(articleId);
 			} else {
@@ -465,7 +466,8 @@
 		if (bookmarkBtn) {
 			e.preventDefault();
 			const id = bookmarkBtn.getAttribute("data-id");
-			toggleBookmark(Number.isNaN(id) ? id : Number(id));
+			const parsed = Number(id);
+			toggleBookmark(Number.isNaN(parsed) ? id : parsed);
 			return;
 		}
 

@@ -39,6 +39,6 @@ describe("CORS origin restriction", () => {
 			{ DB: {} as D1Database, ALLOWED_ORIGIN: "https://my-app.pages.dev" },
 		);
 		const allowOrigin = res.headers.get("Access-Control-Allow-Origin");
-		expect(allowOrigin).not.toBe("https://evil-site.com");
+		expect(allowOrigin).toBeNull();
 	});
 });
