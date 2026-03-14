@@ -17,7 +17,7 @@ app.get("/", async (c) => {
 
 	const page = Math.max(1, Math.min(rawPage, 1000));
 	const pageSize = Math.max(1, Math.min(rawPageSize, 100));
-	const clientToken = c.req.query("clientToken");
+	const clientToken = c.req.header("X-Client-Token");
 
 	const result = await getArticles(c.env.DB, {
 		newspaper,

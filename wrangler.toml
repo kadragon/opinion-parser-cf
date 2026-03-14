@@ -13,3 +13,7 @@ database_id = "50920e3e-2d3f-47b5-a118-04055e9ea8c3"
 [[rules]]
 type = "Text"
 globs = ["**/*.html"]
+
+[[rules]]
+type = "Text"
+globs = ["src/frontend/*.js"]

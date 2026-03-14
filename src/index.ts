@@ -1,7 +1,7 @@
 import { Hono } from "hono";
-import { cors } from "hono/cors";
 import { handleCron } from "./cron/handler";
 import { html } from "./frontend/serve";
+import { createCorsMiddleware } from "./middleware/cors";
 import articles from "./routes/articles";
 import bookmarks from "./routes/bookmarks";
 import feed from "./routes/feed";
@@ -10,7 +10,7 @@ import type { Env } from "./types";
 
 const app = new Hono<{ Bindings: Env }>();
 
-app.use("*", cors());
+app.use("*", createCorsMiddleware());
 
 app.route("/api/articles", articles);
 app.route("/api/bookmarks", bookmarks);

@@ -1,6 +1,7 @@
 export interface Env {
 	DB: D1Database;
 	SCRAPE_KEY?: string;
+	ALLOWED_ORIGIN?: string;
 }
 
 export interface Article {
