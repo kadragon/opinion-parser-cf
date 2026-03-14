@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS articles (
   image_url TEXT
 );
 
-CREATE INDEX idx_articles_newspaper ON articles(newspaper);
-CREATE INDEX idx_articles_published_at ON articles(published_at DESC);
+CREATE INDEX IF NOT EXISTS idx_articles_newspaper ON articles(newspaper);
+CREATE INDEX IF NOT EXISTS idx_articles_published_at ON articles(published_at DESC);
 
 CREATE TABLE IF NOT EXISTS bookmarks (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,4 +20,4 @@ CREATE TABLE IF NOT EXISTS bookmarks (
   UNIQUE(article_id, client_token)
 );
 
-CREATE INDEX idx_bookmarks_client_token ON bookmarks(client_token);
+CREATE INDEX IF NOT EXISTS idx_bookmarks_client_token ON bookmarks(client_token);

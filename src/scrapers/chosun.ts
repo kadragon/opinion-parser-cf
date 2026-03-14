@@ -1,4 +1,4 @@
-import { fetchWithRetry, parseDate } from "./base";
+import { cleanText, decodeEntities, fetchWithRetry, parseDate } from "./base";
 import type { NewspaperScraper, ScrapedArticle } from "./types";
 
 const CHOSUN_BASE = "https://www.chosun.com";
@@ -178,7 +178,7 @@ export class ChosunScraper implements NewspaperScraper {
 					newspaper: this.name,
 					title: this.cleanTitle(title),
 					url: fullUrl,
-					summary: prologue ? this.stripTags(prologue).slice(0, 200) : null,
+					summary: prologue ? cleanText(prologue).slice(0, 200) : null,
 					published_at: createDate ? parseDate(createDate) : parseDate(new Date().toISOString()),
 					image_url: null,
 				});
@@ -242,7 +242,7 @@ export class ChosunScraper implements NewspaperScraper {
 		while ((match = anchorPattern.exec(html)) !== null) {
 			const url = `${CHOSUN_BASE}${match[1]}`;
 			const innerHtml = match[2];
-			const title = this.stripTags(innerHtml).trim();
+			const title = cleanText(innerHtml).trim();
 
 			if (!title || articles.some((a) => a.url === url)) continue;
 
@@ -309,7 +309,7 @@ export class ChosunScraper implements NewspaperScraper {
 
 		const simplePattern = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "i");
 		const simpleMatch = xml.match(simplePattern);
-		return simpleMatch ? this.decodeEntities(simpleMatch[1].trim()) : null;
+		return simpleMatch ? decodeEntities(simpleMatch[1].trim()) : null;
 	}
 
 	private cleanTitle(title: string): string {
@@ -317,21 +317,5 @@ export class ChosunScraper implements NewspaperScraper {
 			.replace(/^\[사설\]\s*/, "")
 			.replace(/^\[칼럼\]\s*/, "")
 			.trim();
-	}
-
-	private stripTags(html: string): string {
-		return html
-			.replace(/<[^>]+>/g, "")
-			.replace(/\s+/g, " ")
-			.trim();
-	}
-
-	private decodeEntities(text: string): string {
-		return text
-			.replace(/&amp;/g, "&")
-			.replace(/&lt;/g, "<")
-			.replace(/&gt;/g, ">")
-			.replace(/&quot;/g, '"')
-			.replace(/&#39;/g, "'");
 	}
 }

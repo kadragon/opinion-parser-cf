@@ -8,8 +8,15 @@ app.get("/", async (c) => {
 	const newspaper = c.req.query("newspaper");
 	const date = c.req.query("date");
 	const q = c.req.query("q");
-	const page = Number(c.req.query("page") ?? "1");
-	const pageSize = Number(c.req.query("pageSize") ?? "20");
+	const rawPage = Number(c.req.query("page") ?? "1");
+	const rawPageSize = Number(c.req.query("pageSize") ?? "20");
+
+	if (Number.isNaN(rawPage) || Number.isNaN(rawPageSize)) {
+		return c.json({ error: "page and pageSize must be valid numbers" }, 400);
+	}
+
+	const page = Math.max(1, Math.min(rawPage, 1000));
+	const pageSize = Math.max(1, Math.min(rawPageSize, 100));
 	const clientToken = c.req.query("clientToken");
 
 	const result = await getArticles(c.env.DB, {

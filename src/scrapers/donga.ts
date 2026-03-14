@@ -1,4 +1,4 @@
-import { fetchWithRetry, parseDate } from "./base";
+import { decodeEntities, fetchWithRetry, parseDate, stripHtmlTags } from "./base";
 import type { NewspaperScraper, ScrapedArticle } from "./types";
 
 export class DongaScraper implements NewspaperScraper {
@@ -47,7 +47,7 @@ export class DongaScraper implements NewspaperScraper {
 			newspaper: this.name,
 			title: cleanTitle || title,
 			url: link,
-			summary: description ? this.stripTags(description).trim().slice(0, 200) : null,
+			summary: description ? stripHtmlTags(description).trim().slice(0, 200) : null,
 			published_at: pubDate ? parseDate(pubDate) : new Date().toISOString(),
 			image_url: null,
 		};
@@ -63,19 +63,6 @@ export class DongaScraper implements NewspaperScraper {
 
 		const simplePattern = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "i");
 		const simpleMatch = xml.match(simplePattern);
-		return simpleMatch ? this.decodeEntities(simpleMatch[1].trim()) : null;
-	}
-
-	private decodeEntities(text: string): string {
-		return text
-			.replace(/&amp;/g, "&")
-			.replace(/&lt;/g, "<")
-			.replace(/&gt;/g, ">")
-			.replace(/&quot;/g, '"')
-			.replace(/&#39;/g, "'");
-	}
-
-	private stripTags(html: string): string {
-		return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ");
+		return simpleMatch ? decodeEntities(simpleMatch[1].trim()) : null;
 	}
 }

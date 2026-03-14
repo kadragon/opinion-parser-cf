@@ -9,17 +9,25 @@ export async function handleCron(db: D1Database): Promise<{
 	const results: { newspaper: string; inserted: number; error?: string }[] = [];
 	let totalInserted = 0;
 
-	for (const scraper of scrapers) {
-		try {
+	const settled = await Promise.allSettled(
+		scrapers.map(async (scraper) => {
 			const articles = await scraper.scrape();
 			const inserted = await insertArticles(db, articles);
+			return { newspaper: scraper.name, inserted };
+		}),
+	);
+
+	for (const result of settled) {
+		if (result.status === "fulfilled") {
+			const { newspaper, inserted } = result.value;
 			totalInserted += inserted;
-			results.push({ newspaper: scraper.name, inserted });
-			console.log(`[CRON] ${scraper.name}: ${inserted} articles inserted`);
-		} catch (error) {
-			const message = error instanceof Error ? error.message : String(error);
-			results.push({ newspaper: scraper.name, inserted: 0, error: message });
-			console.error(`[CRON] ${scraper.name}: error - ${message}`);
+			results.push({ newspaper, inserted });
+			console.log(`[CRON] ${newspaper}: ${inserted} articles inserted`);
+		} else {
+			const message =
+				result.reason instanceof Error ? result.reason.message : String(result.reason);
+			results.push({ newspaper: "unknown", inserted: 0, error: message });
+			console.error(`[CRON] error - ${message}`);
 		}
 	}
 

@@ -1,4 +1,4 @@
-import { fetchWithRetry, parseDate } from "./base";
+import { cleanText, fetchWithRetry, parseDate } from "./base";
 import type { NewspaperScraper, ScrapedArticle } from "./types";
 
 interface NextDataArticle {
@@ -100,7 +100,7 @@ export class HaniScraper implements NewspaperScraper {
 	}
 
 	private mapNextDataArticle(item: NextDataArticle): ScrapedArticle | null {
-		const title = item.title ? this.stripTags(item.title).trim() : null;
+		const title = item.title ? cleanText(item.title).trim() : null;
 		if (!title) return null;
 
 		const rawUrl = item.url ?? item.article_url;
@@ -113,7 +113,7 @@ export class HaniScraper implements NewspaperScraper {
 			return null;
 		}
 
-		const summary = item.subtitle ? this.stripTags(item.subtitle).trim() : null;
+		const summary = item.subtitle ? cleanText(item.subtitle).trim() : null;
 
 		const dateStr = item.createDate ?? item.published_at;
 		const publishedAt = dateStr ? parseDate(dateStr) : parseDate(new Date().toISOString());
@@ -139,7 +139,7 @@ export class HaniScraper implements NewspaperScraper {
 		while ((match = anchorPattern.exec(html)) !== null) {
 			const url = `${this.baseUrl}${match[1]}`;
 			const titleHtml = match[2];
-			const title = this.stripTags(titleHtml).trim();
+			const title = cleanText(titleHtml).trim();
 
 			if (title && !articles.some((a) => a.url === url)) {
 				const context = this.extractContext(html, match.index);
@@ -173,7 +173,7 @@ export class HaniScraper implements NewspaperScraper {
 		const summaryMatch = surrounding.match(
 			/<(?:p|span|div)[^>]*class="[^"]*(?:desc|summary|sub|lead|excerpt)[^"]*"[^>]*>([\s\S]*?)<\//,
 		);
-		const summary = summaryMatch ? this.stripTags(summaryMatch[1]).trim() : null;
+		const summary = summaryMatch ? cleanText(summaryMatch[1]).trim() : null;
 
 		const dateMatch = surrounding.match(
 			/(\d{4})[.\-/](\d{1,2})[.\-/](\d{1,2})[\s]*(\d{1,2}:\d{2})?/,
@@ -188,18 +188,5 @@ export class HaniScraper implements NewspaperScraper {
 		const imageUrl = imgMatch ? imgMatch[1] : null;
 
 		return { summary: summary || null, publishedAt, imageUrl };
-	}
-
-	private stripTags(html: string): string {
-		return html
-			.replace(/<[^>]+>/g, "")
-			.replace(/&amp;/g, "&")
-			.replace(/&lt;/g, "<")
-			.replace(/&gt;/g, ">")
-			.replace(/&quot;/g, '"')
-			.replace(/&#39;/g, "'")
-			.replace(/&nbsp;/g, " ")
-			.replace(/&#\d+;/g, "")
-			.replace(/\s+/g, " ");
 	}
 }

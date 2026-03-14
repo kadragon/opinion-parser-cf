@@ -16,7 +16,12 @@ app.get("/", async (c) => {
 });
 
 app.post("/", async (c) => {
-	const body = await c.req.json<{ articleId?: number; clientToken?: string }>();
+	let body: { articleId?: number; clientToken?: string };
+	try {
+		body = await c.req.json<{ articleId?: number; clientToken?: string }>();
+	} catch {
+		return c.json({ error: "Invalid JSON body" }, 400);
+	}
 
 	if (!body.articleId || !body.clientToken) {
 		return c.json({ error: "articleId and clientToken are required" }, 400);

@@ -73,6 +73,28 @@ export function parseDate(dateStr: string): string {
 }
 
 /** Date 객체를 KST ISO 8601 문자열로 변환 */
+export function stripHtmlTags(html: string): string {
+	return html.replace(/<[^>]*>/g, "");
+}
+
+export function decodeEntities(text: string): string {
+	return text
+		.replace(/&amp;/g, "&")
+		.replace(/&lt;/g, "<")
+		.replace(/&gt;/g, ">")
+		.replace(/&quot;/g, '"')
+		.replace(/&#39;/g, "'")
+		.replace(/&apos;/g, "'")
+		.replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(Number.parseInt(hex, 16)))
+		.replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number.parseInt(dec, 10)))
+		.replace(/&nbsp;/g, " ");
+}
+
+export function cleanText(html: string): string {
+	return decodeEntities(stripHtmlTags(html)).replace(/\s+/g, " ").trim();
+}
+
+/** Date 객체를 KST ISO 8601 문자열로 변환 */
 export function toKstIso(date: Date): string {
 	const kst = new Date(date.getTime() + 9 * 60 * 60 * 1000);
 	const y = kst.getUTCFullYear();

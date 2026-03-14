@@ -1,26 +1,5 @@
-import { fetchWithRetry, parseDate } from "./base";
+import { cleanText, fetchWithRetry, parseDate } from "./base";
 import type { NewspaperScraper, ScrapedArticle } from "./types";
-
-function stripHtmlTags(html: string): string {
-	return html.replace(/<[^>]*>/g, "");
-}
-
-function decodeEntities(text: string): string {
-	return text
-		.replace(/&amp;/g, "&")
-		.replace(/&lt;/g, "<")
-		.replace(/&gt;/g, ">")
-		.replace(/&quot;/g, '"')
-		.replace(/&#39;/g, "'")
-		.replace(/&apos;/g, "'")
-		.replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(Number.parseInt(hex, 16)))
-		.replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number.parseInt(dec, 10)))
-		.replace(/&nbsp;/g, " ");
-}
-
-function cleanText(html: string): string {
-	return decodeEntities(stripHtmlTags(html)).trim();
-}
 
 export class JoongangScraper implements NewspaperScraper {
 	readonly name = "중앙일보";

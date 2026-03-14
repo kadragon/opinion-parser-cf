@@ -1,9 +1,0 @@
-[    1229ms] [ERROR] 쿠키를 찾을 수 없습니다. @ https://cdn.evgnet.com/beacon/chosun/chosunilbo/scripts/evergage.min.js:1366
-[    1729ms] [WARNING] Mixed Content: The page at 'https://www.chosun.com/opinion/editorial/' was loaded over HTTPS, but requested an insecure element 'http://image.chosun.com/arc/mcp/mcp_pdf_background_paper.png'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html @ https://www.chosun.com/opinion/editorial/:0
-[    1954ms] [WARNING] Google Deploy of the SharedId library has been deprecated. Please select another option in the GAM UI. If you use Prebid, we suggest the Prebid.js UserId option. If you do not, you may configure GAM to allow Google to share a first party user identifier with OB and AB participants, which is either the publisherProvidedId or the __gads value when that is missing. @ https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js:0
-[    1956ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
-https://goo.gle/gpt-message#155 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202603090101/pubads_impl.js?cb=31097235:18
-[    1998ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
-https://goo.gle/gpt-message#155 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202603090101/pubads_impl.js?cb=31097235:18
-[    2212ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
-https://goo.gle/gpt-message#155 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202603090101/pubads_impl.js?cb=31097235:18

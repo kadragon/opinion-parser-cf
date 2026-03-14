@@ -2,30 +2,28 @@ import type { ScrapedArticle } from "../scrapers/types";
 import type { Article, ArticleWithBookmark, Bookmark, PaginatedResponse } from "../types";
 
 export async function insertArticles(db: D1Database, articles: ScrapedArticle[]): Promise<number> {
-	let inserted = 0;
-
-	for (const article of articles) {
-		const result = await db
-			.prepare(
-				`INSERT OR IGNORE INTO articles (newspaper, title, url, summary, published_at, image_url)
-				 VALUES (?, ?, ?, ?, ?, ?)`,
-			)
-			.bind(
-				article.newspaper,
-				article.title,
-				article.url,
-				article.summary,
-				article.published_at,
-				article.image_url,
-			)
-			.run();
-
-		if (result.meta.changes > 0) {
-			inserted++;
-		}
+	if (articles.length === 0) {
+		return 0;
 	}
 
-	return inserted;
+	const statement = db.prepare(
+		`INSERT OR IGNORE INTO articles (newspaper, title, url, summary, published_at, image_url)
+		 VALUES (?, ?, ?, ?, ?, ?)`,
+	);
+
+	const batch = articles.map((article) =>
+		statement.bind(
+			article.newspaper,
+			article.title,
+			article.url,
+			article.summary,
+			article.published_at,
+			article.image_url,
+		),
+	);
+
+	const results = await db.batch(batch);
+	return results.reduce((sum, r) => sum + (r.meta.changes ?? 0), 0);
 }
 
 export interface GetArticlesParams {
