@@ -1,0 +1,26 @@
+import { getDateLabel } from "../lib/date";
+import type { Article } from "../lib/types";
+import { ArticleCard } from "./ArticleCard";
+
+interface DateGroupProps {
+	dateKey: string;
+	articles: Article[];
+	bookmarkIds: Set<number>;
+	onToggleBookmark: (id: number) => void;
+}
+
+export function DateGroup({ dateKey, articles, bookmarkIds, onToggleBookmark }: DateGroupProps) {
+	return (
+		<>
+			<div className="date-group-header">{getDateLabel(dateKey)}</div>
+			{articles.map((a) => (
+				<ArticleCard
+					key={a.id}
+					article={a}
+					isBookmarked={bookmarkIds.has(a.id)}
+					onToggleBookmark={onToggleBookmark}
+				/>
+			))}
+		</>
+	);
+}

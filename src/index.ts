@@ -1,6 +1,5 @@
 import { Hono } from "hono";
 import { handleCron } from "./cron/handler";
-import { html } from "./frontend/serve";
 import { createCorsMiddleware } from "./middleware/cors";
 import articles from "./routes/articles";
 import bookmarks from "./routes/bookmarks";
@@ -16,10 +15,6 @@ app.route("/api/articles", articles);
 app.route("/api/bookmarks", bookmarks);
 app.route("/api/scrape", scrape);
 app.route("/api/feed", feed);
-
-app.get("/", (c) => {
-	return c.html(html);
-});
 
 export default {
 	fetch: app.fetch,
