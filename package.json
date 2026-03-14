@@ -4,6 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"predev": "vite build --config src/frontend/vite.config.ts",
 		"dev": "wrangler dev",
 		"dev:frontend": "vite --config src/frontend/vite.config.ts",
 		"build:frontend": "vite build --config src/frontend/vite.config.ts",

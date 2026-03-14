@@ -8,6 +8,7 @@ export function useArticles(filters: Filters, clientToken: string) {
 	const [articles, setArticles] = useState<Article[]>([]);
 	const [loading, setLoading] = useState(true);
 	const [hasMore, setHasMore] = useState(true);
+	const [error, setError] = useState(false);
 	const pageRef = useRef(1);
 	const abortRef = useRef<AbortController | null>(null);
 
@@ -18,6 +19,8 @@ export function useArticles(filters: Filters, clientToken: string) {
 			abortRef.current = controller;
 
 			setLoading(true);
+			setError(false);
+			if (!append) setArticles([]);
 
 			fetchArticles(
 				{
@@ -38,10 +41,13 @@ export function useArticles(filters: Filters, clientToken: string) {
 					setLoading(false);
 				})
 				.catch((e) => {
-					if (e instanceof DOMException && e.name === "AbortError") return;
+					if (e instanceof DOMException && e.name === "AbortError") {
+						setLoading(false);
+						return;
+					}
 					console.error("Failed to load articles:", e);
 					setLoading(false);
-					if (!append) setArticles([]);
+					setError(true);
 				});
 		},
 		[filters.newspaper, filters.date, filters.q, clientToken],
@@ -57,5 +63,5 @@ export function useArticles(filters: Filters, clientToken: string) {
 		load(pageRef.current, true);
 	}, [load]);
 
-	return { articles, loading, hasMore, loadMore };
+	return { articles, loading, hasMore, error, loadMore };
 }

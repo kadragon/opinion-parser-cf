@@ -1,5 +1,4 @@
-import { useCallback, useState } from "react";
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "../hooks/useDebounce";
 import type { Filters } from "../lib/types";
 
@@ -22,10 +21,15 @@ export function FilterBar({ filters, onFilterChange }: FilterBarProps) {
 	const debouncedSearch = useDebounce(searchText, 300);
 
 	useEffect(() => {
+		setSearchText(filters.q);
+	}, [filters.q]);
+
+	// biome-ignore lint/correctness/useExhaustiveDependencies: intentionally omitting filters and onFilterChange to prevent infinite re-renders
+	useEffect(() => {
 		if (debouncedSearch !== filters.q) {
 			onFilterChange({ ...filters, q: debouncedSearch });
 		}
-	}, [debouncedSearch, filters, onFilterChange]);
+	}, [debouncedSearch]);
 
 	const handleNewspaperClick = useCallback(
 		(key: string) => {

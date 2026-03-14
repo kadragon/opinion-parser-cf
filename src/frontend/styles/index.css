@@ -403,6 +403,13 @@ body {
 	font-size: 0.88rem;
 }
 
+.error-message {
+	text-align: center;
+	padding: 60px 20px;
+	color: var(--text-secondary);
+	font-size: 0.95rem;
+}
+
 /* Loading spinner */
 .spinner {
 	display: inline-block;

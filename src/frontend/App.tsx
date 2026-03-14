@@ -12,18 +12,18 @@ function AppContent() {
 	const [filters, setFilters] = useState<Filters>({ newspaper: "", q: "", date: "" });
 	const [showBookmarks, setShowBookmarks] = useState(false);
 
-	const { articles, loading, hasMore, loadMore } = useArticles(filters, clientToken);
+	const { articles, loading, hasMore, error, loadMore } = useArticles(filters, clientToken);
 	const { bookmarkIds, toggleBookmark } = useBookmarks(clientToken);
 
 	const handleToggleBookmarks = useCallback(() => {
 		setShowBookmarks((prev) => !prev);
 	}, []);
 
-	const displayedCount = useMemo(() => {
+	const displayedArticles = useMemo(() => {
 		if (showBookmarks) {
-			return articles.filter((a) => bookmarkIds.has(a.id)).length;
+			return articles.filter((a) => bookmarkIds.has(a.id));
 		}
-		return articles.length;
+		return articles;
 	}, [articles, bookmarkIds, showBookmarks]);
 
 	return (
@@ -32,7 +32,7 @@ function AppContent() {
 				본문으로 건너뛰기
 			</a>
 			<Header
-				articleCount={displayedCount}
+				articleCount={displayedArticles.length}
 				showBookmarks={showBookmarks}
 				onToggleBookmarks={handleToggleBookmarks}
 				theme={theme}
@@ -41,9 +41,10 @@ function AppContent() {
 			<FilterBar filters={filters} onFilterChange={setFilters} />
 			<main className="content" id="main-content" aria-live="polite">
 				<ArticleList
-					articles={articles}
+					articles={displayedArticles}
 					loading={loading}
 					hasMore={hasMore}
+					error={error}
 					showBookmarks={showBookmarks}
 					bookmarkIds={bookmarkIds}
 					onToggleBookmark={toggleBookmark}

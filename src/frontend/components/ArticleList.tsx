@@ -9,6 +9,7 @@ interface ArticleListProps {
 	articles: Article[];
 	loading: boolean;
 	hasMore: boolean;
+	error: boolean;
 	showBookmarks: boolean;
 	bookmarkIds: Set<number>;
 	onToggleBookmark: (id: number) => void;
@@ -19,22 +20,27 @@ export function ArticleList({
 	articles,
 	loading,
 	hasMore,
+	error,
 	showBookmarks,
 	bookmarkIds,
 	onToggleBookmark,
 	onLoadMore,
 }: ArticleListProps) {
-	const displayed = showBookmarks ? articles.filter((a) => bookmarkIds.has(a.id)) : articles;
-
-	if (loading && displayed.length === 0) {
+	if (loading && articles.length === 0) {
 		return <LoadingSpinner />;
 	}
 
-	if (displayed.length === 0) {
+	if (error && articles.length === 0) {
+		return (
+			<p className="error-message">기사를 불러오는 데 실패했습니다. 잠시 후 다시 시도해주세요.</p>
+		);
+	}
+
+	if (articles.length === 0) {
 		return <EmptyState showBookmarks={showBookmarks} />;
 	}
 
-	const groups = groupByDate(displayed);
+	const groups = groupByDate(articles);
 
 	return (
 		<>

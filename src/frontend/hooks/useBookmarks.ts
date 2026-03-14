@@ -5,10 +5,12 @@ export function useBookmarks(clientToken: string) {
 	const [bookmarkIds, setBookmarkIds] = useState<Set<number>>(new Set());
 
 	useEffect(() => {
-		fetchBookmarks(clientToken).then((items) => {
-			const ids = items.map((b) => b.articleId || b.id || 0).filter(Boolean);
-			setBookmarkIds(new Set(ids));
-		});
+		fetchBookmarks(clientToken)
+			.then((items) => {
+				const ids = items.map((b) => b.articleId || b.id || 0).filter(Boolean);
+				setBookmarkIds(new Set(ids));
+			})
+			.catch((error) => console.error("Failed to fetch bookmarks:", error));
 	}, [clientToken]);
 
 	const toggleBookmark = useCallback(
