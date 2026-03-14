@@ -1,6 +1,13 @@
-name = "opinion-parser-cf"
+name = "opinion-parser"
 main = "src/index.ts"
 compatibility_date = "2024-12-01"
+
+[placement]
+mode = "smart"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
 
 [triggers]
 crons = ["0 */2 * * *"]
@@ -13,6 +20,7 @@ database_id = "50920e3e-2d3f-47b5-a118-04055e9ea8c3"
 [[rules]]
 type = "Text"
 globs = ["**/*.html"]
+fallthrough = true
 
 [[rules]]
 type = "Text"
