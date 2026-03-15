@@ -27,6 +27,8 @@ export function ArticleList({
 	onToggleBookmark,
 	onLoadMore,
 }: ArticleListProps) {
+	const groups = useMemo(() => groupByDate(articles), [articles]);
+
 	if (loading && articles.length === 0) {
 		return <LoadingSpinner />;
 	}
@@ -40,8 +42,6 @@ export function ArticleList({
 	if (articles.length === 0) {
 		return <EmptyState showBookmarks={showBookmarks} />;
 	}
-
-	const groups = useMemo(() => groupByDate(articles), [articles]);
 
 	return (
 		<>
