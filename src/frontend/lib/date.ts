@@ -44,17 +44,28 @@ export function getDateLabel(dateKey: string): string {
 	if (dateKey === yesterdayKey) return "어제";
 
 	const parts = dateKey.split("-");
-	return `${parts[0]}년 ${Number.parseInt(parts[1])}월 ${Number.parseInt(parts[2])}일`;
+	const year = Number.parseInt(parts[0]);
+	const month = Number.parseInt(parts[1]);
+	const day = Number.parseInt(parts[2]);
+	if (Number.isNaN(year) || Number.isNaN(month) || Number.isNaN(day)) return dateKey;
+	return `${year}년 ${month}월 ${day}일`;
 }
 
-export function groupByDate<T extends { publishedAt?: string; date?: string; createdAt?: string }>(
-	articles: T[],
-): { key: string; items: T[] }[] {
+export function formatTime(dateStr: string): string {
+	const d = new Date(dateStr);
+	if (Number.isNaN(d.getTime())) return "";
+	const k = toKst(d);
+	return `${String(k.h).padStart(2, "0")}:${String(k.min).padStart(2, "0")}`;
+}
+
+export function groupByDate<
+	T extends { publishedAt?: string; published_at?: string; date?: string; createdAt?: string },
+>(articles: T[]): { key: string; items: T[] }[] {
 	const groups: Record<string, T[]> = {};
 	const order: string[] = [];
 
 	for (const a of articles) {
-		const key = getDateKey(a.publishedAt || a.date || a.createdAt || "");
+		const key = getDateKey(a.publishedAt || a.published_at || a.date || a.createdAt || "");
 		if (!groups[key]) {
 			groups[key] = [];
 			order.push(key);
@@ -63,9 +74,4 @@ export function groupByDate<T extends { publishedAt?: string; date?: string; cre
 	}
 
 	return order.map((key) => ({ key, items: groups[key] }));
-}
-
-export function estimateReadingTime(text: string): number {
-	if (!text) return 1;
-	return Math.max(1, Math.ceil(text.length / 500));
 }
