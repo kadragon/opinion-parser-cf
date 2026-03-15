@@ -238,6 +238,8 @@ body {
 	margin-bottom: 10px;
 	transition: all var(--transition-fast);
 	position: relative;
+	content-visibility: auto;
+	contain-intrinsic-size: auto 200px;
 }
 
 .article-card:hover {

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { getDateLabel } from "../lib/date";
 import type { Article } from "../lib/types";
 import { ArticleCard } from "./ArticleCard";
@@ -9,7 +10,12 @@ interface DateGroupProps {
 	onToggleBookmark: (id: number) => void;
 }
 
-export function DateGroup({ dateKey, articles, bookmarkIds, onToggleBookmark }: DateGroupProps) {
+export const DateGroup = memo(function DateGroup({
+	dateKey,
+	articles,
+	bookmarkIds,
+	onToggleBookmark,
+}: DateGroupProps) {
 	return (
 		<>
 			<div className="date-group-header">{getDateLabel(dateKey)}</div>
@@ -23,4 +29,4 @@ export function DateGroup({ dateKey, articles, bookmarkIds, onToggleBookmark }: 
 			))}
 		</>
 	);
-}
+});

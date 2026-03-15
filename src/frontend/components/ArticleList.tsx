@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { groupByDate } from "../lib/date";
 import type { Article } from "../lib/types";
 import { DateGroup } from "./DateGroup";
@@ -40,7 +41,7 @@ export function ArticleList({
 		return <EmptyState showBookmarks={showBookmarks} />;
 	}
 
-	const groups = groupByDate(articles);
+	const groups = useMemo(() => groupByDate(articles), [articles]);
 
 	return (
 		<>
