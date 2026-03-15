@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { memo, useCallback, useState } from "react";
 import { estimateReadingTime, formatDate } from "../lib/date";
 import type { Article } from "../lib/types";
 
@@ -69,7 +69,11 @@ function StarIcon({ filled }: { filled: boolean }) {
 	);
 }
 
-export function ArticleCard({ article, isBookmarked, onToggleBookmark }: ArticleCardProps) {
+export const ArticleCard = memo(function ArticleCard({
+	article,
+	isBookmarked,
+	onToggleBookmark,
+}: ArticleCardProps) {
 	const [shared, setShared] = useState(false);
 	const a = article;
 	const readTime = estimateReadingTime(a.summary || a.content || "");
@@ -132,4 +136,4 @@ export function ArticleCard({ article, isBookmarked, onToggleBookmark }: Article
 			</time>
 		</article>
 	);
-}
+});

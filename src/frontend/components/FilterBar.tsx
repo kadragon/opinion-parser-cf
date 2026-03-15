@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useDebounce } from "../hooks/useDebounce";
 import type { Filters } from "../lib/types";
 
@@ -20,14 +20,20 @@ export function FilterBar({ filters, onFilterChange }: FilterBarProps) {
 	const [searchText, setSearchText] = useState(filters.q);
 	const debouncedSearch = useDebounce(searchText, 300);
 
-	useEffect(() => {
-		setSearchText(filters.q);
-	}, [filters.q]);
+	const filtersRef = useRef(filters);
+	const onFilterChangeRef = useRef(onFilterChange);
+	filtersRef.current = filters;
+	onFilterChangeRef.current = onFilterChange;
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: intentionally omitting filters and onFilterChange to prevent infinite re-renders
+	const prevQ = useRef(filters.q);
+	if (prevQ.current !== filters.q) {
+		prevQ.current = filters.q;
+		setSearchText(filters.q);
+	}
+
 	useEffect(() => {
-		if (debouncedSearch !== filters.q) {
-			onFilterChange({ ...filters, q: debouncedSearch });
+		if (debouncedSearch !== filtersRef.current.q) {
+			onFilterChangeRef.current({ ...filtersRef.current, q: debouncedSearch });
 		}
 	}, [debouncedSearch]);
 

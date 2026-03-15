@@ -42,7 +42,6 @@ export function useArticles(filters: Filters, clientToken: string) {
 				})
 				.catch((e) => {
 					if (e instanceof DOMException && e.name === "AbortError") {
-						setLoading(false);
 						return;
 					}
 					console.error("Failed to load articles:", e);
