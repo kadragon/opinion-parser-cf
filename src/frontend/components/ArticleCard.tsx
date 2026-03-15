@@ -1,5 +1,5 @@
 import { memo, useCallback, useState } from "react";
-import { estimateReadingTime, formatDate } from "../lib/date";
+import { formatTime } from "../lib/date";
 import type { Article } from "../lib/types";
 
 interface ArticleCardProps {
@@ -76,9 +76,8 @@ export const ArticleCard = memo(function ArticleCard({
 }: ArticleCardProps) {
 	const [shared, setShared] = useState(false);
 	const a = article;
-	const readTime = estimateReadingTime(a.summary || a.content || "");
 	const articleUrl = a.link || a.url || "";
-	const articleDate = a.publishedAt || a.date || a.createdAt || "";
+	const articleDate = a.publishedAt || a.published_at || a.date || a.createdAt || "";
 
 	const handleShare = useCallback(() => {
 		if (navigator.share) {
@@ -102,7 +101,7 @@ export const ArticleCard = memo(function ArticleCard({
 					<span className="paper-badge" data-paper={a.newspaper}>
 						{a.newspaper}
 					</span>
-					<span className="reading-time">{readTime}분 읽기</span>
+					<span className="publish-time">{formatTime(articleDate)}</span>
 				</div>
 				<div className="card-actions">
 					<button
@@ -130,10 +129,6 @@ export const ArticleCard = memo(function ArticleCard({
 					{a.title}
 				</a>
 			</h2>
-			{a.summary && <p className="article-summary">{a.summary}</p>}
-			<time className="article-date" dateTime={articleDate}>
-				{formatDate(articleDate)}
-			</time>
 		</article>
 	);
 });

@@ -17,6 +17,11 @@
 	--accent: #4361ee;
 	--accent-hover: #3a56d4;
 	--bookmark-color: #fbbf24;
+	--color-joongang: #e8192c;
+	--color-chosun: #003478;
+	--color-donga: #007a85;
+	--color-hani: #00588c;
+	--color-khan: #2654e9;
 	--font-stack: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
 		"Noto Sans KR", "Malgun Gothic", sans-serif;
 }
@@ -158,19 +163,19 @@ body {
 	--paper-color: var(--accent);
 }
 .filter-btn[data-paper="중앙일보"] {
-	--paper-color: #dc2626;
+	--paper-color: var(--color-joongang);
 }
 .filter-btn[data-paper="조선일보"] {
-	--paper-color: #2563eb;
+	--paper-color: var(--color-chosun);
 }
 .filter-btn[data-paper="동아일보"] {
-	--paper-color: #1e3a5f;
+	--paper-color: var(--color-donga);
 }
 .filter-btn[data-paper="한겨레"] {
-	--paper-color: #16a34a;
+	--paper-color: var(--color-hani);
 }
 .filter-btn[data-paper="경향신문"] {
-	--paper-color: #ea580c;
+	--paper-color: var(--color-khan);
 }
 
 .filter-btn.active {
@@ -271,22 +276,22 @@ body {
 }
 
 .paper-badge[data-paper="중앙일보"] {
-	background: #dc2626;
+	background: var(--color-joongang);
 }
 .paper-badge[data-paper="조선일보"] {
-	background: #2563eb;
+	background: var(--color-chosun);
 }
 .paper-badge[data-paper="동아일보"] {
-	background: #1e3a5f;
+	background: var(--color-donga);
 }
 .paper-badge[data-paper="한겨레"] {
-	background: #16a34a;
+	background: var(--color-hani);
 }
 .paper-badge[data-paper="경향신문"] {
-	background: #ea580c;
+	background: var(--color-khan);
 }
 
-.reading-time {
+.publish-time {
 	font-size: 0.72rem;
 	color: var(--text-tertiary);
 }
@@ -333,22 +338,6 @@ body {
 
 .article-title a:hover {
 	color: var(--accent);
-}
-
-.article-summary {
-	font-size: 0.88rem;
-	color: var(--text-secondary);
-	line-height: 1.65;
-	margin-bottom: 8px;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
-
-.article-date {
-	font-size: 0.75rem;
-	color: var(--text-tertiary);
 }
 
 /* Load more */
