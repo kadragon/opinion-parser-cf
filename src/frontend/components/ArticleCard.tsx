@@ -101,7 +101,7 @@ export const ArticleCard = memo(function ArticleCard({
 					<span className="paper-badge" data-paper={a.newspaper}>
 						{a.newspaper}
 					</span>
-					<span className="reading-time">{formatTime(articleDate)}</span>
+					<span className="publish-time">{formatTime(articleDate)}</span>
 				</div>
 				<div className="card-actions">
 					<button

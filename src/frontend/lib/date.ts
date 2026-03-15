@@ -17,13 +17,6 @@ function toKst(d: Date): KstParts {
 	};
 }
 
-export function formatDate(dateStr: string): string {
-	const d = new Date(dateStr);
-	if (Number.isNaN(d.getTime())) return dateStr;
-	const k = toKst(d);
-	return `${k.m}/${k.d} ${String(k.h).padStart(2, "0")}:${String(k.min).padStart(2, "0")}`;
-}
-
 export function getDateKey(dateStr: string): string {
 	const d = new Date(dateStr);
 	if (Number.isNaN(d.getTime())) return dateStr;
@@ -44,9 +37,9 @@ export function getDateLabel(dateKey: string): string {
 	if (dateKey === yesterdayKey) return "어제";
 
 	const parts = dateKey.split("-");
-	const year = Number.parseInt(parts[0]);
-	const month = Number.parseInt(parts[1]);
-	const day = Number.parseInt(parts[2]);
+	const year = Number.parseInt(parts[0], 10);
+	const month = Number.parseInt(parts[1], 10);
+	const day = Number.parseInt(parts[2], 10);
 	if (Number.isNaN(year) || Number.isNaN(month) || Number.isNaN(day)) return dateKey;
 	return `${year}년 ${month}월 ${day}일`;
 }
