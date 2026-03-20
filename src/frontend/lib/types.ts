@@ -32,3 +32,12 @@ export interface Filters {
 	q: string;
 	date: string;
 }
+
+export interface ArticleContent {
+	title: string;
+	publishedAt: string;
+	body: string[];
+	newspaper: string;
+	error?: string;
+	fallbackUrl?: string;
+}
