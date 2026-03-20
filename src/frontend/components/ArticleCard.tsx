@@ -101,6 +101,10 @@ export const ArticleCard = memo(function ArticleCard({
 		setShowModal(true);
 	}, []);
 
+	const handleCloseModal = useCallback(() => {
+		setShowModal(false);
+	}, []);
+
 	return (
 		<article className="article-card" data-id={a.id}>
 			<div className="card-top">
@@ -137,11 +141,7 @@ export const ArticleCard = memo(function ArticleCard({
 				</a>
 			</h2>
 			{showModal && (
-				<ArticleModal
-					articleUrl={articleUrl}
-					newspaper={a.newspaper}
-					onClose={() => setShowModal(false)}
-				/>
+				<ArticleModal articleUrl={articleUrl} newspaper={a.newspaper} onClose={handleCloseModal} />
 			)}
 		</article>
 	);

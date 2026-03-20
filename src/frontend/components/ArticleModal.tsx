@@ -119,8 +119,9 @@ export function ArticleModal({ articleUrl, newspaper, onClose }: ArticleModalPro
 							<h2 className="article-modal-title">{content.title}</h2>
 						</div>
 						<div className="article-modal-body">
-							{content.body.map((paragraph) => (
-								<p key={paragraph}>{paragraph}</p>
+							{content.body.map((paragraph, index) => (
+								// biome-ignore lint/suspicious/noArrayIndexKey: paragraphs are static content, not reordered
+								<p key={index}>{paragraph}</p>
 							))}
 						</div>
 					</>
@@ -147,11 +148,12 @@ function formatModalDate(dateStr: string): string {
 		const date = new Date(dateStr);
 		if (Number.isNaN(date.getTime())) return dateStr;
 
-		const y = date.getFullYear();
-		const m = date.getMonth() + 1;
-		const d = date.getDate();
-		const h = String(date.getHours()).padStart(2, "0");
-		const min = String(date.getMinutes()).padStart(2, "0");
+		const kst = new Date(date.getTime() + 9 * 60 * 60 * 1000);
+		const y = kst.getUTCFullYear();
+		const m = kst.getUTCMonth() + 1;
+		const d = kst.getUTCDate();
+		const h = String(kst.getUTCHours()).padStart(2, "0");
+		const min = String(kst.getUTCMinutes()).padStart(2, "0");
 
 		return `${y}년 ${m}월 ${d}일 ${h}:${min}`;
 	} catch {

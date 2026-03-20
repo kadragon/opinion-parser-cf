@@ -17,7 +17,7 @@ const parsers: ArticleContentParser[] = [
 function findParser(url: string): ArticleContentParser | null {
 	try {
 		const hostname = new URL(url).hostname;
-		return parsers.find((p) => hostname.includes(p.domain)) ?? null;
+		return parsers.find((p) => hostname === p.domain || hostname.endsWith(`.${p.domain}`)) ?? null;
 	} catch {
 		return null;
 	}

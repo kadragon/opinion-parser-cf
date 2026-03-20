@@ -14,7 +14,7 @@ app.get("/", async (c) => {
 	let parsed: URL;
 	try {
 		parsed = new URL(url);
-		if (!parsed.protocol.startsWith("http")) {
+		if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
 			throw new Error("Invalid protocol");
 		}
 	} catch {
@@ -37,8 +37,8 @@ app.get("/", async (c) => {
 				newspaper: cached.newspaper,
 			});
 		}
-	} catch {
-		// Cache miss or DB error, proceed with fetch
+	} catch (err) {
+		console.error("Cache read failed:", err);
 	}
 
 	// Fetch and parse
@@ -52,8 +52,8 @@ app.get("/", async (c) => {
 			)
 				.bind(url, result.title, result.publishedAt, JSON.stringify(result.body), result.newspaper)
 				.run();
-		} catch {
-			// Cache write failure is non-critical
+		} catch (err) {
+			console.error("Cache write failed:", err);
 		}
 
 		return c.json({
