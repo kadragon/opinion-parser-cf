@@ -1,6 +1,7 @@
 import { memo, useCallback, useState } from "react";
 import { formatTime } from "../lib/date";
 import type { Article } from "../lib/types";
+import { ArticleModal } from "./ArticleModal";
 
 interface ArticleCardProps {
 	article: Article;
@@ -75,6 +76,7 @@ export const ArticleCard = memo(function ArticleCard({
 	onToggleBookmark,
 }: ArticleCardProps) {
 	const [shared, setShared] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 	const a = article;
 	const articleUrl = a.link || a.url || "";
 	const articleDate = a.publishedAt || a.published_at || a.date || a.createdAt || "";
@@ -93,6 +95,11 @@ export const ArticleCard = memo(function ArticleCard({
 	const handleBookmark = useCallback(() => {
 		onToggleBookmark(a.id);
 	}, [a.id, onToggleBookmark]);
+
+	const handleTitleClick = useCallback((e: React.MouseEvent) => {
+		e.preventDefault();
+		setShowModal(true);
+	}, []);
 
 	return (
 		<article className="article-card" data-id={a.id}>
@@ -125,10 +132,17 @@ export const ArticleCard = memo(function ArticleCard({
 				</div>
 			</div>
 			<h2 className="article-title">
-				<a href={articleUrl || "#"} target="_blank" rel="noopener noreferrer">
+				<a href={articleUrl || "#"} onClick={handleTitleClick}>
 					{a.title}
 				</a>
 			</h2>
+			{showModal && (
+				<ArticleModal
+					articleUrl={articleUrl}
+					newspaper={a.newspaper}
+					onClose={() => setShowModal(false)}
+				/>
+			)}
 		</article>
 	);
 });

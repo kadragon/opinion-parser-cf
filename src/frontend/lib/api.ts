@@ -1,4 +1,4 @@
-import type { BookmarkItem, PaginatedResponse } from "./types";
+import type { ArticleContent, BookmarkItem, PaginatedResponse } from "./types";
 
 export function fetchArticles(
 	params: {
@@ -49,5 +49,14 @@ export function toggleBookmarkApi(articleId: number, clientToken: string): Promi
 			"X-Client-Token": clientToken,
 		},
 		body: JSON.stringify({ articleId }),
+	});
+}
+
+export function fetchArticleContent(url: string, signal?: AbortSignal): Promise<ArticleContent> {
+	return fetch(`/api/article-content?url=${encodeURIComponent(url)}`, { signal }).then((res) => {
+		if (!res.ok && res.status !== 502) {
+			throw new Error("Failed to fetch article content");
+		}
+		return res.json() as Promise<ArticleContent>;
 	});
 }
