@@ -63,11 +63,11 @@ export function ArticleModal({ articleUrl, newspaper, onClose }: ArticleModalPro
 	};
 
 	return createPortal(
+		// biome-ignore lint/a11y/noStaticElementInteractions: modal overlay backdrop dismisses on click
 		<div
 			className="article-modal-overlay"
 			onClick={handleOverlayClick}
 			onKeyDown={handleOverlayKeyDown}
-			aria-label="사설 본문"
 		>
 			<dialog className="article-modal" ref={modalRef} open aria-modal="true">
 				<button className="article-modal-close" onClick={onClose} aria-label="닫기" type="button">

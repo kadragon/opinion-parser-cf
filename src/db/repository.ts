@@ -1,5 +1,5 @@
 import type { ScrapedArticle } from "../scrapers/types";
-import type { Article, ArticleWithBookmark, Bookmark, PaginatedResponse } from "../types";
+import type { Article, ArticleWithBookmark, PaginatedResponse } from "../types";
 
 export async function insertArticles(db: D1Database, articles: ScrapedArticle[]): Promise<number> {
 	if (articles.length === 0) {

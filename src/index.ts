@@ -20,7 +20,7 @@ app.route("/api/feed", feed);
 
 export default {
 	fetch: app.fetch,
-	async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext) {
+	async scheduled(_event: ScheduledEvent, env: Env, ctx: ExecutionContext) {
 		ctx.waitUntil(handleCron(env.DB));
 	},
 };
