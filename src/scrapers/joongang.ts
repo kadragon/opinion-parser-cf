@@ -145,7 +145,7 @@ export class JoongangScraper implements NewspaperScraper {
 		}
 
 		// Fallback: visible text date pattern (not inside URLs/attributes)
-		const textDateMatch = html.match(/>(\d{4}[.\-]\d{2}[.\-]\d{2}\s+\d{2}:\d{2})</);
+		const textDateMatch = html.match(/>(\d{4}[.-]\d{2}[.-]\d{2}\s+\d{2}:\d{2})</);
 		if (textDateMatch) {
 			return parseDate(textDateMatch[1].replace(/\./g, "-"));
 		}
