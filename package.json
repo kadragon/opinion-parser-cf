@@ -23,7 +23,7 @@
 		"react-dom": "^19.2.4"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.0",
+		"@biomejs/biome": "^2.4.8",
 		"@cloudflare/vitest-pool-workers": "^0.13.3",
 		"@cloudflare/workers-types": "^4.20260317.1",
 		"@types/react": "^19.2.14",
