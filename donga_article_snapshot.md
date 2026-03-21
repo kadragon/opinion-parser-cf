@@ -1,0 +1,1108 @@
+- generic [active] [ref=e1]:
+  - navigation:
+    - link "본문으로 바로가기" [ref=e2] [cursor=pointer]:
+      - /url: "#contents"
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e7]:
+        - link "블룸버그 “BTS 광화문 공연, 서울에 2660억원 수익 안길 것”" [ref=e8] [cursor=pointer]:
+          - /url: https://www.donga.com/news/article/all/20260320/133569941/2
+          - paragraph [ref=e9]: 블룸버그 “BTS 광화문 공연, 서울에 2660억원 수익 안길 것”
+        - button "전체메뉴 닫기" [ref=e10] [cursor=pointer]:
+          - generic:
+            - img
+          - generic [ref=e11]: 전체메뉴 닫기
+    - banner [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - link "동아일보" [ref=e17] [cursor=pointer]:
+            - /url: https://www.donga.com
+            - generic:
+              - img
+          - navigation [ref=e19]:
+            - menu [ref=e20]:
+              - menuitem "오피니언" [ref=e21] [cursor=pointer]
+              - menuitem "정치" [ref=e22] [cursor=pointer]
+              - menuitem "경제" [ref=e23] [cursor=pointer]
+              - menuitem "국제" [ref=e24] [cursor=pointer]
+              - menuitem "사회" [ref=e25] [cursor=pointer]
+              - menuitem "문화" [ref=e26] [cursor=pointer]
+              - menuitem "연예" [ref=e27] [cursor=pointer]
+              - menuitem "스포츠" [ref=e28] [cursor=pointer]
+              - menuitem "헬스동아" [ref=e29] [cursor=pointer]
+              - menuitem "트렌드뉴스" [ref=e30] [cursor=pointer]
+          - navigation [ref=e32]:
+            - menu [ref=e33]:
+              - menuitem "통합검색" [ref=e34] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic [ref=e35]: 통합검색
+              - menuitem "마이페이지" [ref=e36] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic [ref=e37]: 마이페이지
+              - menuitem "전체메뉴 펼치기" [ref=e38] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic [ref=e39]: 전체메뉴 펼치기
+        - progressbar [ref=e40]
+    - main [ref=e42]:
+      - generic [ref=e43]:
+        - iframe [ref=e46]:
+          - iframe [ref=f13e4]:
+            - iframe [ref=f23e3]:
+              - iframe [ref=f47e2]:
+                - iframe [ref=f48e2]:
+                  - generic [active] [ref=f50e1]:
+                    - banner
+                    - iframe [ref=f50e2]:
+                      - iframe [ref=f57e4]:
+                        - generic [ref=f88e3]:
+                          - link [ref=f88e4] [cursor=pointer]:
+                            - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CZgCSpA-9aauVNdHbpt8Pu9mScLCg4diEAauY7-PKFdnZHhABIMecgyRgm8v-jsApoAGcr_uoAsgBA-ACAKgDAcgDCKoEsgJP0FauLhhgpVc7LwmRFLBGjkvb9HYw6nbIN3nvW54a-8av_Rf67uhC5tqHuUSpJfK6TImp1-MRqYBkYM7e299roFv-xofJP4xkhLoDFQznrCYhPo9DMf09S_602w4xwvg6TNnl7CTDtJx_No7-KDsx8TSpQutbfck8kCB1O0wLZTZO8afsGK0SBpoEo8QdBjrZPUR_kaaABwGo3H1YeH9AcL1-vcjaGhrZa8g8Y2sZ1DcLVqz7BukFeIoIS0uLux4VA7L88f5nCMMkaL2bzipxehXyM39E2gWHztBZ5dXJWau-sqYFbpRf7XEUVCxZYWPK_rm_1gxzd-pvwud0ow2_U5R2MjlT_6IXDaNWKeWPc-NSmQncIqcxB-8-M2pxCUCwLrcewxrkcOk8p5_9zfv_ZXHABJ7otMTBBeAEAYgFgZWelFegBgOAB8zQhNcBqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggvCIBhEAEYnQEyCIqCgICAgIAIOg2AQIDAgICAgKiAAqgDSL39wTpYzq3Uv5GukwPyCBthZHgtc3Vic3luLTQ1NDE1MzQ2OTYxNTE1OTCxCeOLtkt73WokgAoDmAsByAsBogwDkAEBqg0CS1LIDQHiDRMIouPUv5GukwMV0a3pBR27rAQO6g0TCP271b-RrpMDFdGt6QUdu6wEDvANAogO____________AdgTDdAVAZgWAcoWAgoA-BYBgBcBshcOGAEqCjcxMzYxNjg5ODK6FwI4AaoYFwkAAAAAWA8CQRIKNzEzNjE2ODk4MhgBshgJEgKwUxgDIgEA0BgB6BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIq_fVv5GukwMV0a3pBR27rAQOEAEYASAAEgIPJ_D_BwE&num=1&cid=CAQS0gEABaugfa2DX95EGyOxpzAQYoxvN9z2EPUi2COrsnErEnMk5J5H8vasd9w_u5Y4uR1PZQJpGzIsCP_pV_tB79Klcy43EFGbk20pelug7VfV4XtskMnPaNq9zUnIFu7zl6UHaLUdTEtqRciSB9YqvMDnv3ENM2QHJ_JTJ-VwLUpqG-cdJCNoF4GPH82iKL4JaM0YDoEMsnVSt0YyyvyhbVELwnpfzAxA9KdvHWL25fSzW6cAcLvkHZtlheZPIXc4z7PkO72y6XTMOtjnCGWxkBo4znEYAQ&sig=AOD64_0sYn2zSroEnnz87kd38pWHrKxh_g&client=ca-pub-3533864070776314&rf=5&nx=CLICK_X&ny=CLICK_Y&uap=UACH(platform)&uapv=UACH(platformVersion)&uaa=UACH(architecture)&uam=UACH(model)&uafv=UACH(uaFullVersion)&uab=UACH(bitness)&uaw=UACH(wow64)&uafvl=UACH(fullVersionList)&nb=2&adurl=https://www.hero-wars.com/%3Fdelayedsignup%3Dtrue%26nx_source%3Dadx_adwordsdisplay.hw_wb_uu_-.cc-ww_other.g-mix.a-mix.au-lal.opt-purchase2.cr-hw_st_nextloot2a_gif.cn-970_250.lp-delayed.dt-display.cid-23396321921.agid-189390468126.csd-190326.-%26cp%3D.aid-801093146044%26gad_source%3D5%26gad_campaignid%3D23396321921%26gclid%3DEAIaIQobChMIq_fVv5GukwMV0a3pBR27rAQOEAEYASAAEgIPJ_D_BwE
+                          - generic [ref=f88e6]:
+                            - link [ref=f88e8] [cursor=pointer]:
+                              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AcrBLeWDLVxTtAOCVkYVjVZR0hs6voCs49o7I0_VhZ7qa79keRQlilnvOMWOMdQ9RGf1mFS9IQwJN-cZZFz8es13sT0HpBVaMEzEfNB3OMrM5E-ETG8t6PLhHtuBs6Uu39GKOfhrMbBYuZ_J60GXvJ0xxYxiyqVvcy68ynpWX7OOY7gZgj0Yc2egFXkTpcsdaM3xLPcxE4xjCVn-Bs-L4LWpt6PCB105avmOzeDoxxk3kC69F2VphvR8zMF_jZ1gsJiOuEg7NCo1CdGQ3tgDXwFcQyHWg0LtJVVakjQMsu2Yo2vNK7CvRRIralfFoDvpTM8_RJtfTuPE2CuDJMS7WfdDaUfHw86a0sIikxE2SPsFiRkR2Ut0K1NvpL1mKXGxZOy53PGhuVJsz-Ux_JPgOmOdJfOxKarEklJ80bWPoSvw4sbW2bCh0wc_Hr_gRcOyK8J2LpHYuiACfo4t3zgS9yJOCPJKNycl0lNM6U348SjXpe4BNZyMJsFAOlZA96uX8E6ytVbm66xi6BnxIUIXpc25lgCwzag-g32WHKj3r73ImIsGOChKXGJV04DpPPkqFb9Vk3pbyoXe5eK4VhyMwepK2cQ-JWLxue3vz5TjNlZjNjCdrypCqqXYioO9Dr-s3W6rtlFWLqJjkPJxOicJgHACOvIywR_o-t3IQwi7opNDPTbieg8opWCIqF4Q_bAgACiIDdbLYvzefqDAi9sOwkRHK-gMlGvhoEXtsVkh9gCsuOuaKUT7gatEqZ0KmXQEbdSYRVgZBsmFGfa7X-z-VULKlSZYwZs_mKzYVWj9aKyvSkG7BQZrvlZhiCZxaZYmZ3upfkJS2TLRuLpYzMBTgtmaBed6bwqw01L0QQHKya5PDK4msj-7cO245bFxl1UMs9uU5B3c0yc45-L6wz0sCxm07QJWUrD7CsCVN_N4UGAzshAKQL2rakY-bnZRCd6qPorn3gbJZMR53B3Ps1qT_xIVDozG1Kh9Pr1UnhE1F41M5Uwu1Eq3crLuVynCwBkjPe54_s4-rXmSKNrTy1AfNxgCO9hQRQ7TVi5IVylzztkNEpGllPUQU2RO3SqNemwqXCSwY_J1AVUcrNAB_u5BaZkeXcNL4hDAvY3kmoC8lIMhhIodFDLk4d0NVCG7HYi3TKdIPQpmCpjVgAyOfNFEGNW6wslRXLWuoXq_UePH51trRyVOeFakpi3KEWwvCD0HnvQCr13ebVUG5f7nQO57ZefbjmyBq0jMAhN_fuKZ4pd4pST-gIe3KjS1SxSXyJbrCIZTB5pzWgxe8pD7P0rdcPsdCaE_UMph_Cy-HqJjpkw-62LPlY0Vouykv53mOfgUILbbyHht_W71Uk8Uk5PlHaJk9Rg_ymVG_OYpnJbDEnlVXqQLCmx3zvo-V0ZD0TLORK4xv-r5-hebVFp2r0G2FgoTDOZBsKTm7ZYx3-v-BxBSXwCplcjUl4mBkCwoKyAGkqoiafK4viLxae6JWzHNEPaxSmS76JCXv6YiqOhleZcu7obQ0AKT7rhOO9TqtFqaTkoByQMmpZyZfIhAiPMJE6cau99pa_rpK4iB6OqX_ljIjfIDlu6drSV0C2d8WA6ce2twrJTA5OT8ep-VBN8yoQLN3x1tbF8NJzE7Psfr0UuzQayLJ5965x1qYmB2Ae96WneAoSLZdPuqoTNGMI5a5CNh1tw9i7o1ffQ82-2Rd6GXzVVsrCDpcklrwOIKH5Pg8j5O4fRhIdh48bxZLowPLtw0x4XkBIDPTPdhpKIpCg0DspBcTziu5anwoWIz9fVLOP1ZhyAgAAOEoPlIq7o45dnMjlVq4LpnYpkIamYzKQIxoMmElmL0ZKCWj_A7TKWHbYuZJShVyjNXgbcMR-yYy6c1l7t8sbpzFcs2SdGYWm1uLbyIFzjCJ5ew_DVX04YYwRW5gEec9dm5dXXxvDxoPexTUTR0ERKbXVqVMie4T0Vn4YqPCrcFiC00iIkAIKUL-VaaAGX_FqevbPfHDidALwxyZtz7MHQeaKcHLVsvtKG_a8PatC8wWeFTRf0O-q3RrCU4FJ6rpbdVXNwj8a_BcdeOCHW6W8ME_DKWxyEkNnULcy1KGG-uqD2r7V-Tx0E11aAWF0G8slL_5jOb6M6NJNrxE0WvhEbnazSjMA2RGaTCJS4dNCUIWbuRwz8D2GsZgaQc3B7Ygz0qNlCdceodOHAJg6d-fxtyOD-u5xVr96oflqM0Ky_rESdUPUEZEx796sxSsngeJ1-XMKh5Upel2MUL4tSGhkBT7dSnCFw7uaJf6XlVk0xDKXDC-1MjQ4akd7T1z9myoRdCwpysyet2Ac9g27-WxHHbCgTjgIkKUy57D4TX9vkmqLQFMrGlRJ5AQsU6CAQkIU0yi5cqvp2kdPH9R5H-6-kMLwdYY_DV9wBGzJhS2CKqhz5ms4t0IB9nyWjcCuhE5m6Jt4U61w_H6yIRceYBwIirdsysNh_rPojCJ-szZDv5w7rtDtAmoyd3EXEwjBSNusvT9KEI3yiRbtQyG866oPZhB7MIcQWBJYxz7emjVJMSv2vYlimdWX6uIE_o9sVUj2PQSwtyEvSphvbOQL0&opi=122715837
+                              - img [ref=f88e10]
+                            - link [ref=f88e12] [cursor=pointer]:
+                              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AcrBLeWDLVxTtAOCVkYVjVZR0hs6voCs49o7I0_VhZ7qa79keRQlilnvOMWOMdQ9RGf1mFS9IQwJN-cZZFz8es13sT0HpBVaMEzEfNB3OMrM5E-ETG8t6PLhHtuBs6Uu39GKOfhrMbBYuZ_J60GXvJ0xxYxiyqVvcy68ynpWX7OOY7gZgj0Yc2egFXkTpcsdaM3xLPcxE4xjCVn-Bs-L4LWpt6PCB105avmOzeDoxxk3kC69F2VphvR8zMF_jZ1gsJiOuEg7NCo1CdGQ3tgDXwFcQyHWg0LtJVVakjQMsu2Yo2vNK7CvRRIralfFoDvpTM8_RJtfTuPE2CuDJMS7WfdDaUfHw86a0sIikxE2SPsFiRkR2Ut0K1NvpL1mKXGxZOy53PGhuVJsz-Ux_JPgOmOdJfOxKarEklJ80bWPoSvw4sbW2bCh0wc_Hr_gRcOyK8J2LpHYuiACfo4t3zgS9yJOCPJKNycl0lNM6U348SjXpe4BNZyMJsFAOlZA96uX8E6ytVbm66xi6BnxIUIXpc25lgCwzag-g32WHKj3r73ImIsGOChKXGJV04DpPPkqFb9Vk3pbyoXe5eK4VhyMwepK2cQ-JWLxue3vz5TjNlZjNjCdrypCqqXYioO9Dr-s3W6rtlFWLqJjkPJxOicJgHACOvIywR_o-t3IQwi7opNDPTbieg8opWCIqF4Q_bAgACiIDdbLYvzefqDAi9sOwkRHK-gMlGvhoEXtsVkh9gCsuOuaKUT7gatEqZ0KmXQEbdSYRVgZBsmFGfa7X-z-VULKlSZYwZs_mKzYVWj9aKyvSkG7BQZrvlZhiCZxaZYmZ3upfkJS2TLRuLpYzMBTgtmaBed6bwqw01L0QQHKya5PDK4msj-7cO245bFxl1UMs9uU5B3c0yc45-L6wz0sCxm07QJWUrD7CsCVN_N4UGAzshAKQL2rakY-bnZRCd6qPorn3gbJZMR53B3Ps1qT_xIVDozG1Kh9Pr1UnhE1F41M5Uwu1Eq3crLuVynCwBkjPe54_s4-rXmSKNrTy1AfNxgCO9hQRQ7TVi5IVylzztkNEpGllPUQU2RO3SqNemwqXCSwY_J1AVUcrNAB_u5BaZkeXcNL4hDAvY3kmoC8lIMhhIodFDLk4d0NVCG7HYi3TKdIPQpmCpjVgAyOfNFEGNW6wslRXLWuoXq_UePH51trRyVOeFakpi3KEWwvCD0HnvQCr13ebVUG5f7nQO57ZefbjmyBq0jMAhN_fuKZ4pd4pST-gIe3KjS1SxSXyJbrCIZTB5pzWgxe8pD7P0rdcPsdCaE_UMph_Cy-HqJjpkw-62LPlY0Vouykv53mOfgUILbbyHht_W71Uk8Uk5PlHaJk9Rg_ymVG_OYpnJbDEnlVXqQLCmx3zvo-V0ZD0TLORK4xv-r5-hebVFp2r0G2FgoTDOZBsKTm7ZYx3-v-BxBSXwCplcjUl4mBkCwoKyAGkqoiafK4viLxae6JWzHNEPaxSmS76JCXv6YiqOhleZcu7obQ0AKT7rhOO9TqtFqaTkoByQMmpZyZfIhAiPMJE6cau99pa_rpK4iB6OqX_ljIjfIDlu6drSV0C2d8WA6ce2twrJTA5OT8ep-VBN8yoQLN3x1tbF8NJzE7Psfr0UuzQayLJ5965x1qYmB2Ae96WneAoSLZdPuqoTNGMI5a5CNh1tw9i7o1ffQ82-2Rd6GXzVVsrCDpcklrwOIKH5Pg8j5O4fRhIdh48bxZLowPLtw0x4XkBIDPTPdhpKIpCg0DspBcTziu5anwoWIz9fVLOP1ZhyAgAAOEoPlIq7o45dnMjlVq4LpnYpkIamYzKQIxoMmElmL0ZKCWj_A7TKWHbYuZJShVyjNXgbcMR-yYy6c1l7t8sbpzFcs2SdGYWm1uLbyIFzjCJ5ew_DVX04YYwRW5gEec9dm5dXXxvDxoPexTUTR0ERKbXVqVMie4T0Vn4YqPCrcFiC00iIkAIKUL-VaaAGX_FqevbPfHDidALwxyZtz7MHQeaKcHLVsvtKG_a8PatC8wWeFTRf0O-q3RrCU4FJ6rpbdVXNwj8a_BcdeOCHW6W8ME_DKWxyEkNnULcy1KGG-uqD2r7V-Tx0E11aAWF0G8slL_5jOb6M6NJNrxE0WvhEbnazSjMA2RGaTCJS4dNCUIWbuRwz8D2GsZgaQc3B7Ygz0qNlCdceodOHAJg6d-fxtyOD-u5xVr96oflqM0Ky_rESdUPUEZEx796sxSsngeJ1-XMKh5Upel2MUL4tSGhkBT7dSnCFw7uaJf6XlVk0xDKXDC-1MjQ4akd7T1z9myoRdCwpysyet2Ac9g27-WxHHbCgTjgIkKUy57D4TX9vkmqLQFMrGlRJ5AQsU6CAQkIU0yi5cqvp2kdPH9R5H-6-kMLwdYY_DV9wBGzJhS2CKqhz5ms4t0IB9nyWjcCuhE5m6Jt4U61w_H6yIRceYBwIirdsysNh_rPojCJ-szZDv5w7rtDtAmoyd3EXEwjBSNusvT9KEI3yiRbtQyG866oPZhB7MIcQWBJYxz7emjVJMSv2vYlimdWX6uIE_o9sVUj2PQSwtyEvSphvbOQL0&opi=122715837
+                              - img [ref=f88e14]
+                          - img [ref=f88e17] [cursor=pointer]
+                          - generic [ref=f88e28]:
+                            - img [ref=f88e31]
+                            - generic [ref=f88e34]:
+                              - img [ref=f88e35]
+                              - text: 광고
+                            - generic [ref=f88e38]:
+                              - generic [ref=f88e41] [cursor=pointer]: 이 광고 그만 보기
+                              - link [ref=f88e43] [cursor=pointer]:
+                                - /url: https://adssettings.google.com/whythisad?source=display&reasons=AcrBLeWDLVxTtAOCVkYVjVZR0hs6voCs49o7I0_VhZ7qa79keRQlilnvOMWOMdQ9RGf1mFS9IQwJN-cZZFz8es13sT0HpBVaMEzEfNB3OMrM5E-ETG8t6PLhHtuBs6Uu39GKOfhrMbBYuZ_J60GXvJ0xxYxiyqVvcy68ynpWX7OOY7gZgj0Yc2egFXkTpcsdaM3xLPcxE4xjCVn-Bs-L4LWpt6PCB105avmOzeDoxxk3kC69F2VphvR8zMF_jZ1gsJiOuEg7NCo1CdGQ3tgDXwFcQyHWg0LtJVVakjQMsu2Yo2vNK7CvRRIralfFoDvpTM8_RJtfTuPE2CuDJMS7WfdDaUfHw86a0sIikxE2SPsFiRkR2Ut0K1NvpL1mKXGxZOy53PGhuVJsz-Ux_JPgOmOdJfOxKarEklJ80bWPoSvw4sbW2bCh0wc_Hr_gRcOyK8J2LpHYuiACfo4t3zgS9yJOCPJKNycl0lNM6U348SjXpe4BNZyMJsFAOlZA96uX8E6ytVbm66xi6BnxIUIXpc25lgCwzag-g32WHKj3r73ImIsGOChKXGJV04DpPPkqFb9Vk3pbyoXe5eK4VhyMwepK2cQ-JWLxue3vz5TjNlZjNjCdrypCqqXYioO9Dr-s3W6rtlFWLqJjkPJxOicJgHACOvIywR_o-t3IQwi7opNDPTbieg8opWCIqF4Q_bAgACiIDdbLYvzefqDAi9sOwkRHK-gMlGvhoEXtsVkh9gCsuOuaKUT7gatEqZ0KmXQEbdSYRVgZBsmFGfa7X-z-VULKlSZYwZs_mKzYVWj9aKyvSkG7BQZrvlZhiCZxaZYmZ3upfkJS2TLRuLpYzMBTgtmaBed6bwqw01L0QQHKya5PDK4msj-7cO245bFxl1UMs9uU5B3c0yc45-L6wz0sCxm07QJWUrD7CsCVN_N4UGAzshAKQL2rakY-bnZRCd6qPorn3gbJZMR53B3Ps1qT_xIVDozG1Kh9Pr1UnhE1F41M5Uwu1Eq3crLuVynCwBkjPe54_s4-rXmSKNrTy1AfNxgCO9hQRQ7TVi5IVylzztkNEpGllPUQU2RO3SqNemwqXCSwY_J1AVUcrNAB_u5BaZkeXcNL4hDAvY3kmoC8lIMhhIodFDLk4d0NVCG7HYi3TKdIPQpmCpjVgAyOfNFEGNW6wslRXLWuoXq_UePH51trRyVOeFakpi3KEWwvCD0HnvQCr13ebVUG5f7nQO57ZefbjmyBq0jMAhN_fuKZ4pd4pST-gIe3KjS1SxSXyJbrCIZTB5pzWgxe8pD7P0rdcPsdCaE_UMph_Cy-HqJjpkw-62LPlY0Vouykv53mOfgUILbbyHht_W71Uk8Uk5PlHaJk9Rg_ymVG_OYpnJbDEnlVXqQLCmx3zvo-V0ZD0TLORK4xv-r5-hebVFp2r0G2FgoTDOZBsKTm7ZYx3-v-BxBSXwCplcjUl4mBkCwoKyAGkqoiafK4viLxae6JWzHNEPaxSmS76JCXv6YiqOhleZcu7obQ0AKT7rhOO9TqtFqaTkoByQMmpZyZfIhAiPMJE6cau99pa_rpK4iB6OqX_ljIjfIDlu6drSV0C2d8WA6ce2twrJTA5OT8ep-VBN8yoQLN3x1tbF8NJzE7Psfr0UuzQayLJ5965x1qYmB2Ae96WneAoSLZdPuqoTNGMI5a5CNh1tw9i7o1ffQ82-2Rd6GXzVVsrCDpcklrwOIKH5Pg8j5O4fRhIdh48bxZLowPLtw0x4XkBIDPTPdhpKIpCg0DspBcTziu5anwoWIz9fVLOP1ZhyAgAAOEoPlIq7o45dnMjlVq4LpnYpkIamYzKQIxoMmElmL0ZKCWj_A7TKWHbYuZJShVyjNXgbcMR-yYy6c1l7t8sbpzFcs2SdGYWm1uLbyIFzjCJ5ew_DVX04YYwRW5gEec9dm5dXXxvDxoPexTUTR0ERKbXVqVMie4T0Vn4YqPCrcFiC00iIkAIKUL-VaaAGX_FqevbPfHDidALwxyZtz7MHQeaKcHLVsvtKG_a8PatC8wWeFTRf0O-q3RrCU4FJ6rpbdVXNwj8a_BcdeOCHW6W8ME_DKWxyEkNnULcy1KGG-uqD2r7V-Tx0E11aAWF0G8slL_5jOb6M6NJNrxE0WvhEbnazSjMA2RGaTCJS4dNCUIWbuRwz8D2GsZgaQc3B7Ygz0qNlCdceodOHAJg6d-fxtyOD-u5xVr96oflqM0Ky_rESdUPUEZEx796sxSsngeJ1-XMKh5Upel2MUL4tSGhkBT7dSnCFw7uaJf6XlVk0xDKXDC-1MjQ4akd7T1z9myoRdCwpysyet2Ac9g27-WxHHbCgTjgIkKUy57D4TX9vkmqLQFMrGlRJ5AQsU6CAQkIU0yi5cqvp2kdPH9R5H-6-kMLwdYY_DV9wBGzJhS2CKqhz5ms4t0IB9nyWjcCuhE5m6Jt4U61w_H6yIRceYBwIirdsysNh_rPojCJ-szZDv5w7rtDtAmoyd3EXEwjBSNusvT9KEI3yiRbtQyG866oPZhB7MIcQWBJYxz7emjVJMSv2vYlimdWX6uIE_o9sVUj2PQSwtyEvSphvbOQL0&opi=122715837
+                                - generic [ref=f88e44]:
+                                  - text: 이 광고가 표시된 이유
+                                  - img [ref=f88e45]
+                          - generic [ref=f88e47]:
+                            - generic [ref=f88e50] [cursor=pointer]: 콘텐츠를 가리는 광고
+                            - generic [ref=f88e53] [cursor=pointer]: 부적절한 광고
+                            - generic [ref=f88e56] [cursor=pointer]: 관심없는 광고
+                            - generic [ref=f88e59] [cursor=pointer]: 여러 번 표시된 광고
+                          - generic [ref=f88e65]: Google은 해당 광고를 더 이상 표시하지 않음
+                          - generic [ref=f88e71]:
+                            - img [ref=f88e72]
+                            - text: 에 의해 종료된 광고입니다.
+        - link [ref=e47] [cursor=pointer]:
+          - /url: https://yellow.contentsfeed.com/RealMedia/ads/click_lx.ads/www.donga.com/news/1051148827/Top/default/empty.gif/33464c6d776d6d394435384141614776
+      - generic [ref=e50]:
+        - navigation "breadcrumb" [ref=e51]:
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - link "오피니언" [ref=e54] [cursor=pointer]:
+                - /url: https://www.donga.com/news/Opinion/List_04
+            - listitem [ref=e55]:
+              - link "사설" [ref=e56] [cursor=pointer]:
+                - /url: https://www.donga.com/news/Series/70040100000001
+        - heading "[사설]27년간 ‘노사정’ 외면한 민노총… 이젠 대화 테이블로 나오라" [level=1] [ref=e57]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - strong [ref=e60]: 동아일보
+          - listitem [ref=e61]:
+            - button "업데이트 2026년 3월 20일 04시 33분" [ref=e62] [cursor=pointer]:
+              - text: 업데이트 2026-03-20 04:33
+              - generic [ref=e63]: 2026년 3월 20일 04시 33분
+              - generic:
+                - img
+        - separator [ref=e64]
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - button "코멘트 13 개" [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]:
+                - term [ref=e69]:
+                  - generic:
+                    - img
+                  - generic [ref=e70]: 코멘트
+                - definition [ref=e71]:
+                  - text: "13"
+                  - generic [ref=e72]: 개
+            - generic [ref=e73]:
+              - term [ref=e74]:
+                - button "좋아요" [ref=e75] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - generic [ref=e76]: 좋아요
+              - definition [ref=e77]:
+                - button "4 개" [ref=e78] [cursor=pointer]:
+                  - text: "4"
+                  - generic [ref=e79]: 개
+          - generic [ref=e80]:
+            - article [ref=e81]:
+              - button "공유하기" [ref=e82] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic [ref=e83]: 공유하기
+            - button "즐겨찾기" [ref=e84] [cursor=pointer]:
+              - generic:
+                - img
+              - generic [ref=e85]: 즐겨찾기
+            - button "뉴스듣기" [ref=e86] [cursor=pointer]:
+              - generic:
+                - img
+              - generic [ref=e87]: 뉴스듣기
+            - article [ref=e88]:
+              - button "글자크기 설정" [ref=e89] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic [ref=e90]: 글자크기 설정
+            - button "프린트" [ref=e91] [cursor=pointer]:
+              - generic:
+                - img
+              - generic [ref=e92]: 프린트
+      - generic [ref=e94]:
+        - complementary [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - figure "이재명 대통령이 19일 청와대 본관에서 열린 경제사회노동위원회 1기 출범 기념 ‘대통령과 함께하는 노동정책 토론회’에서 발언하고 있다. 김재명 기자 base@donga.com" [ref=e98]:
+              - generic [ref=e99]:
+                - img "이재명 대통령이 19일 청와대 본관에서 열린 경제사회노동위원회 1기 출범 기념 ‘대통령과 함께하는 노동정책 토론회’에서 발언하고 있다. 김재명 기자 base@donga.com" [ref=e100]
+                - button "크게보기" [ref=e102] [cursor=pointer]:
+                  - generic [ref=e103]: 크게보기
+                  - generic:
+                    - img
+              - generic [ref=e104]: 이재명 대통령이 19일 청와대 본관에서 열린 경제사회노동위원회 1기 출범 기념 ‘대통령과 함께하는 노동정책 토론회’에서 발언하고 있다. 김재명 기자 base@donga.com
+            - iframe [ref=e106]:
+              - generic [ref=f1e3]:
+                - link "회장님과 결혼한 아나운서, 얼마나 예쁘길래.." [ref=f1e5] [cursor=pointer]:
+                  - /url: javascript:void(0);
+                - link "\"임플란트\" 절대 하지마세요!..\"화제\"" [ref=f1e7] [cursor=pointer]:
+                  - /url: javascript:void(0);
+            - text: 중동 사태로 원-달러 환율이 1500원을 넘는 위기 상황에서 이재명 정부의 1기 경제사회노동위원회(경사노위)가 19일 첫발을 뗐다. 2024년 12월 3일 비상계엄 사태로 한국노총이 사회적 대화 중단을 선언한 지 15개월 만이다. 경사노위는 위기를 돌파할 성장동력 발굴과 일자리 안정을 위한 사회적 타협을 끌어내야 할 과제를 안고 있다. 경사노위는 이날 첫 의제로 ‘인구구조 변화에 따른 일자리 문제’를 정했다.
+            - text: 인공지능(AI) 전환과 인구구조 변화는 일시적 충격이 아니다. 당장 인구 감소와 고령화에 따른 노동력 부족, AI 확산에 따른 청년실업, 대·중소기업 간 노동시장 이중구조 등을 해결해야 한다. 문제는 지금과 같은 연공서열 중심의 임금 체계와 채용도, 해고도 어려운 경직된 노동시장으로는 기업은 물론이고 노동자들도 이런 급격한 기술과 시장 변화에 적응하기 어렵다는 점이다.
+            - text: 결국 AI 시대에 맞는 일자리를 만들고 청년 신규 채용을 늘리려면 새로운 노사정 대타협이 필요하다. 노동계가 노동시장 유연성을 받아들이고, 기업은 노동자 재교육과 재취업 등의 사회 안전망 비용을 분담해 고용 안정성을 높이는 형태의 북유럽식 ‘유연 안정성(Flexicurity)’ 모델이 그 틀이 될 수 있다.
+            - list [ref=e110]:
+              - listitem [ref=e111]:
+                - iframe [ref=e113]:
+                  - iframe [ref=f11e2]:
+                    - link [ref=f16e5] [cursor=pointer]:
+                      - /url: http://info.acrosspf.com/acrossadn.html
+                      - img [ref=f16e6]
+              - listitem [ref=e114]:
+                - iframe [ref=e116]:
+                  - iframe [ref=f15e2]:
+                    - iframe [ref=f17e2]:
+                      - iframe [ref=f19e3]:
+                        - generic [active] [ref=f36e1]:
+                          - generic [ref=f36e8]:
+                            - link "마운x로 끊고 봄동비빔밥 먹방한 女, 두달만에 뼈만남아?" [ref=f36e10] [cursor=pointer]:
+                              - /url: https://ad-log.dable.io/services/donga.com%2Frainbow8/users/93374891.1773997985123/campaigns/YS8sI1qONckfIlszMvBkvg/contents/2nDBw1inMscHrTy91G1oAg/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwBsArPQAwgA0IEAHgA5qQAmuEADEwaAAQBZAIZhxAJiYKm82uKZkc%2BEjiZqA4pIAqAaibmlACgDCAe1th%2BaAHbTEEfuICqztADcIMHhpABtxI0wIAEo2EG5pAHNsLXYwaWcAa1wmVIgAMyEAC0REbngcAHoKjOcAOmkAYzBbeHhuPNqG2wwK2MhYBBQ0QTwAFmpRplH%2BanlR-Aa5hsoSfFpCBkJqPPll-jyN2IAjYeRINttneAhkYaET-jOEfHluGHl6fHgMDABPWxCACtRg1YohbIhQsh4kkhPhYjAxEUSmVKhVpPx4PUmi02h0uj1bO0KgAvQb1fgAfgwzgAvPISAAyDAhenyBmjJnwEIQ2kkUY0eiM%2BKtI6NDK04qleAAUhIAEEZfJhErhBisY1mq12p1uqruEcKXLhNyIXKACL8wVK2jwNBki0kcycD5MG3wfgZC1u1RdK4wLDem38CB%2BNANCAW7gNG1YRCFWz8C34UaMhNIWkAd2ztX4lwS0l1GGZtOjjLA9JT1DIo1otdGQvghW4tKYwrAiAarKlZTl8sZGOGtIR1zAyBC6QSQgytlimeGSSGIxAnAAGvKEvhnAAlQixBqFdLOCAhISAD57ABzdgA1VwAXTcgnUwXcxkIAGscAhHO1EimlB5S4oE4JEkYCxHGCbLoQtT0LU8LsM4AK2FOeAsOwkIJHceBrhuW67gAxDBIAuAEzjgmAvy3MurrUAAPphm47nu7Dfrg%2BCMfayQgCQxynNwYgRnCoyjNBFDjMciZkSEEDOAk8ZCMhICYtwyCgYmyABEEaCXEIfiJhk0iqSQyAzpAekYIgIR0EpBkhPEyANEc-D4MgmINMgyCKKoTCrGQ8j4OYrkYg06T8PIrkhnk0gwCEKCqTpel%2BAZRkQCZZkWRgBluSotCefg3m%2BUwoX5BFUUFeFkWIFxjwNIiwF4AA0tuADqsSYIp6EELEIZOIF7iPG11D0AAogNmYJAAygkADyACKsRcOVeDAAAOiABLcBA6DoJcqC-Gty04PIrDLQ80K8RAe0poJOU1hMoyHSAx08eGNxpJk511rUkwXbQB3LQ00bndQTC1NQdD0CQtBkHdf0uZmyDwEc51EFD0bIJmthwwjzGqHd0aIGODx7UDLwkHMhC3ctuNjoFIRoIT0FMPgnyMzjDR40piYnsgtgwKUPN03MjBTLQd1hUVP5JYgiI3F0MDEXt8j9SzfhjhgHMhFzPNvIg-Nk6M8hkCQd3wLYgIwCdHg6wJ%2BuGxTDTK7c8CqaEwznUbJtm9TtPMZ%2B9BZfQdDIy5GBlWg3A04E50fSQvtMGTgfIEcZGi2Vru-SjiepytNkNHLzH0JDy1gNwGC2bnOD8gAvhV5H3KcaDuBgLxvB8Xw-P8QKjBgsQYjXeDHfXECN687yfN8fwAsCXfsPOzgnU9-GXcJ1Bzi4tnVZJDS-EI9VNewCT8Dx2TsA0bUGyQZPVvg0HEOQlCCsTsQTiSvw8hiR8EY7mayNw79oI7G%2BkW4D1ZiFcgA
+                              - generic [ref=f36e13]: 마운x로 끊고 봄동비빔밥 먹방한 女, 두달만에 뼈만남아?
+                            - link "녹내장 안약 부작용?!" [ref=f36e15] [cursor=pointer]:
+                              - /url: https://ad-log.dable.io/services/donga.com%2Frainbow8/users/93374891.1773997985123/campaigns/eQXVrGPa6pfFSnXeKVsV4A/contents/qhuXJpJzuM8TJ96UlvlxvQ/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwBsArPQAwgA0IEAHgA5qQAmuEADEwaAAQBZAIZhxAJiYKm82uKZkc%2BEjiZqA4pIAqAaibmlACgDCAe1th%2BaAHbTEEfuICqztADcIMHhpABtxI0wIAEo2EG5pAHNsLXYwaWcAa1x8VIgAMyEAC0REbngcAHoKjOcAOmkAYzBbeHhuPNqG2wwK2MhYBBQ0QTwAFmpRplH%2BanlR-Aa5hsoSfFpCBkJqPPll-jyN2IAjYeRINttneAhkYaET-jOEfHluGHl6fHgMDABPWxCACtRg1YohbIhQsh4kkhPhYjAxEUSmVKhVpPx4PUmi02h0uj1bO0KgAvQb1fgAfgwzgAvPISAAyDAhenyBmjJnwEIQ2kkUY0eiM%2BKtI6NDK04qleAAUhIAEEZfJhErhBisY1mq12p1uqruEcKXLhNyIXKACL8wVK2jwNBki0kcycD5MG3wfgZC1u1RdK4wLDem38CB%2BNANCAW7gNG1YRCFWz8C34UaMhNIWkAd2ztX4lwS0l1GGZtOjjLA9JT1DIo1otdGQvghW4tKYwrAiAarKlZTl8sZGOGtIR1zAyBC6QSQgytlimeGSSGIxAnAAGvKEvhnAAlQixBqFdLOCAhISAD57ABzdgA1VwAXTcgnUwXcxkIAGscAhHO1EimlB5S4oE4JEkYCxHGCbLoQtT0LU8LsM4AK2FOeAsOwkIJHceBrhuW67gAxDBIAuAEzjgmAvy3MurrUAAPphm47nu7Dfrg8iMfayQgCQxynNwYgRkIjC1PIZD0FQxyJmRIQQM4CTxkIyEgJi3DIKBibIAEQRoJcQh%2BImGTSGpJDIDOkD6RgiAhHQymGSE8TIA0Rz8PgyCYg0yDIIoqhMKsZDyPg5huRiDTpPw8huSGeTSDAIQoGpun6X4hnGRApnmZZGCGe5Ki0F5%2BA%2BX5TBhfkkXRYVEVRYgXGPA0iLAXgADS24AOqxJgSnoSA8ixCGThBe4jztdQ9AAKJDZmCQAMoJAA8gAirEXAVXgwAADogAS3AQOg6CXKgvwbatOAsatDzQrxEAHQJQkiWQTDUKwx3cWdZzpBkB0%2BdB9BkAwKb3Wt0YHUJTCCfQnL4NQhC-Q00bIJmyDwEcB1g0wkPQ5mthwwjuAPr90aIGODwHUDXlMIQuVkDjDR43ZoRoITtRTB85A5KtuNjhgiYnsgtgwKUPN0y85hrOTq3hcVP7JYgiI3F0MDEQDg0U34bMcyEXM828iD8%2ByUyEEdIDwLYgIwKdHha4ooy64rY5oPAak0-wiO-QbRvUyEtO4EDX2EJ8oyjCjrkYOVaDcG7gR017Pt%2ByzlNjt%2Bz3bXTuu%2BYwd2rVDrlHGRovlY7afQ5nud-fpDRy9kn2-WA3AYHZpc4PyAC%2BlXkfcpxoO4GAvG8HxfD8-xAqMzixBizd4CdbcQB3rzvJ83x-ACwKD%2Bw87OKd4bsZdwmiUvLh2TVUkNL8QgNc17AJPwPEe%2BwDTtWQJAkIQ4xkPg0HEOQlCCi8nHsBOJK-DyGKXwIrbTMshuCAJtsgfepFuB9WyPXIAA
+                              - generic [ref=f36e18]: 녹내장 안약 부작용?!
+                            - link "충격적인 지루성두피염 원인 (이러니 안 낫지..)" [ref=f36e20] [cursor=pointer]:
+                              - /url: https://ad-log.dable.io/services/donga.com%2Frainbow8/users/93374891.1773997985123/campaigns/ByCj_f1suIkq5cR1q16vzw/contents/VEGIf2-GUkgDDQOBEEUQ2A/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwBsArPQAwgA0IEAHgA5qQAmuEADEwaAAQBZAIZhxAJiYKm82uKZkc%2BEjiZqA4pIAqAaibmlACgDCAe1th%2BaAHbTEEfuICqztADcIMHhpABtxI0wIAEo2EG5pAHNsLXYwaWcAa1x5VIgAMyEAC0REbngcAHoKjOcAOmkAYzBbeHhuPNqG2wwK2MhYBBQ0QTwAFmpRplH%2BanlR-Aa5hsoSfFpCBkJqPPll-jyN2IAjYeRINttneAhkYaET-jOEfHluGHl6fHgMDABPWxCACtRg1YohbIhQsh4kkhPhYjAxEUSmVKhVpPx4PUmi02h0uj1bO0KgAvQb1fgAfgwzgAvPISAAyDAhenyBmjJnwEIQ2kkUY0eiM%2BKtI6NDK04qleAAUhIAEEZfJhErhBisY1mq12p1uqruEcKXLhNyIXKACL8wVK2jwNBki0kcycD5MG3wfgZC1u1RdK4wLDem38CB%2BNANCAW7gNG1YRCFWz8C34UaMhNIWkAd2ztX4lwS0l1GGZtOjjLA9JT1DIo1otdGQvghW4tKYwrAiAarKlZTl8sZGOGtIR1zAyBC6QSQgytlimeGSSGIxAnAAGvKEvhnAAlQixBqFdLOCAhISAD57ABzdgA1VwAXTcgnUwXcxkIAGscAhHO1EimlB5S4oE4JEkYCxHGCbLoQtSjLU8LsM4AK2FOeAsOwkIJHceBrhuW67gAxDBIAuAEzjgmAvy3MurrUAAPphm47nu7DfrgJCMfayQgCQxynNwYgRkI1AkLUTCEPg%2BFHImZEhBAzgJPGQjISAmLcMgoGJsgARBGglxCH4iYZNI6kkMgM6QAZGCICEdAqUZITxMgDRHPw%2BDIJiDTIMgiiqEwqxkPI%2BDmO5GINOk-DyO5IZ5NIMAhIgXGPA0iLAXgADS24AOqxJgynoRxsQhk4wXuI8OXUPQACiZWZgkADKCQAPIAIqxFwsV4MAAA6IAEtwEDoOglyoL8PWdTgOSdQ80K8RAI0CUJIn%2BaMoysON3FTWc6QZDNgnCaJUxLZ1DTRiNcxMMtXXRsgmbIPARzHZMZ2HW5ma2Ndt3ZPdnXRogY4PCNTBCfytDaGdX1jsFIRoH9QmfHMHwgw030qYmJ7ILYMClOjUMpv5JD8mdEVRTFyB5BAbiIjcXQwMRx2lfDiPfut-VQ%2Bs9CjIQ%2B3nW5RxkQT0WICN%2BAPXZDTU7g%2BD0GQZ1gNwGD2aLOD8gAvnF5H3KcaDuBgLxvB8Xw-P8QKjLO7AYqreATRrEBa687yfN8fwAsCxsgPOziTeG7GzTt%2BGu-ZiXSQ0vxCKlGXsAk-A8bgp1dTlZC4%2Bz1b4NBxDkJQgovJx7ATiSvw8hiUfsGg8CXbI3AFwRxcB6R3BFWLitAA
+                              - generic [ref=f36e23]: 충격적인 지루성두피염 원인 (이러니 안 낫지..)
+                          - link [ref=f36e26] [cursor=pointer]:
+                            - /url: https://static.dable.io/static/html/introduction.html
+            - text: 그러려면 경사노위의 대표성과 사회적 공론장 기능이 회복돼야 한다. 그간 사회적 타협 기구가 공전한 것은 노사정이 이익의 균형점을 찾지 못하고 일방적 결론으로 흐를 때가 있었기 때문이다. 민노총은 1999년 경사노위 전신인 노사정위를 탈퇴한 이후 27년간 복귀하지 않고 있다. 이날도 한국노총은 참석했지만, 민노총은 오지 않았다.
+            - text: 더구나 이번 회의는 노사 관계의 틀을 바꿀 ‘노란봉투법’(노봉법·노동조합 및 노동관계조정법 2·3조 개정안)이 시행된 이후 열린 첫 회의다. 국회와 거리에서 세를 과시하며 노봉법을 관철한 민노총이 노동의 미래를 고민하고 책임과 의무를 나누는 경사노위는 외면했다. 민노총이 노봉법에 기대 “사장 나와라, 대통령 나오라”라며 기업과 공공기관에 대해 ‘하청노조와 교섭을 회피하고 있다’라고 비난하면서도 정작 자신들은 노사정이 만나는 사회적 교섭 자리를 회피한 것이다.
+            - text: 한국 사회는 중동 사태와 잠재성장률 추락과 같은 내우외환에 직면했다. 위기일수록 사회적 대화가 중요하다. 이번에야말로 노사정이 머리를 맞대고 사회적 대타협의 길을 찾아야 한다. 민노총이 있어야 할 곳은 거리가 아니라 노사정 테이블이다.
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - heading "사설 >" [level=3] [ref=e119]:
+                - link "사설 >" [ref=e120] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000001
+                  - text: 사설
+                  - generic: ">"
+              - generic [ref=e121]:
+                - generic [ref=e122]: 구독 1,086
+                - button "구독" [ref=e123] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - text: 구독
+            - generic [ref=e124]:
+              - generic:
+                - link:
+                  - /url: https://www.donga.com/news/Opinion/article/all/20260319/133567820/2
+                  - figure:
+                    - img "[사설]27년간 ‘노사정’ 외면한 민노총… 이젠 대화 테이블로 나오라"
+              - list [ref=e125]:
+                - listitem [ref=e126]:
+                  - link "27년간 ‘노사정’ 외면한 민노총… 이젠 대화 테이블로 나오라" [ref=e127] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Opinion/article/all/20260319/133567820/2
+                    - paragraph [ref=e128]:
+                      - strong [ref=e129]: 27년간 ‘노사정’ 외면한 민노총… 이젠 대화 테이블로 나오라
+                - listitem [ref=e130]:
+                  - link "울산 4자녀, 군산 모자의 비극… 죽어야 보이는 ‘벼랑 끝 사람들’" [ref=e131] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Opinion/article/all/20260319/133567824/2
+                    - paragraph [ref=e132]:
+                      - strong [ref=e133]: 울산 4자녀, 군산 모자의 비극… 죽어야 보이는 ‘벼랑 끝 사람들’
+                - listitem [ref=e134]:
+                  - link "민심은 흉흉한데 텃밭 공천 두고 아귀다툼하는 국힘" [ref=e135] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Opinion/article/all/20260319/133567822/2
+                    - paragraph [ref=e136]:
+                      - strong [ref=e137]: 민심은 흉흉한데 텃밭 공천 두고 아귀다툼하는 국힘
+          - generic [ref=e138]:
+            - link "#중동 사태" [ref=e139] [cursor=pointer]:
+              - /url: https://www.donga.com/news/search?query=%EC%A4%91%EB%8F%99+%EC%82%AC%ED%83%9C
+            - link "#원-달러 환율" [ref=e140] [cursor=pointer]:
+              - /url: https://www.donga.com/news/search?query=%EC%9B%90-%EB%8B%AC%EB%9F%AC+%ED%99%98%EC%9C%A8
+            - link "#경제사회노동위원회" [ref=e141] [cursor=pointer]:
+              - /url: https://www.donga.com/news/search?query=%EA%B2%BD%EC%A0%9C%EC%82%AC%ED%9A%8C%EB%85%B8%EB%8F%99%EC%9C%84%EC%9B%90%ED%9A%8C
+            - link "#사회적 대화" [ref=e142] [cursor=pointer]:
+              - /url: https://www.donga.com/news/search?query=%EC%82%AC%ED%9A%8C%EC%A0%81+%EB%8C%80%ED%99%94
+          - generic [ref=e144]:
+            - list [ref=e146]:
+              - listitem [ref=e147]:
+                - button "좋아요" [ref=e148] [cursor=pointer]
+                - generic [ref=e149]:
+                  - term [ref=e150]: 좋아요
+                  - definition [ref=e151]:
+                    - text: "1"
+                    - generic [ref=e152]: 개
+              - listitem [ref=e153]:
+                - button "슬퍼요" [ref=e154] [cursor=pointer]
+                - generic [ref=e155]:
+                  - term [ref=e156]: 슬퍼요
+                  - definition [ref=e157]:
+                    - text: "0"
+                    - generic [ref=e158]: 개
+              - listitem [ref=e159]:
+                - button "화나요" [ref=e160] [cursor=pointer]
+                - generic [ref=e161]:
+                  - term [ref=e162]: 화나요
+                  - definition [ref=e163]:
+                    - text: "3"
+                    - generic [ref=e164]: 개
+            - generic [ref=e165]:
+              - heading "댓글 13" [level=2] [ref=e166]
+              - button "댓글을 입력해 주세요 등록" [ref=e167] [cursor=pointer]:
+                - paragraph [ref=e168]: 댓글을 입력해 주세요
+                - generic [ref=e169]: 등록
+              - generic [ref=e171]:
+                - heading "추천 많은 댓글" [level=3] [ref=e172]
+                - list [ref=e173]:
+                  - listitem [ref=e174]:
+                    - article [ref=e175]:
+                      - generic [ref=e176]:
+                        - button "달라이라마" [ref=e177] [cursor=pointer]:
+                          - generic:
+                            - img
+                          - strong [ref=e178]: 달라이라마
+                        - paragraph [ref=e179]: 2026-03-20 07:41:40
+                      - paragraph [ref=e181]: 대한민국의 최고의 악귀 집단 1위는 더불어 미친당, 그 다음은 민노총~~~이 양대 극악무도한 세력들을 뿌리 뽑아야 민주화가 될 것이다.
+                      - generic [ref=e182]:
+                        - button "추천 13" [ref=e183] [cursor=pointer]:
+                          - generic [ref=e184]:
+                            - term [ref=e185]:
+                              - generic:
+                                - img
+                              - generic [ref=e186]: 추천
+                            - definition [ref=e187]: "13"
+                        - button "비추천 2" [ref=e188] [cursor=pointer]:
+                          - generic [ref=e189]:
+                            - term [ref=e190]:
+                              - generic:
+                                - img
+                              - generic [ref=e191]: 비추천
+                            - definition [ref=e192]: "2"
+                  - listitem [ref=e193]:
+                    - article [ref=e194]:
+                      - generic [ref=e195]:
+                        - button "소심한라임67" [ref=e196] [cursor=pointer]:
+                          - generic:
+                            - img
+                          - strong [ref=e197]: 소심한라임67
+                        - paragraph [ref=e198]: 2026-03-20 06:07:00
+                      - paragraph [ref=e200]: 민노총없는 사회 행복한 국민.
+                      - generic [ref=e201]:
+                        - button "추천 10" [ref=e202] [cursor=pointer]:
+                          - generic [ref=e203]:
+                            - term [ref=e204]:
+                              - generic:
+                                - img
+                              - generic [ref=e205]: 추천
+                            - definition [ref=e206]: "10"
+                        - button "비추천 1" [ref=e207] [cursor=pointer]:
+                          - generic [ref=e208]:
+                            - term [ref=e209]:
+                              - generic:
+                                - img
+                              - generic [ref=e210]: 비추천
+                            - definition [ref=e211]: "1"
+                  - listitem [ref=e212]:
+                    - article [ref=e213]:
+                      - generic [ref=e214]:
+                        - button "터럭대감" [ref=e215] [cursor=pointer]:
+                          - generic:
+                            - img
+                          - strong [ref=e216]: 터럭대감
+                        - paragraph [ref=e217]: 2026-03-20 09:28:05
+                      - paragraph [ref=e219]: 민노총 하는짓 보면 과거 일본 적군파들 산속에서 자기네들끼리 선명성 경쟁하면서 자아비판하고 살해하던것이 생각난다 한국 민폐노총하는짓보면 꼭 그짓을 하는것 같다 갈라파고스 노조법에 시대에 뒤 떨어진 독불장군식 민폐노총
+                      - generic [ref=e220]:
+                        - button "추천 8" [ref=e221] [cursor=pointer]:
+                          - generic [ref=e222]:
+                            - term [ref=e223]:
+                              - generic:
+                                - img
+                              - generic [ref=e224]: 추천
+                            - definition [ref=e225]: "8"
+                        - button "비추천 2" [ref=e226] [cursor=pointer]:
+                          - generic [ref=e227]:
+                            - term [ref=e228]:
+                              - generic:
+                                - img
+                              - generic [ref=e229]: 비추천
+                            - definition [ref=e230]: "2"
+                - button "전체 댓글 보기" [ref=e231] [cursor=pointer]: 전체 댓글 보기
+            - generic [ref=e232]:
+              - heading "지금 뜨는 뉴스" [level=3] [ref=e234]
+              - list [ref=e236]:
+                - listitem [ref=e237]:
+                  - article [ref=e238]:
+                    - link "‘연봉 248억 1위’ 대기업 회장님, 건보료 얼마 낼까?" [ref=e240] [cursor=pointer]:
+                      - /url: https://www.donga.com/news/Society/article/all/20260320/133570576/1
+                      - img "‘연봉 248억 1위’ 대기업 회장님, 건보료 얼마 낼까?" [ref=e242]
+                    - heading "대기업 총수 건보료 ‘월 2000만 원대’…보수 공개에 관심 집중" [level=4] [ref=e244]:
+                      - link "대기업 총수 건보료 ‘월 2000만 원대’…보수 공개에 관심 집중" [ref=e245] [cursor=pointer]:
+                        - /url: https://www.donga.com/news/Society/article/all/20260320/133570576/1
+                - listitem [ref=e246]:
+                  - article [ref=e247]:
+                    - link "대전 공장 화재, 24명 중상…李 “신속히 인명 구조하라”" [ref=e249] [cursor=pointer]:
+                      - /url: https://www.donga.com/news/Society/article/all/20260320/133571122/2
+                      - img "대전 공장 화재, 24명 중상…李 “신속히 인명 구조하라”" [ref=e251]
+                    - heading "대전 공장 화재, 14명 연락두절…李 “신속히 인명 구조하라”" [level=4] [ref=e253]:
+                      - link "대전 공장 화재, 14명 연락두절…李 “신속히 인명 구조하라”" [ref=e254] [cursor=pointer]:
+                        - /url: https://www.donga.com/news/Society/article/all/20260320/133571122/2
+                - listitem [ref=e255]:
+                  - article [ref=e256]:
+                    - link "美전투기 F-35 ‘무적 신화’ 깨졌다…이란서 첫 피격, 비상착륙" [ref=e258] [cursor=pointer]:
+                      - /url: https://www.donga.com/news/Inter/article/all/20260320/133571483/1
+                      - img "美전투기 F-35 ‘무적 신화’ 깨졌다…이란서 첫 피격, 비상착륙" [ref=e260]
+                    - heading "‘하늘 위 슈퍼컴’ F-35, 이란 추정 공격에 비상착륙…美전투기 첫 피격" [level=4] [ref=e262]:
+                      - link "‘하늘 위 슈퍼컴’ F-35, 이란 추정 공격에 비상착륙…美전투기 첫 피격" [ref=e263] [cursor=pointer]:
+                        - /url: https://www.donga.com/news/Inter/article/all/20260320/133571483/1
+        - complementary [ref=e264]:
+          - iframe [ref=e268]:
+            - iframe [ref=f32e2]:
+              - generic [ref=f40e2] [cursor=pointer]:
+                - link [ref=f40e4]:
+                  - /url: https://privacy.as.criteo.com/adchoices?cppv=3&cpp=FzOJq_d0MZTBQUzPTG_aupKB4ks2d1kU9hwrRxp7RY1Tiyc9qgoP0KCtek5MEaOvwe5lgs0bqepoy371PUApTkWPDU9QGfsBcdLX39w3maetL4Nl2VTr8Tr4xAfC-aiRyM17s510ZJrgUznbUuAZ_VWDWmY
+                  - img [ref=f40e5]
+                - img [ref=f40e7]
+                - generic [ref=f40e8]:
+                  - link [ref=f40e9]:
+                    - /url: https://cat.jp2.as.criteo.com/delivery/ck.php?cppv=3&cpp=u1g3o3JhsiO3oLHbmdx1mETF-MAX9rkz8zpjCauebISRX80M1RBUiZNfN74O9RtWF_R7wmFFM6TYzLSu6o7hYhK12BU5SwYLyyvSvBfx2kXhTyUBqkBTCDKTRfmdq0DRr4WC_pcz1HZpC-fhZm6XMww7FqBEaUQb3-bN3d9V-ymH3mRZAwdGRmGqFzzq-T7fj6oJzn9Bd86SQ5pBaRpCTnShNwzA-0dcoBJ3hc5nzko7WSABaMHuTfOa4P0nVfcnlT8HJGgENFkvCgNiersxA6O2DRFo5q3yxkmsodnICO3Se-J14_oMLk3rGdcsRlGNpqfDEZXh6vPVRzJ57BEBRRyIVCT9OnRhQWncHvqhH-w8wNRP8wYZXqMYzpsnwSp_6VoVNDXVlqN0-pbtt982u3kiYRvsfydaxE6U8LQGS1nTPe86aErsNBB4xY6YgMWP1k4KaKlZtAtVjnDEKcQ6kSy18_SPurzYy0REgRAPxDhZT8xqzdZOIqffNcLRF3fCTqr4YXCwJBxolGDQvNvY3aW_086KsVCGg7rNNb44B0k2fnpK7IwFDhuKpCgB9b3MVfI_7Ox3s921hbd7BWx2hqmBPj9LQNhr3z3W8p1QglfW-o3jljjdWDjlW3N8coQ72JTrY8RArIkYbnr8d-VTApYMpGw&maxdest=https%3A%2F%2Fwww.adobe.com%2Fkr%2Fcreativecloud%2Froc%2Fdesign%2Fall-in-one.html%3Fsdid%3DDD5B16W3%26mv%3Ddisplay%26mv2%3Ddisplay%26utm_source%3Dcriteo%26utm_medium%3Ddisplay%26utm_campaign%3DCRI_FY26CC_PSP_PSP_KR_DSK_ST%2826.03.14-%29%26utm_id%3D674964%26cto_pld%3DUeYOPyK_AQCKx_gOMKEq5w
+                    - img [ref=f40e12]
+                  - link [ref=f40e13]:
+                    - /url: https://cat.jp2.as.criteo.com/delivery/ck.php?cppv=3&cpp=BPFXL3JhsiO3oLHbmdx1mETF-MAX9rkz8zpjCauebISRX80M1RBUiZNfN74O9RtWF_R7wmFFM6TYzLSu6o7hYhK12BU5SwYLyyvSvBfx2kXhTyUBqkBTCDKTRfmdq0DRr4WC_pcz1HZpC-fhZm6XMww7FqBEaUQb3-bN3d9V-ymH3mRZAwdGRmGqFzzq-T7fj6oJzn9Bd86SQ5pBaRpCTnShNwzA-0dcoBJ3hc5nzko7WSABaMHuTfOa4P0nVfcnlT8HJGgENFkvCgNiersxA6O2DRFo5q3yxkmsodnICO3Se-J14_oMLk3rGdcsRlGNpqfDEZXh6vPVRzJ57BEBRRyIVCT9OnRhQWncHvqhH-w8wNRP8wYZXqMYzpsnwSp_6VoVNDXVlqN0-pbtt982u3kiYRvsfydaxE6U8LQGS1nTPe86aErsNBB4xY6YgMWP1k4KaKlZtAtVjnDEKcQ6kSy18_SPurzYy0REgRAPxDhZT8xq4F3Od6H80-LNi6BkdRRWictuAgfDChNjXe5SHKn5OSJCsxKunqTzOxdth9HuhPp3N5rUx9DOFv6Kz_s9NJBeBJqzRtBgKC_wHTL-x4xmihl4rUhZ1_BC58sCEp9voeiLWoPsXeLm-6ofRkWhhzLeb6B1LOjkVaByH09PJzdc1Yk&maxdest=https%3A%2F%2Fwww.adobe.com%2Fkr%2Fcreativecloud%2Froc%2Fdesign%2Fall-in-one.html%3Fsdid%3DDD5B16W3%26mv%3Ddisplay%26mv2%3Ddisplay%26utm_source%3Dcriteo%26utm_medium%3Ddisplay%26utm_campaign%3DCRI_FY26CC_PSP_PSP_KR_DSK_ST%2826.03.14-%29%26utm_id%3D674964%26cto_pld%3D72bW5yK_AQDND5DtZkrDqQ
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - heading "트렌드뉴스" [level=2] [ref=e272]
+              - tablist [ref=e273]:
+                - tab "많이 본" [selected] [ref=e274] [cursor=pointer]
+                - tab "댓글 순" [ref=e275] [cursor=pointer]
+            - list [ref=e278]:
+              - listitem [ref=e279]:
+                - link "1 블룸버그 “BTS 광화문 공연, 서울에 2660억원 수익 안길 것”" [ref=e280] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Economy/article/all/20260320/133569941/2
+                  - generic [ref=e281]:
+                    - generic [ref=e282]: "1"
+                    - heading "블룸버그 “BTS 광화문 공연, 서울에 2660억원 수익 안길 것”" [level=3] [ref=e283]
+              - listitem [ref=e284]:
+                - link "2 ‘연봉 248억 1위’ 대기업 회장님, 건보료 얼마 낼까?" [ref=e285] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260320/133570576/1
+                  - generic [ref=e286]:
+                    - generic [ref=e287]: "2"
+                    - heading "‘연봉 248억 1위’ 대기업 회장님, 건보료 얼마 낼까?" [level=3] [ref=e288]
+              - listitem [ref=e289]:
+                - link "3 美전투기 F-35 ‘무적 신화’ 깨졌다…이란서 첫 피격, 비상착륙" [ref=e290] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Inter/article/all/20260320/133571483/1
+                  - generic [ref=e291]:
+                    - generic [ref=e292]: "3"
+                    - heading "美전투기 F-35 ‘무적 신화’ 깨졌다…이란서 첫 피격, 비상착륙" [level=3] [ref=e293]
+              - listitem [ref=e294]:
+                - link "4 차 뒤에 바짝 붙어 어슬렁…악질 오토바이 검거" [ref=e295] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260320/133571064/2
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: "4"
+                    - heading "차 뒤에 바짝 붙어 어슬렁…악질 오토바이 검거" [level=3] [ref=e298]
+              - listitem [ref=e299]:
+                - link "5 대전 공장 화재, 24명 중상…李 “신속히 인명 구조하라”" [ref=e300] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260320/133571122/2
+                  - generic [ref=e301]:
+                    - generic [ref=e302]: "5"
+                    - heading "대전 공장 화재, 24명 중상…李 “신속히 인명 구조하라”" [level=3] [ref=e303]
+              - listitem [ref=e304]:
+                - link "6 김민석 “유시민 형은 TV출연 즐기는 강남 지식인 됐다” 문자 포착" [ref=e305] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Politics/article/all/20260320/133571420/1
+                  - generic [ref=e306]:
+                    - generic [ref=e307]: "6"
+                    - heading "김민석 “유시민 형은 TV출연 즐기는 강남 지식인 됐다” 문자 포착" [level=3] [ref=e308]
+              - listitem [ref=e309]:
+                - link "7 서영교 “그러면 너경원이라 불러요?”…나경원과 국조특위 충돌" [ref=e310] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Politics/article/all/20260320/133572152/2
+                  - generic [ref=e311]:
+                    - generic [ref=e312]: "7"
+                    - heading "서영교 “그러면 너경원이라 불러요?”…나경원과 국조특위 충돌" [level=3] [ref=e313]
+              - listitem [ref=e314]:
+                - link "8 손 내민 트럼프 품에…‘와락’ 안긴 다카이치" [ref=e315] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Inter/article/all/20260320/133569734/2
+                  - generic [ref=e316]:
+                    - generic [ref=e317]: "8"
+                    - heading "손 내민 트럼프 품에…‘와락’ 안긴 다카이치" [level=3] [ref=e318]
+              - listitem [ref=e319]:
+                - link "9 갑판서 ‘36분’ 조깅했을 뿐인데…佛항공모함 위치 유출됐다" [ref=e320] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Inter/article/all/20260320/133571684/2
+                  - generic [ref=e321]:
+                    - generic [ref=e322]: "9"
+                    - heading "갑판서 ‘36분’ 조깅했을 뿐인데…佛항공모함 위치 유출됐다" [level=3] [ref=e323]
+              - listitem [ref=e324]:
+                - link "10 “UAE, 韓에 원유 우선공급 이례적 우대…천궁-Ⅱ가 결정적”" [ref=e325] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Politics/article/all/20260320/133570641/2
+                  - generic [ref=e326]:
+                    - generic [ref=e327]: "10"
+                    - heading "“UAE, 韓에 원유 우선공급 이례적 우대…천궁-Ⅱ가 결정적”" [level=3] [ref=e328]
+          - iframe [ref=e335]:
+            - iframe [ref=f77e2]:
+              - generic [active] [ref=f81e1]:
+                - iframe [ref=f81e3]:
+                  - generic [ref=f82e2] [cursor=pointer]:
+                    - link [ref=f82e4]:
+                      - /url: https://privacy.as.criteo.com/adchoices?cppv=3&cpp=6QbIb3hmbeD--pZ5nu6tkL7L4aqXrUn5m3K9XZWh01QmBlKwudsdRc6Vxaeqb0Zcsg6zQvTwDw6lw-08WNOWRUjbZkYRU-NLpuhtuHHZkZqVKOT0dPjBXg8vBUtyLaZiNLo3XWtrrnFPAr9245vKgTerDDk
+                      - img [ref=f82e5]
+                    - img [ref=f82e7]
+                    - link [ref=f82e9]:
+                      - /url: https://cat.jp2.as.criteo.com/delivery/ck.php?cppv=3&cpp=kANhNYg8KhB5c4lewtEZKz_Zsim83W0cw5yBfuoEFIQSNg5GkND8-y9b6g61tGusltPZ3pEfcFp5RpfLCn2VvPDS_p9xnyRXuKT4GDPc5ydYg5AGQcFHAz7tcYd15z7xwwp01D7-kzuCxu7cvmdUTAJbgbOLh8YQgmknaTJEBzsxfo6y8F83TAQRZ-cCEwu-UV1RkUarhyVu32iuq-77xsOAKLDueh6n7XgEBA0RjA9_TWauiX5Ocp2x2J4AZj_bxIE0QriNeOsh1Rv4z6eBxnHw42teYEk3I9GxuVIm0VMnc39JDmwtOCG4-vajoM5z0ZWEp1fvSW9VpjJ3oKSAEykx6kURVPAEuthjtOkQgQb1NyjxeMOBl7rMFx3XuLyR1kZN82-NMSFXYigkJ31v2tc6jBkzP3ONzHztG9P2wrZAFeG6xOnTOxc6uABqmmqq27uFEw0V6Mn2OegIkqSmoYK6Uxf62eF1Yg80ywP5ml2Ov_l461OVd3HCdUbTXlf6ob3xg40bC_By8NMYICSFms6wZaZ6CMjx3bcoe5rrq-AoDA-vLeoMumGMFvFV3T__5Qv3qkrs_LnORwNlg0aWtZfoSnJJiOt9XfdNGAlFioLQBs6RwHOLLpF7AJWNmPuvcCm3yA&maxdest=https%3A%2F%2Fwww.adobe.com%2Fkr%2Fcreativecloud%2Froc%2Fdesign%2Fall-in-one.html%3Fsdid%3DDD5B16W3%26mv%3Ddisplay%26mv2%3Ddisplay%26utm_source%3Dcriteo%26utm_medium%3Ddisplay%26utm_campaign%3DCRI_FY26CC_PSP_PSP_KR_DSK_ST%2826.03.14-%29%26utm_id%3D674964%26cto_pld%3DsraoYCK_AQB36D9GbD5Ivg
+                      - img [ref=f82e12]
+                - generic:
+                  - iframe
+                - img [ref=f81e4]
+                - img [ref=f81e5]
+          - generic [ref=e337]:
+            - heading "AI 추천 기사" [level=3] [ref=e339]
+            - list [ref=e341]:
+              - listitem [ref=e342]:
+                - link "李 “2년 되면 정규직화 다들 회피… 3, 4년으로 했으면 좋겠다” 李 “2년 되면 정규직화 다들 회피… 3, 4년으로 했으면 좋겠다”" [ref=e343] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260320/133567791/2
+                  - img "李 “2년 되면 정규직화 다들 회피… 3, 4년으로 했으면 좋겠다”" [ref=e346]
+                  - heading "李 “2년 되면 정규직화 다들 회피… 3, 4년으로 했으면 좋겠다”" [level=4] [ref=e349]
+              - listitem [ref=e350]:
+                - link "李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다 李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다" [ref=e351] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260319/133563370/1
+                  - img "李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다" [ref=e354]
+                  - heading "李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다" [level=4] [ref=e357]
+              - listitem [ref=e358]:
+                - link "李 “기간제 2년 되면 정규직 전환, 말은 좋은데 되레 장애” 李 “기간제 2년 되면 정규직 전환, 말은 좋은데 되레 장애”" [ref=e359] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260319/133566742/1
+                  - img "李 “기간제 2년 되면 정규직 전환, 말은 좋은데 되레 장애”" [ref=e362]
+                  - heading "李 “기간제 2년 되면 정규직 전환, 말은 좋은데 되레 장애”" [level=4] [ref=e365]
+              - listitem [ref=e366]:
+                - link "李 “고용유연성, 노동자 일방적 희생 옳지 않아” 李 “고용유연성, 노동자 일방적 희생 옳지 않아”" [ref=e367] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Politics/article/all/20260319/133562669/1
+                  - img "李 “고용유연성, 노동자 일방적 희생 옳지 않아”" [ref=e370]
+                  - heading "李 “고용유연성, 노동자 일방적 희생 옳지 않아”" [level=4] [ref=e373]
+              - listitem [ref=e374]:
+                - link "“돈 쓴 만큼 성적 나오네”…상위권 고교생, 사교육비 더 써 “돈 쓴 만큼 성적 나오네”…상위권 고교생, 사교육비 더 써" [ref=e375] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Society/article/all/20260318/133552432/1
+                  - img "“돈 쓴 만큼 성적 나오네”…상위권 고교생, 사교육비 더 써" [ref=e378]
+                  - heading "“돈 쓴 만큼 성적 나오네”…상위권 고교생, 사교육비 더 써" [level=4] [ref=e381]
+              - listitem [ref=e382]:
+                - link "김민석 “유시민 형은 TV출연 즐기는 강남 지식인 됐다” 문자 포착 김민석 “유시민 형은 TV출연 즐기는 강남 지식인 됐다” 문자 포착" [ref=e383] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Politics/article/all/20260320/133571420/1
+                  - img "김민석 “유시민 형은 TV출연 즐기는 강남 지식인 됐다” 문자 포착" [ref=e386]
+                  - heading "김민석 “유시민 형은 TV출연 즐기는 강남 지식인 됐다” 문자 포착" [level=4] [ref=e389]
+          - iframe [ref=e393]:
+            - iframe [ref=f14e5]:
+              - iframe [ref=f33e3]:
+                - iframe [ref=f37e2]:
+                  - generic [ref=f38e3]:
+                    - link "알파엠 광고 ACE Planet" [ref=f38e4] [cursor=pointer]:
+                      - /url: /optout.php
+                      - generic: 알파엠 광고
+                      - img "ACE Planet" [ref=f38e5]
+                    - link "ad creative ad.aceplanet.co.kr" [ref=f38e6] [cursor=pointer]:
+                      - /url: //ad.alpham.co.kr/_log/clicks.php?si=1000030&ci=1000048&cvi=1000035&ati=1&t=1&aid=1000022&device=1&bst=1&dbg=1900000&hbg=1900000&c=250&fq_v=0&fq_h=0&size=300x250&vc=79&cai=57&lu=https%3A%2F%2Fccl-ko.kr%2Fpage%2Fccl4
+                      - img "ad creative ad.aceplanet.co.kr" [ref=f38e7]
+          - generic [ref=e402]:
+            - generic [ref=e403]:
+              - button "Play" [ref=e404] [cursor=pointer]:
+                - img
+                - generic [ref=e405]: Play
+              - generic [ref=e407]:
+                - slider "Seek" [ref=e408]: "0"
+                - progressbar [ref=e409]: "% buffered"
+                - generic: 00:00
+              - generic "Current time" [ref=e410]: 00:00
+              - generic "Duration" [ref=e411]: ⁄00:52
+              - generic [ref=e412]:
+                - button "Mute" [ref=e752] [cursor=pointer]:
+                  - img
+                  - generic [ref=e753]: Mute
+                - slider "Volume" [ref=e415]: "0"
+            - button "Play" [ref=e419] [cursor=pointer]:
+              - img
+              - generic [ref=e420]: Play
+          - link [ref=e423] [cursor=pointer]:
+            - /url: https://yellow.contentsfeed.com/RealMedia/ads/click_lx.ads/www.donga.com/news/1765142168/x58/default/empty.gif/33464c6d776d6d394436454142364245
+      - iframe [ref=e427]:
+        - generic [active] [ref=f4e1]:
+          - generic [ref=f4e4]:
+            - heading "추천 콘텐츠" [level=1] [ref=f4e5]
+            - table "추천 콘텐츠" [ref=f4e8]:
+              - caption [ref=f4e9]: 추천 콘텐츠
+              - rowgroup [ref=f4e16]:
+                - row "AD 알고나니 너무 쉬운 치아 패임 해결법 李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다 AD 드디어 수면제와 이별…\"잠 안오는 이유 찾아\" 충격적 이유 李 “고용 유연성 확보하되, 정규직 늘리는 방향으로 가야” AD 점점 처지는 눈밑꺼짐, 가장 후회되는 3가지 행동" [ref=f4e17]:
+                  - cell "AD 알고나니 너무 쉬운 치아 패임 해결법" [ref=f4e18]:
+                    - link "AD 알고나니 너무 쉬운 치아 패임 해결법" [ref=f4e19] [cursor=pointer]:
+                      - /url: https://ad-log.dable.io/services/news.donga.com/users/11710570.1773997985128/campaigns/mXtIX5WQBgcYieNETYC6dw/contents/tOv9oNT4irmVkZLMEXncug/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwCsJVIANCBAB4AOakAJriADEwaAAQBZAIZgRAJgAMsuTIBsIuWRz4SOObREBxMQBUA1HPMKAFAGEA9rbA80AOwmIIPEQFVnaAG4QYPASADYiRpgQAJTMIGjuGMgAxm78gCRjgDyrgBNNgB2jTIA1A4AkgwD0gD5zgD-tBYVVsRwSAObYmixgEs4A1rhyLdBwSMhofHjKMtTKAGYALMr45hIeSQz41GTjJCST%2BMo8ixI8ZJOxAEaDyJDwHLbO8BADQyAnPGcI%2BJOTABZQErQyGBgAnrYQmhlGxYvBbDAwEkmgR1rRlIRqPJYohbIhQsg6o1%2BPhYlC0Px3ohEBx4DhisUAO40gB0PCu9QktKStgwxWcECp8GKAHkuL4rsUpOgkiEIMKQiFivIVHISPgyMUtCQEUj5DL8TcwMgQm16vx2rZYlTBo0UIN%2BAwAFISDC8gBCxpYSXebU5IX4gA%2BewAc3YANVcAF03IQAftYAazsAOy20pBtHhSJ60eAhdHwWJYRDvWz3Qi02i0vEsZxA2wGvByVENS14G12x22ADE%2BbizgCzjRYH%2Bd34VAAPtX7U7wUnELh8Cx4GgAF6w5THU4cYQw-jKZQ5si0JHHTMd8XOerp-hllg8C7INMZp4BIJoK78PyZ9oSZB%2BEjII2QR8YRAhManl8uPxOrYSAAGoyMkRw8PgyDHkkyDILKyjyoqMizHIcF7Ckzg8GB0EQOMEgwCEKBPvej7Pq%2BDgQB%2BX4-hgL7wUoiEKmQKHmHBPB4QRRHsZxhHDiwjzJFCYD8AA0gASgA6rEmAcJ2eCNhxTgpO4TyViAAAaYAAFYAFowH4omIJJvKxOww54MAAA6ICshgHAQOg6BXKg-wOTZOAyEwNmCfOaAwh5y6ruudBeT5c4LrcrQdIFK60GuSI-N5tkcEkHkyIQMi0oQyj0GQ8rJUkqXIFSyDwEcHkKt0NlFbBVK2GVFW4FVyWpYgOqPB5ci0korzIrQrVJO1yShGgXU9Shkz9YNw0YJmEAhMgkKkjAiDjXIyjTEihDJRx%2BF8cg4xUYgUK3KyMCtuldCDX4OpzRxi3LRwq3rfFJCIcoyUQtpMBYrwr1kO9G03TqaDwE%2Bo08B5o42d9v0pMC43UFQ1Co5MhXFRgfFoBwwKBEjKNoxjsFHB2e1cWtI7E8gpPQxjj5JJdI7vclYAcIkjOUzgGwAL6zmp9yCfEEAYK8HxfD8fyAsChBHLEezyQ8pzC6LbyfN8vwAkCaCyyaLh-f505xQl1B684QlgJAzhJP8YlSbE9Q8POXQuup%2BBELM67dUQpAUCjtD4KMsR6hO-xJnsLtxODVJSBwkdg8gEDW%2B2HCqSOPNAA
+                      - generic [ref=f4e21]: AD
+                      - generic [ref=f4e22]: 알고나니 너무 쉬운 치아 패임 해결법
+                  - cell "李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다" [ref=f4e23]:
+                    - link "李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다" [ref=f4e24] [cursor=pointer]:
+                      - /url: https://r-log.dable.io/s/news.donga.com/u/11710570.1773997985128/click_redirect?c=c291cmNlPTEzMzU2NzgyMCZybT0zMC4xLjEwJTJGMzAuNTIuMiZjaGFubmVsPSVFQiVCMyVCOCVFQiVBQyVCOCVFRCU5NSU5OCVFQiU4QiVBOF8lRUElQjclQjglRUIlQTYlQUMlRUIlOTMlOUMuc3RhbmRhcmRfNXNsb3RzJnJlY29fdHlwZT1wZXJzb25hbGl6ZWQtbmV3cyZ1aWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOCZ3aWRnZXRfaWQ9MzdKYW1PQm8mcmVxdWVzdF9pZD02Mjg2ZjQ2MTAwYWVkYzM3MTg5ZjMzNDE2ZGMzYWQ5NCZ1YT1Nb3ppbGxhJTJGNS4wJTIwKE1hY2ludG9zaCUzQiUyMEludGVsJTIwTWFjJTIwT1MlMjBYJTIwMjYuMy4xKSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwKEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvKSUyMENocm9tZSUyRjE0Ni4wLjc2ODAuODAlMjBTYWZhcmklMkY1MzcuMzYmcmVmPSZjaWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOA%3D%3D&p=cGljaz0xMzM1NjMzNzAmY209MzAuMS4xMCZ1cmw9aHR0cHMlM0ElMkYlMkZ3d3cuZG9uZ2EuY29tJTJGbmV3cyUyRlNvY2lldHklMkZhcnRpY2xlJTJGYWxsJTJGMjAyNjAzMTklMkYxMzM1NjMzNzAlMkYx&r=NobwRAlgJmBcYEYDMSCsA2FB2ADGANGALYCmALgBYD2M8SOAdAk3gL77jRyIoAsAHACZeqQQWLlqtMPQaiGY9p2nI06IYP7jSlGt1nMEbDpBUoMSAJxYk2yXrqN5ik13irUSdTjGEdU-SdBBTAlU24PbwQsO11pAxZQ1zM1dCxeXwk4wKZEsLceNAR0HGtYgMc5YJdlCL5+BEsG8ocZIJD8lIwsLEsEFvjGQ2Na9z4sVEt0fr97QaqO5Lq1VBwETP9WhKMk0cKBFB3Z7MrnXfCxtCR0wUsBnOHzgsihBF57ysfWAF0gA&r_start=0&r_end=4
+                      - generic [ref=f4e26]: 李정부 경사노위 1기 출범…AI-일자리-노령화 해법 찾는다
+                  - cell "AD 드디어 수면제와 이별…\"잠 안오는 이유 찾아\" 충격적 이유" [ref=f4e27]:
+                    - link "AD 드디어 수면제와 이별…\"잠 안오는 이유 찾아\" 충격적 이유" [ref=f4e28] [cursor=pointer]:
+                      - /url: https://ad-log.dable.io/services/news.donga.com/users/11710570.1773997985128/campaigns/3CM7rKLdkGgII0aV014a-g/contents/5CZV8aHd1ti9uKK226Rz7A/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwCsJVIANCBAB4AOakAJriADEwaAAQBZAIZgRAJgAMsuTIBsIuWRz4SOObREBxMQBUA1HPMKAFAGEA9rbA80AOwmIIPEQFVnaAG4QYPASADYiRpgQAJTMIGjuGMgAxm78gCRjgDyrgBNNgB2jTIA1A4AkgwD0gD5zgD-tBYVVsRwSAObYmixgEs4A1rgkLdBwSMhofHjKMtTKAGYALMr45hIeSQz41GTjJCST%2BMo8ixI8ZJOxAEaDyJDwHLbO8BADQyAnPGcI%2BJOTABZQErQyGBgAnrYQmhlGxYvBbDAwEkmgR1rRlIRqPJYohbIhQsg6o1%2BPhYlC0Px3ohEBx4DhisUAO40gB0PCu9QktKStgwxWcECp8GKAHkuL4rsUpOgkiEIMKQiFivIVHISPgyMUtCQEUj5DL8TcwMgQm16vx2rZYlTBo0UIN%2BAwAFISDC8gBCxpYSXebU5IX4gA%2BewAc3YANVcAF03IQAftYAazsAOy20pBtHhSJ60eAhdHwWJYRDvWz3Qi02i0vEsZxA2wGvByVENS14G12x22ADE%2BbizgCzjRYH%2Bd34VAAPtX7U7wUnELhJix4GgAF6w5THU4cYQw-gyMg5pTTY6Zjvi5z1dP8MssHgXZBpjNPAJBNBXfh%2BTPtCTIPwkZBGyAPjCIEJjE-Plx%2BJ22EgABqMjJEcPD4MgR5JMgyCyso8qKjIsxyLBewpM4PCgVBEDjBIMAhCgj53g%2BT4vg4EDvp%2B34YM%2BcFKAhCpkMh5iwTwuH4YRbEcQRw4sI8yRQmA-AANIAEoAOqxJgHCdnghyHh4aApO4TyViAAAaYAAFYAFowH4ImIBJvKxOww54MAAA6ICshgHAQOg6BXKg-wOTZOAyEwNkCfOykQB5y6rjI0yKt5DxzgutytB0HkMLSyg-PgKjUOFSQcEkcVyJMOYkIikzZWlGXIFSyDwEcgXEEVMFUrYZUVbgy60OFGWIDqjweXItJyLMiVyIQLVJG1yShGgnXdfgPwzGQg3DRgmYQCEyCQqSMCION2XKAcBzhexeG8cg4yUYgUK3KyMCtoFdCDX4OrzexS0rRwa0bZMtC0NQKzhRC2kwFivCve9n0zTZGW3QM8CPqNPAefg322L9I3AuNYyvJMhBeTZ6UwRgvFoBwwKBLD3UkDIpNULNOqJuiZxuFe41bUiyhvdVyBHB2e2cetuBw1jxXs7DRUPkkl083l4VgBwiQi9zOAbAAvrOan3AJ8QQBgaOfN8vwAkCaCENgLB7HJEVqQkmtfD8fyAsCBsmi4-3%2BUuK60GuM4sKaziCWAkDOEk-yiZJsT1Dw864HILrqfgRCzLQhBdUQpAUFQdDJdQsR6hO-xJns4csGgkNUlIHB53EkMQH77YcKpPPy0AA
+                      - generic [ref=f4e30]: AD
+                      - generic [ref=f4e31]: 드디어 수면제와 이별…"잠 안오는 이유 찾아" 충격적 이유
+                  - cell "李 “고용 유연성 확보하되, 정규직 늘리는 방향으로 가야”" [ref=f4e32]:
+                    - link "李 “고용 유연성 확보하되, 정규직 늘리는 방향으로 가야”" [ref=f4e33] [cursor=pointer]:
+                      - /url: https://r-log.dable.io/s/news.donga.com/u/11710570.1773997985128/click_redirect?c=c291cmNlPTEzMzU2NzgyMCZybT0zMC4xLjEwJTJGMzAuNTIuMiZjaGFubmVsPSVFQiVCMyVCOCVFQiVBQyVCOCVFRCU5NSU5OCVFQiU4QiVBOF8lRUElQjclQjglRUIlQTYlQUMlRUIlOTMlOUMuc3RhbmRhcmRfNXNsb3RzJnJlY29fdHlwZT1wZXJzb25hbGl6ZWQtbmV3cyZ1aWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOCZ3aWRnZXRfaWQ9MzdKYW1PQm8mcmVxdWVzdF9pZD02Mjg2ZjQ2MTAwYWVkYzM3MTg5ZjMzNDE2ZGMzYWQ5NCZ1YT1Nb3ppbGxhJTJGNS4wJTIwKE1hY2ludG9zaCUzQiUyMEludGVsJTIwTWFjJTIwT1MlMjBYJTIwMjYuMy4xKSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwKEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvKSUyMENocm9tZSUyRjE0Ni4wLjc2ODAuODAlMjBTYWZhcmklMkY1MzcuMzYmcmVmPSZjaWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOA%3D%3D&p=cGljaz0xMzM1NjgyMjgmY209MzAuMS4xMCZ1cmw9aHR0cHMlM0ElMkYlMkZ3d3cuZG9uZ2EuY29tJTJGbmV3cyUyRlBvbGl0aWNzJTJGYXJ0aWNsZSUyRmFsbCUyRjIwMjYwMzIwJTJGMTMzNTY4MjI4JTJGMg%3D%3D&r=NobwRAlgJmBcYEYDMSCsA2FB2ADGANGALYCmALgBYD2M8SOAdAk3gL77jRyIoAsAHACZeqQQWLlqtMPQaiGY9p2nI06IYP7jSlGt1nMEbDpBUoMSAJxYk2yXrqN5ik13irUSdTjGEdU-SdBBTAlU24PbwQsO11pAxZQ1zM1dCxeXwk4wKZEsLceNAR0HGtYgMc5YJdlCL5+BEsG8ocZIJD8lIwsLEsEFvjGQ2Na9z4sVEt0fr97QaqO5Lq1VBwETP9WhKMk0cKBFB3Z7MrnXfCxtCR0wUsBnOHzgsihBF57ysfWAF0gA&r_start=0&r_end=4
+                      - generic [ref=f4e35]: 李 “고용 유연성 확보하되, 정규직 늘리는 방향으로 가야”
+                  - cell "AD 점점 처지는 눈밑꺼짐, 가장 후회되는 3가지 행동" [ref=f4e36]:
+                    - link "AD 점점 처지는 눈밑꺼짐, 가장 후회되는 3가지 행동" [ref=f4e37] [cursor=pointer]:
+                      - /url: https://ad-log.dable.io/services/news.donga.com/users/11710570.1773997985128/campaigns/d59FfvHYLjTl4VZNMNenxQ/contents/IPiTlEG8qfkspQ39nxKujg/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwCsJVIANCBAB4AOakAJriADEwaAAQBZAIZgRAJgAMsuTIBsIuWRz4SOObREBxMQBUA1HPMKAFAGEA9rbA80AOwmIIPEQFVnaAG4QYPASADYiRpgQAJTMIGjuGMgAxm78gCRjgDyrgBNNgB2jTIA1A4AkgwD0gD5zgD-tBYVVsRwSAObYmixgEs4A1ri0LdBwSMhofHjKMtTKAGYALMr45hIeSQz41GTjJCST%2BMo8ixI8ZJOxAEaDyJDwHLbO8BADQyAnPGcI%2BJOTABZQErQyGBgAnrYQmhlGxYvBbDAwEkmgR1rRlIRqPJYohbIhQsg6o1%2BPhYlC0Px3ohEBx4DhisUAO40gB0PCu9QktKStgwxWcECp8GKAHkuL4rsUpOgkiEIMKQiFivIVHISPgyMUtCQEUj5DL8TcwMgQm16vx2rZYlTBo0UIN%2BAwAFISDC8gBCxpYSXebU5IX4gA%2BewAc3YANVcAF03IQAftYAazsAOy20pBtHhSJ60eAhdHwWJYRDvWz3Qi02i0vEsZxA2wGvByVENS14G12x22ADE%2BbizgCzjRYH%2Bd34VAAPtX7U7wUnELhlCx4GgAF6w5THU4cYQw3GTWnKMj4V7HTMd8XOerp-hllg8C7INMZp4BIJoK78PyZ9oSZB%2BEjII2QR8YRAhManl8uPxOrYSAAGoyMkRw8PgyDHkkyDILKyjyoqMizHIcF7Ckzg8GB0EQOMEgwCEKBPvej7Pq%2BDgQB%2BX4-hgL7wUoiEKmQKHmHBPB4QRRHsZxhHDiwjzJFCYD8AA0gASgA6rEmAcJ2wyxBxTgpO4TyViAAAaYAAFYAFowH4omIJJvKxOww54MAAA6ICshgHAQOg6BXKg-wOTZOAyEwNmCfOaAwh5rwrmurw0N5DxzgutytB0HnyLSlCjMi1DhUkHBJB5qoyLSCqIT8hCpelyBUsg8BHHFZByIVsFUrYpXlbgmyTOF6WIDqjweXItLmLQcjKLQZAtUkbXJKEaCdd1swkOYJBDSNGCZhAITIJCpIwIgE3yjISXdDZHH4XxyDjFRiBQrcrIwK2cUrENfg6gtHHLatHDrZtDD9aQ4UQtpMBYrwb2EB9s02eld0DPAT5jTwgVfbYP2jcCE10Khu22UVGB8WgHDAoESO0Cjc06om6JnG414TZMa7Ilo1XIEcHb7VxG24PgtP0zDNlpY%2BSRXSzJCjjZYAcIkPPMzgGwAL6zmp9yCfEEAYK8HxfD8fyAsChAGiwezyRFakJErnzfL8AJAmgmsmi4f3%2BbCQWruuhwsKazhCWAkDOEk-xiVJsT1Dw864FVtnqeuhCzLQhBdUQpAUFQyOjLEeoTv8SZ7IHLBoBDVJSBw6dxBDEAe%2B2HCqSzEtAA
+                      - generic [ref=f4e39]: AD
+                      - generic [ref=f4e40]: 점점 처지는 눈밑꺼짐, 가장 후회되는 3가지 행동
+                - row "AD 박카X 맛 ‘알부민’…효과 없었던 진짜 이유 AD '손가락염증' 환자들이 가장 후회한 \"3가지 습관\" 전한길 “신당 창당 고심 중”…설문조사에선 응답률 저조 AD 녹내장 안약 부작용?! [단독]“기장 살해 前부기장, 메디컬 테스트 떨어져…비행 못하자 퇴사”" [ref=f4e41]:
+                  - cell "AD 박카X 맛 ‘알부민’…효과 없었던 진짜 이유" [ref=f4e42]:
+                    - link "AD 박카X 맛 ‘알부민’…효과 없었던 진짜 이유" [ref=f4e43] [cursor=pointer]:
+                      - /url: https://ad-log.dable.io/services/news.donga.com/users/11710570.1773997985128/campaigns/sKAd9ajjGVOOPlNOdaVfCA/contents/SEoMOu3EgfaMNyyBEFAbLg/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwCsJVIANCBAB4AOakAJriADEwaAAQBZAIZgRAJgAMsuTIBsIuWRz4SOObREBxMQBUA1HPMKAFAGEA9rbA80AOwmIIPEQFVnaAG4QYPASADYiRpgQAJTMIGjuGMgAxm78gCRjgDyrgBNNgB2jTIA1A4AkgwD0gD5zgD-tBYVVsRwSAObYmixgEs4A1rj4LdBwSMhofHjKMtTKAGYALMr45hIeSQz41GTjJCST%2BMo8ixI8ZJOxAEaDyJDwHLbO8BADQyAnPGcI%2BJOTABZQErQyGBgAnrYQmhlGxYvBbDAwEkmgR1rRlIRqPJYohbIhQsg6o1%2BPhYlC0Px3ohEBx4DhisUAO40gB0PCu9QktKStgwxWcECp8GKAHkuL4rsUpOgkiEIMKQiFivIVHISPgyMUtCQEUj5DL8TcwMgQm16vx2rZYlTBo0UIN%2BAwAFISDC8gBCxpYSXebU5IX4gA%2BewAc3YANVcAF03IQAftYAazsAOy20pBtHhSJ60eAhdHwWJYRDvWz3Qi0ya0vEsZxA2wGvByVENS14G12x22ADE%2BbizgCzjRYH%2Bd34VAAPtX7U7wUnELgZCx4GgAF6w5THU4cYQwq3Z5TUDYyY6Zjvi5z1dP8MssHgXZBpjNPAJBNBXfh%2BTPtCTIPwkZBGyAPjCIEJjE-Plx%2BJ22EgABqMjJEcPD4MgR5JMgyCyso8qKjIsxyLBewpM4PCgVBEDjBIMAhMOLCPMkUJgPwADSABKADqsSYBwnZ4Ouh4eGgKTuE8lYgAAGmAABWABaMB%2BBRiA0bysTsMOeDAAAOiArIYBwEDoOgVyoP8KkKTgo4KSR87sRAOkMLSK5rshTD6XOC63K0HQmcuq6TDIlkKUkHBJDpMgIlZimecgVLIPARzeb57kBVStjBaFI7hSAnmIDqjw6XItJyK8hDyN0CmJTqKTAql6UyCQCHrH5eUnpmEAhMgkKkjAiBFXIhC6CuekgDwuH4YRyDjBAbhQrcrIwK23krBVSRJcFQ5nG4V5FSMpVvMofkeTBRwdl1eEEU1XRrXUyRjV0pV%2BWAHCJEkx04BsAC%2Bs5cfcJHxBAGCvB8Xw-H8gLAoQSSxHsTEPKcL1vW8nzfL8AJAmgf0mi4WK2UuZnOSxICms4pFgJAzhJP8lG0bE9Q8POuByC63H4EQsy0K1ebEOQlA0LQ%2BCjLEeoTv8SZ7GTLBoPAgVSBwvNxALEC4%2B2HCcV0t1AA
+                      - generic [ref=f4e45]: AD
+                      - generic [ref=f4e46]: 박카X 맛 ‘알부민’…효과 없었던 진짜 이유
+                  - cell "AD '손가락염증' 환자들이 가장 후회한 \"3가지 습관\"" [ref=f4e47]:
+                    - link "AD '손가락염증' 환자들이 가장 후회한 \"3가지 습관\"" [ref=f4e48] [cursor=pointer]:
+                      - /url: https://ad-log.dable.io/services/news.donga.com/users/11710570.1773997985128/campaigns/OyrQlSTyHHw10sloqGdWTg/contents/4gK5kNmf4h-ufhtzC7huIg/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwCsJVIANCBAB4AOakAJriADEwaAAQBZAIZgRAJgAMsuTIBsIuWRz4SOObREBxMQBUA1HPMKAFAGEA9rbA80AOwmIIPEQFVnaAG4QYPASADYiRpgQAJTMIGjuGMgAxm78gCRjgDyrgBNNgB2jTIA1A4AkgwD0gD5zgD-tBYVVsRwSAObYmixgEs4A1rgyLdBwSMhofHjKMtTKAGYALMr45hIeSQz41GTjJCST%2BMo8ixI8ZJOxAEaDyJDwHLbO8BADQyAnPGcI%2BJOTABZQErQyGBgAnrYQmhlGxYvBbDAwEkmgR1rRlIRqPJYohbIhQsg6o1%2BPhYlC0Px3ohEBx4DhisUAO40gB0PCu9QktKStgwxWcECp8GKAHkuL4rsUpOgkiEIMKQiFivIVHISPgyMUtCQEUj5DL8TcwMgQm16vx2rZYlTBo0UIN%2BAwAFISDC8gBCxpYSXebU5IX4gA%2BewAc3YANVcAF03IQAftYAazsAOy20pBtHhSJ60eAhdHwWJYRDvWz3Qi02i0vEsZxA2wGvByVENS14G12x22ADE%2BbizgCzjRYH%2Bd34VAAPtX7U7wUnELgSCx4GgAF6w5THU4cYQw3HUWlkBjUY6Zjvi5z1dP8MssHgXZBpjNPAJBNBXfh%2BTPtCTIPwkZBGyAPjCIEJjE-Plx%2BJ22EgABqMjJEcPD4MgR5JMgyCyso8qKjIsxyLBewpM4PCgVBEDjBIMAhCgj53g%2BT4vg4EDvp%2B34YM%2BcFKAhCpkMh5iwTwuH4YRbEcQRw4sI8yRQmA-AANIAEoAOqxJgHCdlWsTsU4KTuE8lYgAAGmAABWABaMB%2BCJiASbysTsMOeDAAAOiArIYBwEDoOgVyoP89nWTg3TWQJ85oDC7nLCua5yNQhBMF5c4LrcrQdO5DA5gh1BvPgYU2RwSSxVstKTAczEkJ5qUwVSyDwEc-mJSlSRpcgVK2MVpUjnIygpWliA6o87lyLScizDIuXNUkrXJKEaAdV1WzIaF1ktTqGCZhAITIJCpIwIgo1yNlhBEKO1nsXhvHIOMlGIFCtysjArbuaMtD9X4M1zQtS0cCta3ZWQtD4Nd1kQlpMBYrwL0UO9n0gGlt0DPAj7DTw-kpd9v0pMCo1jIQMiTNQFVVRgvFoBwwKBP5XUbL1m39YNibomcbhXqNygbMotCUBjMFHB2u2catuDJdZlXM-8MPc3UyQXZzJBNdZYAcIkSTCzgGwAL6zqp9wCfEEAYK8HxfD8fyAsChB8CwexyQ8pyq%2BrbyfN8vwAkCaD6yaLh-b5sIBauSIO84glgJAzhJP8omSbE9Q8POuByC6an4EQsy0IQnVEKQFBUHQ%2BCjLEeoTv8SZ7GHLBoBDVJSBwudxBDEC%2B%2B2HAqZzctAA
+                      - generic [ref=f4e50]: AD
+                      - generic [ref=f4e51]: "'손가락염증' 환자들이 가장 후회한 \"3가지 습관\""
+                  - cell "전한길 “신당 창당 고심 중”…설문조사에선 응답률 저조" [ref=f4e52]:
+                    - link "전한길 “신당 창당 고심 중”…설문조사에선 응답률 저조" [ref=f4e53] [cursor=pointer]:
+                      - /url: https://r-log.dable.io/s/news.donga.com/u/11710570.1773997985128/click_redirect?c=c291cmNlPTEzMzU2NzgyMCZybT0zMC4xLjEwJTJGMzAuNTIuMiZjaGFubmVsPSVFQiVCMyVCOCVFQiVBQyVCOCVFRCU5NSU5OCVFQiU4QiVBOF8lRUElQjclQjglRUIlQTYlQUMlRUIlOTMlOUMuc3RhbmRhcmRfNXNsb3RzJnJlY29fdHlwZT1wZXJzb25hbGl6ZWQtbmV3cyZ1aWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOCZ3aWRnZXRfaWQ9MzdKYW1PQm8mcmVxdWVzdF9pZD02Mjg2ZjQ2MTAwYWVkYzM3MTg5ZjMzNDE2ZGMzYWQ5NCZ1YT1Nb3ppbGxhJTJGNS4wJTIwKE1hY2ludG9zaCUzQiUyMEludGVsJTIwTWFjJTIwT1MlMjBYJTIwMjYuMy4xKSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwKEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvKSUyMENocm9tZSUyRjE0Ni4wLjc2ODAuODAlMjBTYWZhcmklMkY1MzcuMzYmcmVmPSZjaWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOA%3D%3D&p=cGljaz0xMzM0ODI0NTImY209MzAuNTIuMiZ1cmw9aHR0cHMlM0ElMkYlMkZ3d3cuZG9uZ2EuY29tJTJGbmV3cyUyRlBvbGl0aWNzJTJGYXJ0aWNsZSUyRmFsbCUyRjIwMjYwMzA3JTJGMTMzNDgyNDUyJTJGMSUzRg%3D%3D&r=NobwRAlgJmBcYEYDMSCsA2FB2ADGANGALYCmALgBYD2M8SOAdAk3gL77jRyIoAsAHACZeqQQWLlqtMPQaiGY9p2nI06IYP7jSlGt1nMEbDpBUoMSAJxYk2yXrqN5ik13irUSdTjGEdU-SdBBTAlU24PbwQsO11pAxZQ1zM1dCxeXwk4wKZEsLceNAR0HGtYgMc5YJdlCL5+BEsG8ocZIJD8lIwsLEsEFvjGQ2Na9z4sVEt0fr97QaqO5Lq1VBwETP9WhKMk0cKBFB3Z7MrnXfCxtCR0wUsBnOHzgsihBF57ysfWAF0gA&r_start=0&r_end=4
+                      - generic [ref=f4e55]: 전한길 “신당 창당 고심 중”…설문조사에선 응답률 저조
+                  - cell "AD 녹내장 안약 부작용?!" [ref=f4e56]:
+                    - link "AD 녹내장 안약 부작용?!" [ref=f4e57] [cursor=pointer]:
+                      - /url: https://ad-log.dable.io/services/news.donga.com/users/11710570.1773997985128/campaigns/pzhD1LVaYdw5BFcIJG824w/contents/CPDGAEOWP5sHfJMnmnLEEg/click_redirect?q=N4IgTgpgjgrhDOAXA%2BoglgWwiAXCAjAOyEDMAnGYWQBwCsJVIANCBAB4AOakAJriADEwaAAQBZAIZgRAJgAMsuTIBsIuWRz4SOObREBxMQBUA1HPMKAFAGEA9rbA80AOwmIIPEQFVnaAG4QYPASADYiRpgQAJTMIGjuGMgAxm78gCRjgDyrgBNNgB2jTIA1A4AkgwD0gD5zgD-tBYVVsRwSAObYmixgEs4A1rgALC3QcEjIaHx4yjLUygBmXcr45hIeSQz41GQTJCRd%2BMo8ixI8ZF2xAEZDyJDwHLbO8BCDwyAnPGcI%2BF1dABZQErQyGBgAnrYQmhlGxYvBbDAwEkmgR1rRlIRqPJYohbIhQsg6o1%2BPhYlC0Px3ohEBx4DhisUAO40gB0PCu9QktKStgwxWcECp8GKAHkuL4rsUpOgkiEIMKQiFivIVHISPgyMUtCQEUj5DL8TcwMgQm16vx2rZYlSho0UEN%2BAwAFISDC8gBCxpYSXebU5IX4gA%2BewAc3YANVcAF03IQAftYAazsAOy20pBtHhSJ60eAhdHwWJYRDvWz3Qi02i0vEsZxA2wGvByVENS14G12x22ADE%2BbizgCzjRYH%2Bd34VAAPtX7U7wUnELhaCx4GgAF6w5THU4cYQw-gyEi0ujKWjHTMd8XOerp-hllg8C7INMZp4BIJoK78PyZ9oSZB%2BEjII2QR8YRAhcanl8uPxOrYSAAGoyMkRw8PgyDHkkyDILKyjyoqMizHIcF7Ckzg8GB0EQBMEgwCEKBPvej7Pq%2BDgQB%2BX4-hgL7wUoiEKmQKHmHBPB4QRRHsZxhHDiwjzJFCYD8AA0gASgA6rEmAcJ2eAbkeHhoCk7hPJWIAABpgAAVgAWjAfiiYgkm8rE7DDngwAADogKyGAcBA6DoFcqD-I5tk4DITC2YJ84qRAnnLquCK0HI0w%2BQ8c4LrcrQdEFK7KJstDUPg3m2UkHBJEF1ByLS8LUF0tBkJFmWwVSyDwEcnnrCQpVZcgVK2JV1W4OsciRVliA6o8nl5eYhBbJsnVJN1yShGgfW0nIWhhRQI1jRgmYQCEyCQqSMCIFN4XLDIVCRRx%2BF8cgExUYgUK3KyMCtjlo62Vlfg6ktHGretHCbdtJDrnIhA9LZEI6TAWK8J932-SNj2DPAT4TTwnn4JFANAykwJTYVZBhSo9WwRgfFoBwwKBGjXQY4xC06om6JnG415TfQSh0OldkNUcHaHVxW24AjGUs-88P1Y%2BSQ3VzX2RWAHCJELnM4BsAC%2Bs7qfcgnxBAGCvB8Xw-H8gLAoQEyxHs8lRepCTq583y-ACQJoHrJouMDAVLiua6KSAprOEJYCQM4ST-GJUmxPUPDzrgHV2Rp%2BBELMtCEHlRCkBQVB0Gl1CxHqE7-EmeyhywaDQ1SUgcDncTQxAPvthwalc7LQA
+                      - generic [ref=f4e59]: AD
+                      - generic [ref=f4e60]: 녹내장 안약 부작용?!
+                  - cell "[단독]“기장 살해 前부기장, 메디컬 테스트 떨어져…비행 못하자 퇴사”" [ref=f4e61]:
+                    - link "[단독]“기장 살해 前부기장, 메디컬 테스트 떨어져…비행 못하자 퇴사”" [ref=f4e62] [cursor=pointer]:
+                      - /url: https://r-log.dable.io/s/news.donga.com/u/11710570.1773997985128/click_redirect?c=c291cmNlPTEzMzU2NzgyMCZybT0zMC4xLjEwJTJGMzAuNTIuMiZjaGFubmVsPSVFQiVCMyVCOCVFQiVBQyVCOCVFRCU5NSU5OCVFQiU4QiVBOF8lRUElQjclQjglRUIlQTYlQUMlRUIlOTMlOUMuc3RhbmRhcmRfNXNsb3RzJnJlY29fdHlwZT1wZXJzb25hbGl6ZWQtbmV3cyZ1aWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOCZ3aWRnZXRfaWQ9MzdKYW1PQm8mcmVxdWVzdF9pZD02Mjg2ZjQ2MTAwYWVkYzM3MTg5ZjMzNDE2ZGMzYWQ5NCZ1YT1Nb3ppbGxhJTJGNS4wJTIwKE1hY2ludG9zaCUzQiUyMEludGVsJTIwTWFjJTIwT1MlMjBYJTIwMjYuMy4xKSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwKEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvKSUyMENocm9tZSUyRjE0Ni4wLjc2ODAuODAlMjBTYWZhcmklMkY1MzcuMzYmcmVmPSZjaWQ9MTE3MTA1NzAuMTc3Mzk5Nzk4NTEyOA%3D%3D&p=cGljaz0xMzM1NjM5NzMmY209MzAuNTIuMiZ1cmw9aHR0cHMlM0ElMkYlMkZ3d3cuZG9uZ2EuY29tJTJGbmV3cyUyRlNvY2lldHklMkZhcnRpY2xlJTJGYWxsJTJGMjAyNjAzMTklMkYxMzM1NjM5NzMlMkYx&r=NobwRAlgJmBcYEYDMSCsA2FB2ADGANGALYCmALgBYD2M8SOAdAk3gL77jRyIoAsAHACZeqQQWLlqtMPQaiGY9p2nI06IYP7jSlGt1nMEbDpBUoMSAJxYk2yXrqN5ik13irUSdTjGEdU-SdBBTAlU24PbwQsO11pAxZQ1zM1dCxeXwk4wKZEsLceNAR0HGtYgMc5YJdlCL5+BEsG8ocZIJD8lIwsLEsEFvjGQ2Na9z4sVEt0fr97QaqO5Lq1VBwETP9WhKMk0cKBFB3Z7MrnXfCxtCR0wUsBnOHzgsihBF57ysfWAF0gA&r_start=0&r_end=4
+                      - generic [ref=f4e64]: "[단독]“기장 살해 前부기장, 메디컬 테스트 떨어져…비행 못하자 퇴사”"
+          - link "by Dable" [ref=f4e65] [cursor=pointer]:
+            - /url: https://static.dable.io/static/html/introduction.html
+            - text: by
+            - generic [ref=f4e66]: Dable
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - heading "당신만 안 본 뉴스" [level=3] [ref=e432]
+          - list [ref=e433]:
+            - listitem [ref=e434]:
+              - article [ref=e435]:
+                - link "고윤정, 소방관 장비 지원 위해 5000만원 기부" [ref=e437] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Entertainment/article/all/20260320/133572108/1
+                  - img "고윤정, 소방관 장비 지원 위해 5000만원 기부" [ref=e439]
+                - heading "고윤정, 소방관 장비 지원 위해 5000만원 기부" [level=3] [ref=e441]:
+                  - link "고윤정, 소방관 장비 지원 위해 5000만원 기부" [ref=e442] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Entertainment/article/all/20260320/133572108/1
+            - listitem [ref=e443]:
+              - article [ref=e444]:
+                - link "무명 고교생에서 세계 정상까지…임종언, 쇼트트랙 새 역사 썼다" [ref=e446] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Sports/article/all/20260320/133570026/1
+                  - img "무명 고교생에서 세계 정상까지…임종언, 쇼트트랙 새 역사 썼다" [ref=e448]
+                - heading "무명 고교생에서 세계 정상까지…임종언, 쇼트트랙 새 역사 썼다" [level=3] [ref=e450]:
+                  - link "무명 고교생에서 세계 정상까지…임종언, 쇼트트랙 새 역사 썼다" [ref=e451] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Sports/article/all/20260320/133570026/1
+            - listitem [ref=e452]:
+              - article [ref=e453]:
+                - link "첫 승 신고한 K리그1 우승후보 전북·대전, 이번엔 ‘연승’ 놓고 맞대결" [ref=e455] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Sports/article/all/20260320/133570435/1
+                  - img "첫 승 신고한 K리그1 우승후보 전북·대전, 이번엔 ‘연승’ 놓고 맞대결" [ref=e457]
+                - heading "첫 승 신고한 K리그1 우승후보 전북·대전, 이번엔 ‘연승’ 놓고 맞대결" [level=3] [ref=e459]:
+                  - link "첫 승 신고한 K리그1 우승후보 전북·대전, 이번엔 ‘연승’ 놓고 맞대결" [ref=e460] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Sports/article/all/20260320/133570435/1
+            - listitem [ref=e461]:
+              - article [ref=e462]:
+                - link "‘KBO MVP’ 폰세, 시범경기 평균자책점 0.66… 토론토 선발 로테이션 ‘확정’" [ref=e464] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Sports/article/all/20260320/133571239/1
+                  - img "‘KBO MVP’ 폰세, 시범경기 평균자책점 0.66… 토론토 선발 로테이션 ‘확정’" [ref=e466]
+                - heading "‘KBO MVP’ 폰세, 시범경기 평균자책점 0.66… 토론토 선발 로테이션 ‘확정’" [level=3] [ref=e468]:
+                  - link "‘KBO MVP’ 폰세, 시범경기 평균자책점 0.66… 토론토 선발 로테이션 ‘확정’" [ref=e469] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Sports/article/all/20260320/133571239/1
+            - listitem [ref=e470]:
+              - article [ref=e471]:
+                - link "“음식은 이렇게 먹어야지!” 맥도날드CEO 보고 있나? ‘밈’ 화제" [ref=e473] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Inter/article/all/20260320/133569580/2
+                  - img "“음식은 이렇게 먹어야지!” 맥도날드CEO 보고 있나? ‘밈’ 화제" [ref=e475]
+                - heading "“음식은 이렇게 먹어야지!” 맥도날드CEO 보고 있나? ‘밈’ 화제" [level=3] [ref=e477]:
+                  - link "“음식은 이렇게 먹어야지!” 맥도날드CEO 보고 있나? ‘밈’ 화제" [ref=e478] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Inter/article/all/20260320/133569580/2
+            - listitem [ref=e479]:
+              - article [ref=e480]:
+                - link "‘백호의 기습’ 그 기세 올라타고 월드컵 누빈다" [ref=e482] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Sports/article/all/20260320/133567711/2
+                  - img "‘백호의 기습’ 그 기세 올라타고 월드컵 누빈다" [ref=e484]
+                - heading "‘백호의 기습’ 그 기세 올라타고 월드컵 누빈다" [level=3] [ref=e486]:
+                  - link "‘백호의 기습’ 그 기세 올라타고 월드컵 누빈다" [ref=e487] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Sports/article/all/20260320/133567711/2
+            - listitem [ref=e488]:
+              - article [ref=e489]:
+                - link "한 시즌 최다 1083점… GS칼텍스 꽃피운 실바의 봄" [ref=e491] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Sports/article/all/20260320/133567702/2
+                  - img "한 시즌 최다 1083점… GS칼텍스 꽃피운 실바의 봄" [ref=e493]
+                - heading "한 시즌 최다 1083점… GS칼텍스 꽃피운 실바의 봄" [level=3] [ref=e495]:
+                  - link "한 시즌 최다 1083점… GS칼텍스 꽃피운 실바의 봄" [ref=e496] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Sports/article/all/20260320/133567702/2
+            - listitem [ref=e497]:
+              - article [ref=e498]:
+                - link "박신양, 22세 딸 언급…“심리학서 치의학으로 전공 변경”" [ref=e500] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Culture/article/all/20260320/133568373/1
+                  - img "박신양, 22세 딸 언급…“심리학서 치의학으로 전공 변경”" [ref=e502]
+                - heading "박신양, 22세 딸 언급…“심리학서 치의학으로 전공 변경”" [level=3] [ref=e504]:
+                  - link "박신양, 22세 딸 언급…“심리학서 치의학으로 전공 변경”" [ref=e505] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Culture/article/all/20260320/133568373/1
+        - separator [ref=e506]
+        - generic [ref=e507]:
+          - generic [ref=e508]:
+            - heading "연재 칼럼" [level=3] [ref=e509]
+            - tablist [ref=e510]:
+              - tab "구독 많은" [selected] [ref=e511] [cursor=pointer]
+              - tab "실시간 구독 많은" [ref=e512] [cursor=pointer]
+              - tab "최신 업데이트" [ref=e513] [cursor=pointer]
+          - list [ref=e516]:
+            - listitem [ref=e517]:
+              - generic [ref=e518]:
+                - heading "동아광장" [level=4] [ref=e520]:
+                  - link "동아광장" [ref=e521] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Series/70040100000019
+                - generic [ref=e522]:
+                  - button "구독" [ref=e523] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - text: 구독
+                  - paragraph [ref=e524]: 구독 114
+              - list [ref=e526]:
+                - listitem [ref=e527]:
+                  - link "대법관 인사는 ‘사법 3법’ 과 다르다[동아광장/정원수] 9시간 전" [ref=e528] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Opinion/article/all/20260319/133567806/1
+                    - heading "대법관 인사는 ‘사법 3법’ 과 다르다[동아광장/정원수]" [level=5] [ref=e529]:
+                      - generic:
+                        - img
+                      - text: 대법관 인사는 ‘사법 3법’ 과 다르다[동아광장/정원수]
+                    - text: 9시간 전
+            - listitem [ref=e530]:
+              - generic [ref=e531]:
+                - img "게임 인더스트리" [ref=e533]
+                - heading "게임 인더스트리" [level=4] [ref=e534]:
+                  - link "게임 인더스트리" [ref=e535] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Series/70080100000006
+                - generic [ref=e536]:
+                  - button "구독" [ref=e537] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - text: 구독
+                  - paragraph [ref=e538]: 구독 24
+              - list [ref=e540]:
+                - listitem [ref=e541]:
+                  - link "게임을 활용한 범죄, 게임사들은 어떻게 대응하고 있을까 [게임 인더스트리] 8시간 전" [ref=e542] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/article/all/20260319/133566191/1
+                    - heading "게임을 활용한 범죄, 게임사들은 어떻게 대응하고 있을까 [게임 인더스트리]" [level=5] [ref=e543]:
+                      - generic:
+                        - img
+                      - text: 게임을 활용한 범죄, 게임사들은 어떻게 대응하고 있을까 [게임 인더스트리]
+                    - text: 8시간 전
+            - listitem [ref=e544]:
+              - generic [ref=e545]:
+                - img "K제조 바꾸는 AI로봇" [ref=e547]
+                - heading "K제조 바꾸는 AI로봇" [level=4] [ref=e548]:
+                  - link "K제조 바꾸는 AI로봇" [ref=e549] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Series/70081900000001
+                - generic [ref=e550]:
+                  - button "구독" [ref=e551] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - text: 구독
+                  - paragraph [ref=e552]: 구독 4
+              - list [ref=e554]:
+                - listitem [ref=e555]:
+                  - link "불량 검사에 생성형 AI 도입하니, ‘가짜 불량’ 판정률 10%→0% 13시간 전" [ref=e556] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Economy/article/all/20260320/133567594/1
+                    - heading "불량 검사에 생성형 AI 도입하니, ‘가짜 불량’ 판정률 10%→0%" [level=5] [ref=e557]:
+                      - generic:
+                        - img
+                      - text: 불량 검사에 생성형 AI 도입하니, ‘가짜 불량’ 판정률 10%→0%
+                    - text: 13시간 전
+            - listitem [ref=e558]:
+              - generic [ref=e559]:
+                - heading "횡설수설" [level=4] [ref=e561]:
+                  - link "횡설수설" [ref=e562] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Series/70040100000002
+                - generic [ref=e563]:
+                  - button "구독" [ref=e564] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - text: 구독
+                  - paragraph [ref=e565]: 구독 424
+              - list [ref=e567]:
+                - listitem [ref=e568]:
+                  - link "‘네이밍 앤드 셰이밍’[횡설수설/김재영] 11시간 전" [ref=e569] [cursor=pointer]:
+                    - /url: https://www.donga.com/news/Opinion/article/all/20260319/133567804/1
+                    - heading "‘네이밍 앤드 셰이밍’[횡설수설/김재영]" [level=5] [ref=e570]:
+                      - generic:
+                        - img
+                      - text: ‘네이밍 앤드 셰이밍’[횡설수설/김재영]
+                    - text: 11시간 전
+        - insertion [ref=e573]
+    - contentinfo [ref=e575]:
+      - generic [ref=e578]:
+        - list [ref=e580]:
+          - listitem [ref=e581]:
+            - link "오피니언" [ref=e582] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Opinion
+          - listitem [ref=e583]:
+            - list [ref=e584]:
+              - listitem [ref=e585]:
+                - link "사설" [ref=e586] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000001
+              - listitem [ref=e587]:
+                - link "오늘과 내일" [ref=e588] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000009
+              - listitem [ref=e589]:
+                - link "횡설수설" [ref=e590] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000002
+              - listitem [ref=e591]:
+                - link "동아광장" [ref=e592] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000019
+            - list [ref=e593]:
+              - listitem [ref=e594]:
+                - link "동아시론" [ref=e595] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000278
+              - listitem [ref=e596]:
+                - link "광화문에서" [ref=e597] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70040100000034
+              - listitem [ref=e598]:
+                - link "현장에서" [ref=e599] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/Series/70010000000260
+              - listitem [ref=e600]:
+                - link "POLL" [ref=e601] [cursor=pointer]:
+                  - /url: https://www.donga.com/news/poll
+        - list [ref=e603]:
+          - listitem [ref=e604]:
+            - link "정치" [ref=e605] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Politics
+          - listitem [ref=e606]:
+            - link "경제" [ref=e607] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Economy
+          - listitem [ref=e608]:
+            - link "국제" [ref=e609] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Inter
+          - listitem [ref=e610]:
+            - link "사회" [ref=e611] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Society
+          - listitem [ref=e612]:
+            - link "문화" [ref=e613] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Culture
+          - listitem [ref=e614]:
+            - link "연예" [ref=e615] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Entertainment
+          - listitem [ref=e616]:
+            - link "스포츠" [ref=e617] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Sports
+          - listitem [ref=e618]:
+            - link "헬스동아" [ref=e619] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Health
+        - list [ref=e621]:
+          - listitem [ref=e622]:
+            - link "함께 미래" [ref=e623] [cursor=pointer]:
+              - /url: https://www.donga.com/news/together
+          - listitem [ref=e624]:
+            - link "히어로콘텐츠" [ref=e625] [cursor=pointer]:
+              - /url: https://original.donga.com
+          - listitem [ref=e626]:
+            - link "디스페셜" [ref=e627] [cursor=pointer]:
+              - /url: https://www.donga.com/dspecial
+          - listitem [ref=e628]:
+            - link "트렌드뉴스" [ref=e629] [cursor=pointer]:
+              - /url: https://www.donga.com/news/TrendNews/daily
+          - listitem [ref=e630]:
+            - link "실시간 뉴스" [ref=e631] [cursor=pointer]:
+              - /url: https://www.donga.com/news/List
+          - listitem [ref=e632]:
+            - link "이슈 포인트" [ref=e633] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Hotissue
+          - listitem [ref=e634]:
+            - link "연재 포인트" [ref=e635] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Hotseries
+          - listitem [ref=e636]:
+            - link "뉴스레터 신청" [ref=e637] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Newsletter
+          - listitem [ref=e638]:
+            - link "기자 구독" [ref=e639] [cursor=pointer]:
+              - /url: https://www.donga.com/Journalist
+        - list [ref=e641]:
+          - listitem [ref=e642]:
+            - link "지면보기" [ref=e643] [cursor=pointer]:
+              - /url: https://www.donga.com/news
+          - listitem [ref=e644]:
+            - link "PDF서비스" [ref=e645] [cursor=pointer]:
+              - /url: https://www.donga.com/news/Pdf
+          - listitem [ref=e646]:
+            - link "신문구독" [ref=e647] [cursor=pointer]:
+              - /url: https://readers.donga.com
+          - listitem [ref=e648]:
+            - link "동아디지털아카이브" [ref=e649] [cursor=pointer]:
+              - /url: https://www.donga.com/archive/newslibrary
+              - text: 동아디지털아카이브
+              - generic:
+                - img
+          - listitem [ref=e650]:
+            - link "보이스뉴스" [ref=e651] [cursor=pointer]:
+              - /url: https://voice.donga.com
+              - text: 보이스뉴스
+              - generic:
+                - img
+          - listitem [ref=e652]:
+            - link "동아방송 DBS" [ref=e653] [cursor=pointer]:
+              - /url: https://dbs.donga.com
+              - text: 동아방송 DBS
+              - generic:
+                - img
+          - listitem [ref=e654]:
+            - link "동아APP서비스" [ref=e655] [cursor=pointer]:
+              - /url: https://web.donga.com/lab
+              - text: 동아APP서비스
+              - generic:
+                - img
+          - listitem [ref=e656]:
+            - link "회원라운지" [ref=e657] [cursor=pointer]:
+              - /url: https://www.donga.com/lounge
+      - generic [ref=e659]:
+        - generic [ref=e660]:
+          - heading "동아일보" [level=2]:
+            - text: 동아일보
+            - generic:
+              - img
+        - generic [ref=e661]:
+          - generic [ref=e662]:
+            - link "DAMG 동아미디어 그룹" [ref=e663] [cursor=pointer]:
+              - /url: https://web.donga.com/damg
+              - text: DAMG 동아미디어 그룹
+              - generic:
+                - img
+            - generic [ref=e664]:
+              - generic [ref=e665]:
+                - button "DAMG 콘텐츠 브랜드" [ref=e666] [cursor=pointer]:
+                  - text: DAMG 콘텐츠 브랜드
+                  - generic:
+                    - img
+                - list:
+                  - listitem:
+                    - link "채널A":
+                      - /url: https://www.ichannela.com
+                  - listitem:
+                    - link "스포츠동아":
+                      - /url: https://sports.donga.com
+                  - listitem:
+                    - link "어린이동아":
+                      - /url: https://kids.donga.com
+                  - listitem:
+                    - link "에듀동아":
+                      - /url: https://edu.donga.com
+                  - listitem:
+                    - link "과학동아":
+                      - /url: https://www.dongascience.com
+                  - listitem:
+                    - link "어린이과학동아":
+                      - /url: https://www.popcornplanet.co.kr
+                  - listitem:
+                    - link "수학동아":
+                      - /url: https://www.dongascience.com
+                  - listitem:
+                    - link "어린이수학동아":
+                      - /url: https://www.popcornplanet.co.kr
+                  - listitem:
+                    - link "브랜더쿠":
+                      - /url: https://www.brdq.co.kr
+                  - listitem:
+                    - link "IT동아":
+                      - /url: https://it.donga.com
+                  - listitem:
+                    - link "게임동아":
+                      - /url: https://game.donga.com
+              - generic [ref=e667]:
+                - button "문화스포츠사업" [ref=e668] [cursor=pointer]:
+                  - text: 문화스포츠사업
+                  - generic:
+                    - img
+                - list:
+                  - listitem:
+                    - link "동아 신춘문예":
+                      - /url: https://sinchoon.donga.com/Docs?p0=outline
+                  - listitem:
+                    - link "동아국악콩쿠르":
+                      - /url: https://www.donga.com/concours/classical/
+                  - listitem:
+                    - link "동아음악콩쿠르":
+                      - /url: https://www.donga.com/concours/music/
+                  - listitem:
+                    - link "동아뮤지컬콩쿠르":
+                      - /url: https://dongamusical.com/
+                  - listitem:
+                    - link "동아무용콩쿠르":
+                      - /url: https://www.donga.com/concours/dance/
+                  - listitem:
+                    - link "동아주니어음악콩쿠르":
+                      - /url: https://www.donga.com/concours/juniormusic/
+                  - listitem:
+                    - link "동아주니어국악콩쿠르":
+                      - /url: https://www.donga.com/concours/juniorgugak/
+                  - listitem:
+                    - link "동아마라톤":
+                      - /url: https://dongma.club/
+                  - listitem:
+                    - link "동아연극상":
+                      - /url: https://www.donga.com/docs/ilbo/event/performance/2017/performance6.html
+                  - listitem:
+                    - link "LG와 함께 하는 서울국제음악콩쿠르":
+                      - /url: http://www.seoulcompetition.com/
+                  - listitem:
+                    - link "제주 국제사진공모전":
+                      - /url: http://www.jejucontest.com
+              - generic [ref=e669]:
+                - button "동아 Family" [ref=e670] [cursor=pointer]:
+                  - text: 동아 Family
+                  - generic:
+                    - img
+                - list:
+                  - listitem:
+                    - link "인촌기념회":
+                      - /url: http://www.inchonmemorial.co.kr/
+                  - listitem:
+                    - link "일민미술관":
+                      - /url: https://ilmin.org/
+                  - listitem:
+                    - link "신문박물관":
+                      - /url: https://www.presseum.or.kr/
+                  - listitem:
+                    - link "화정평화재단":
+                      - /url: http://www.hjpeace.or.kr/
+                  - listitem:
+                    - link "하서학술재단":
+                      - /url: https://www.haseofoundation.org/
+          - list [ref=e672]:
+            - listitem [ref=e673]:
+              - link "신동아" [ref=e674] [cursor=pointer]:
+                - /url: https://shindonga.donga.com
+            - listitem [ref=e675]:
+              - link "책의 향기" [ref=e676] [cursor=pointer]:
+                - /url: https://www.donga.com/news/Section/Books
+            - listitem [ref=e677]:
+              - link "주간동아" [ref=e678] [cursor=pointer]:
+                - /url: https://weekly.donga.com
+            - listitem [ref=e679]:
+              - link "스타일매거진Q" [ref=e680] [cursor=pointer]:
+                - /url: https://www.donga.com/news/Section/stylemagazineQ
+            - listitem [ref=e681]:
+              - link "여성동아" [ref=e682] [cursor=pointer]:
+                - /url: https://woman.donga.com
+            - listitem [ref=e683]:
+              - link "골든걸" [ref=e684] [cursor=pointer]:
+                - /url: https://www.donga.com/news/Section/Goldengirl
+            - listitem [ref=e685]:
+              - link "매거진동아" [ref=e686] [cursor=pointer]:
+                - /url: https://magazine.donga.com
+            - listitem [ref=e687]:
+              - link "edu+" [ref=e688] [cursor=pointer]:
+                - /url: https://www.donga.com/news/Section/Funnystudy
+            - listitem [ref=e689]:
+              - link "동아비즈니스리뷰" [ref=e690] [cursor=pointer]:
+                - /url: https://dbr.donga.com/?src=image&kw=000011
+            - listitem [ref=e691]:
+              - link "하버드비즈니스리뷰코리아" [ref=e692] [cursor=pointer]:
+                - /url: https://www.hbrkorea.com
+          - generic [ref=e694]:
+            - generic [ref=e695]:
+              - heading "동아일보" [level=3] [ref=e696]:
+                - link "동아일보" [ref=e697] [cursor=pointer]:
+                  - /url: https://www.donga.com/dongailbo
+              - generic [ref=e698]:
+                - paragraph [ref=e699]: 주소 서울특별시 종로구 청계천로 1
+                - paragraph [ref=e700]: 전화번호 02-2020-0114
+            - list [ref=e702]:
+              - listitem [ref=e703]:
+                - link "네이버" [ref=e704] [cursor=pointer]:
+                  - /url: https://media.naver.com/press/020
+              - listitem [ref=e705]:
+                - link "페이스북" [ref=e706] [cursor=pointer]:
+                  - /url: https://www.facebook.com/dongamedia
+              - listitem [ref=e707]:
+                - link "인스타그램" [ref=e708] [cursor=pointer]:
+                  - /url: https://www.instagram.com/dongailbo_official/
+              - listitem [ref=e709]:
+                - link "엑스" [ref=e710] [cursor=pointer]:
+                  - /url: https://x.com/dongamedia
+              - listitem [ref=e711]:
+                - link "스레드" [ref=e712] [cursor=pointer]:
+                  - /url: https://www.threads.com/@dongailbo_official
+            - generic [ref=e713]:
+              - heading "동아닷컴" [level=3] [ref=e714]:
+                - link "동아닷컴" [ref=e715] [cursor=pointer]:
+                  - /url: https://www.donga.com/company
+              - generic [ref=e716]:
+                - paragraph [ref=e717]: 주소 서울특별시 서대문구 충정로 29
+                - paragraph [ref=e718]: 전화번호 02-360-0400
+                - paragraph [ref=e719]: 등록번호 서울아00741
+                - paragraph [ref=e720]: 발행일자 1996.06.18
+                - paragraph [ref=e721]: 등록일자 2009.01.16
+                - paragraph [ref=e722]: 발행·편집인 신석호
+        - generic [ref=e723]:
+          - list [ref=e724]:
+            - listitem [ref=e725]:
+              - link "고객센터" [ref=e726] [cursor=pointer]:
+                - /url: https://faq.donga.com
+            - listitem [ref=e727]:
+              - link "이용약관" [ref=e728] [cursor=pointer]:
+                - /url: https://secure.donga.com/membership/policy/service.php
+            - listitem [ref=e729]:
+              - link "개인정보처리방침" [ref=e730] [cursor=pointer]:
+                - /url: https://secure.donga.com/membership/policy/privacy.php
+            - listitem [ref=e731]:
+              - link "청소년보호정책(책임자:구민회)" [ref=e732] [cursor=pointer]:
+                - /url: https://secure.donga.com/membership/policy/teenager.php
+            - listitem [ref=e733]:
+              - link "사이트맵" [ref=e734] [cursor=pointer]:
+                - /url: https://www.donga.com/news/sitemap
+            - listitem [ref=e735]:
+              - link "저작물 사용" [ref=e736] [cursor=pointer]:
+                - /url: https://www.donga.com/dongailbo?m=copyright
+            - listitem [ref=e737]:
+              - link "제휴안내" [ref=e738] [cursor=pointer]:
+                - /url: https://www.donga.com/company?m=cooperation
+            - listitem [ref=e739]:
+              - link "기사의견·제보" [ref=e740] [cursor=pointer]:
+                - /url: https://www.donga.com/dongailbo?m=comment
+            - listitem [ref=e741]:
+              - link "정정보도신청" [ref=e742] [cursor=pointer]:
+                - /url: https://www.donga.com/dongailbo?m=problem
+            - listitem [ref=e743]:
+              - link "광고안내" [ref=e744] [cursor=pointer]:
+                - /url: https://www.donga.com/company?m=adguide
+            - listitem [ref=e745]:
+              - link "RSS" [ref=e746] [cursor=pointer]:
+                - /url: https://rss.donga.com/
+          - paragraph [ref=e747]: © dongA.com All rights reserved. 무단 전재, 재배포 및 AI학습 이용 금지
+          - link "고려사이버대학교 THE CYBER UNIVERSITY OF KOREA" [ref=e748] [cursor=pointer]:
+            - /url: https://www.cuk.edu/index.do
+            - img "고려사이버대학교 THE CYBER UNIVERSITY OF KOREA" [ref=e749]
+          - link [ref=e750] [cursor=pointer]:
+            - /url: //yellow.contentsfeed.com/RealMedia/ads/click_lx.ads/www.donga.com/main/L18/1631879823/x95/donga/trafficchecking_191018/trafficchecking_191018.html/33464c6d776d6d3944353841447a4849
+  - iframe [ref=e751]:
+    
