@@ -50,11 +50,13 @@ describe("stripHtmlTags", () => {
 		expect(stripHtmlTags("<p>hello</p>")).toBe("hello");
 	});
 
-	it("handles tags containing angle brackets iteratively", () => {
-		// After stripping <scr<x>ipt>, single pass removes <x> leaving "scr" + "ipt>" fragments.
-		// Iterative pass then removes any newly formed tag patterns.
-		const result = stripHtmlTags("<p>hello</p><br/>");
-		expect(result).toBe("hello");
+	it("strips orphaned angle brackets from malformed nested tags", () => {
+		// <scr<x>ipt>text</scr<x>ipt>: regex strips <scr<x> and </scr<x>, leaving "ipt>textipt>".
+		// The final orphan-strip pass removes the remaining > characters.
+		const result = stripHtmlTags("<scr<x>ipt>text</scr<x>ipt>");
+		expect(result).not.toContain("<");
+		expect(result).not.toContain(">");
+		expect(result).toContain("text");
 	});
 
 	it("returns plain text unchanged", () => {

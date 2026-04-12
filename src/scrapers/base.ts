@@ -79,7 +79,8 @@ export function stripHtmlTags(html: string): string {
 		prev = result;
 		result = prev.replace(/<[^>]*>/g, "");
 	} while (result !== prev);
-	return result;
+	// Strip orphaned angle brackets left by malformed/nested tags (e.g. <scr<x>ipt>)
+	return result.replace(/[<>]/g, "");
 }
 
 export function decodeEntities(text: string): string {
