@@ -13,6 +13,7 @@ export interface Article {
 	published_at: string;
 	scraped_at: string;
 	image_url: string | null;
+	removed_at: string | null;
 }
 
 export interface Bookmark {

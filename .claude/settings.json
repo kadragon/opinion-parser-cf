@@ -1,0 +1,26 @@
+{
+	"hooks": {
+		"PostToolUse": [
+			{
+				"matcher": "Edit|Write",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "npx biome check --write $CLAUDE_FILE_PATH 2>/dev/null || true"
+					}
+				]
+			}
+		],
+		"PreToolUse": [
+			{
+				"matcher": "Edit|Write",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "echo $CLAUDE_FILE_PATH | grep -qE '(bun\\.lock|wrangler\\.toml)$' && echo 'BLOCK: Protected file — wrangler.toml and lock files should not be edited by Claude' && exit 1 || exit 0"
+					}
+				]
+			}
+		]
+	}
+}

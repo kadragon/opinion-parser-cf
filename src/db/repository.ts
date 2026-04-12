@@ -1,3 +1,4 @@
+import { toKstIso } from "../scrapers/base";
 import type { ScrapedArticle } from "../scrapers/types";
 import type { Article, ArticleWithBookmark, PaginatedResponse } from "../types";
 
@@ -41,7 +42,7 @@ export async function getArticles(
 ): Promise<PaginatedResponse<ArticleWithBookmark>> {
 	const { newspaper, date, q, page = 1, pageSize = 20, clientToken } = params;
 
-	const conditions: string[] = [];
+	const conditions: string[] = ["a.removed_at IS NULL"];
 	const bindings: (string | number)[] = [];
 
 	if (newspaper) {
@@ -59,7 +60,7 @@ export async function getArticles(
 		bindings.push(`%${q}%`);
 	}
 
-	const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
+	const whereClause = `WHERE ${conditions.join(" AND ")}`;
 
 	const countResult = await db
 		.prepare(`SELECT COUNT(*) as total FROM articles a ${whereClause}`)
@@ -142,6 +143,7 @@ export async function getBookmarks(
 			 FROM articles a
 			 INNER JOIN bookmarks b ON a.id = b.article_id
 			 WHERE b.client_token = ?
+			   AND a.removed_at IS NULL
 			 ORDER BY b.created_at DESC`,
 		)
 		.bind(clientToken)
@@ -152,9 +154,58 @@ export async function getBookmarks(
 
 export async function getAllArticlesForFeed(db: D1Database, limit = 50): Promise<Article[]> {
 	const result = await db
-		.prepare("SELECT * FROM articles ORDER BY published_at DESC LIMIT ?")
+		.prepare("SELECT * FROM articles WHERE removed_at IS NULL ORDER BY published_at DESC LIMIT ?")
 		.bind(limit)
 		.all<Article>();
 
 	return result.results;
+}
+
+/**
+ * Marks articles as removed if they no longer appear in the scraper's active URL list.
+ * Only checks articles published within the last `withinDays` days to avoid marking
+ * articles that have simply aged off the listing page.
+ * Also clears removed_at for articles that have reappeared in the active list.
+ */
+export async function markRemovedArticles(
+	db: D1Database,
+	newspaper: string,
+	activeUrls: string[],
+	withinDays = 1,
+): Promise<{ removed: number; restored: number }> {
+	if (activeUrls.length === 0) {
+		return { removed: 0, restored: 0 };
+	}
+
+	const now = toKstIso(new Date());
+	const cutoffDate = toKstIso(new Date(Date.now() - withinDays * 86_400_000));
+	const placeholders = activeUrls.map(() => "?").join(", ");
+
+	const removeResult = await db
+		.prepare(
+			`UPDATE articles
+			 SET removed_at = ?
+			 WHERE newspaper = ?
+			   AND published_at >= ?
+			   AND url NOT IN (${placeholders})
+			   AND removed_at IS NULL`,
+		)
+		.bind(now, newspaper, cutoffDate, ...activeUrls)
+		.run();
+
+	const restoreResult = await db
+		.prepare(
+			`UPDATE articles
+			 SET removed_at = NULL
+			 WHERE newspaper = ?
+			   AND url IN (${placeholders})
+			   AND removed_at IS NOT NULL`,
+		)
+		.bind(newspaper, ...activeUrls)
+		.run();
+
+	return {
+		removed: removeResult.meta.changes ?? 0,
+		restored: restoreResult.meta.changes ?? 0,
+	};
 }

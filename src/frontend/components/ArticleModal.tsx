@@ -113,15 +113,20 @@ export function ArticleModal({ articleUrl, newspaper, onClose }: ArticleModalPro
 							<span className="paper-badge" data-paper={content.newspaper || newspaper}>
 								{content.newspaper || newspaper}
 							</span>
-							{content.publishedAt && (
-								<span className="article-modal-date">{formatModalDate(content.publishedAt)}</span>
-							)}
 							<h2 className="article-modal-title">{content.title}</h2>
+							{content.publishedAt && (
+								<span className="article-modal-date">
+									<span className="article-modal-date-label">게시일</span>
+									{formatModalDate(content.publishedAt)}
+								</span>
+							)}
 						</div>
 						<div className="article-modal-body">
 							{content.body.map((paragraph, index) => (
 								// biome-ignore lint/suspicious/noArrayIndexKey: paragraphs are static content, not reordered
-								<p key={index}>{paragraph}</p>
+								<p key={index} className={index === 0 ? "article-lead" : ""}>
+									{paragraph}
+								</p>
 							))}
 						</div>
 					</>
