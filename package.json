@@ -8,7 +8,7 @@
 		"dev": "wrangler dev",
 		"dev:frontend": "vite --config src/frontend/vite.config.ts",
 		"build:frontend": "vite build --config src/frontend/vite.config.ts",
-		"deploy": "bun run build:frontend && wrangler deploy",
+		"deploy": "bun run build:frontend && wrangler d1 migrations apply opinion-parser-db && wrangler deploy",
 		"test": "vitest run",
 		"test:watch": "vitest",
 		"lint": "biome check .",
