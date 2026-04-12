@@ -18,3 +18,13 @@
 
 - [x] HaniScraper 테스트 추가
 - [x] JoongangScraper 테스트 추가
+
+## Security Fixes — opinion-parser-cf
+
+> Fix all open GitHub security alerts for this repository.
+
+### Code Scanning Alerts
+
+- [ ] Fix js/incomplete-multi-character-sanitization (HIGH): stripHtmlTags may still contain `<script` after sanitization — src/scrapers/base.ts:77. Use a proper HTML sanitizer library or iteratively apply the regex
+- [ ] Fix js/double-escaping (HIGH): decodeEntities replaces `&amp;` before other entities, causing double-unescaping — src/scrapers/base.ts:81-82. Move `&amp;` replacement to the end of the chain
+- [ ] Fix actions/missing-workflow-permissions: Workflow does not contain permissions — .github/workflows/ci.yml:11-27. Add explicit `permissions:` block (e.g., `contents: read`) to restrict GITHUB_TOKEN scope
