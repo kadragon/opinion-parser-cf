@@ -72,14 +72,19 @@ export function parseDate(dateStr: string): string {
 	return toKstIso(date);
 }
 
-/** Date 객체를 KST ISO 8601 문자열로 변환 */
 export function stripHtmlTags(html: string): string {
-	return html.replace(/<[^>]*>/g, "");
+	let result = html;
+	let prev: string;
+	do {
+		prev = result;
+		result = prev.replace(/<[^>]*>/g, "");
+	} while (result !== prev);
+	// Strip orphaned angle brackets left by malformed/nested tags (e.g. <scr<x>ipt>)
+	return result.replace(/[<>]/g, "");
 }
 
 export function decodeEntities(text: string): string {
 	return text
-		.replace(/&amp;/g, "&")
 		.replace(/&lt;/g, "<")
 		.replace(/&gt;/g, ">")
 		.replace(/&quot;/g, '"')
@@ -87,7 +92,8 @@ export function decodeEntities(text: string): string {
 		.replace(/&apos;/g, "'")
 		.replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(Number.parseInt(hex, 16)))
 		.replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number.parseInt(dec, 10)))
-		.replace(/&nbsp;/g, " ");
+		.replace(/&nbsp;/g, " ")
+		.replace(/&amp;/g, "&"); // must be last: prevents double-unescaping of &amp;lt; → <
 }
 
 export function cleanText(html: string): string {

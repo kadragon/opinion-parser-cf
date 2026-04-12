@@ -25,6 +25,6 @@
 
 ### Code Scanning Alerts
 
-- [ ] Fix js/incomplete-multi-character-sanitization (HIGH): stripHtmlTags may still contain `<script` after sanitization — src/scrapers/base.ts:77. Use a proper HTML sanitizer library or iteratively apply the regex
-- [ ] Fix js/double-escaping (HIGH): decodeEntities replaces `&amp;` before other entities, causing double-unescaping — src/scrapers/base.ts:81-82. Move `&amp;` replacement to the end of the chain
-- [ ] Fix actions/missing-workflow-permissions: Workflow does not contain permissions — .github/workflows/ci.yml:11-27. Add explicit `permissions:` block (e.g., `contents: read`) to restrict GITHUB_TOKEN scope
+- [x] Fix js/incomplete-multi-character-sanitization: Incomplete multi-character sanitization — src/scrapers/base.ts:77 (WARNING). `/<[^>]*>/g` regex does not handle nested/malformed tags. Replace with iterative approach or a proper HTML sanitizer library.
+- [x] Fix js/double-escaping: Double escaping or unescaping — src/scrapers/base.ts:81 (WARNING). `decodeEntities` processes `&amp;` before `&lt;`/`&gt;`, causing double-unescaping if input contains `&amp;lt;`. Move `&amp;` replacement to the end of the chain.
+- [x] Fix actions/missing-workflow-permissions: Workflow does not contain permissions — .github/workflows/ci.yml:11 (WARNING). Add explicit `permissions: contents: read` block to the `ci` job to restrict GITHUB_TOKEN scope.

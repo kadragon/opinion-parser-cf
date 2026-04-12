@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseDate, toKstIso } from "../../src/scrapers/base";
+import { decodeEntities, parseDate, stripHtmlTags, toKstIso } from "../../src/scrapers/base";
 
 describe("parseDate", () => {
 	it("parses YYYY.MM.DD HH:MM as KST", () => {
@@ -42,6 +42,44 @@ describe("parseDate", () => {
 	it("returns KST now for invalid date", () => {
 		const result = parseDate("invalid");
 		expect(result).toMatch(/\+09:00$/);
+	});
+});
+
+describe("stripHtmlTags", () => {
+	it("removes simple tags", () => {
+		expect(stripHtmlTags("<p>hello</p>")).toBe("hello");
+	});
+
+	it("strips orphaned angle brackets from malformed nested tags", () => {
+		// <scr<x>ipt>text</scr<x>ipt>: regex strips <scr<x> and </scr<x>, leaving "ipt>textipt>".
+		// The final orphan-strip pass removes the remaining > characters.
+		const result = stripHtmlTags("<scr<x>ipt>text</scr<x>ipt>");
+		expect(result).not.toContain("<");
+		expect(result).not.toContain(">");
+		expect(result).toContain("text");
+	});
+
+	it("returns plain text unchanged", () => {
+		expect(stripHtmlTags("no tags here")).toBe("no tags here");
+	});
+});
+
+describe("decodeEntities", () => {
+	it("decodes basic HTML entities", () => {
+		expect(decodeEntities("&lt;div&gt;")).toBe("<div>");
+	});
+
+	it("does not double-unescape &amp;lt;", () => {
+		// &amp;lt; should become &lt;, not <
+		expect(decodeEntities("&amp;lt;")).toBe("&lt;");
+	});
+
+	it("decodes &amp; when not part of another entity", () => {
+		expect(decodeEntities("Tom &amp; Jerry")).toBe("Tom & Jerry");
+	});
+
+	it("decodes numeric and hex entities", () => {
+		expect(decodeEntities("&#65;&#x42;")).toBe("AB");
 	});
 });
 
