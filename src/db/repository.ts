@@ -143,6 +143,7 @@ export async function getBookmarks(
 			 FROM articles a
 			 INNER JOIN bookmarks b ON a.id = b.article_id
 			 WHERE b.client_token = ?
+			   AND a.removed_at IS NULL
 			 ORDER BY b.created_at DESC`,
 		)
 		.bind(clientToken)
@@ -170,13 +171,14 @@ export async function markRemovedArticles(
 	db: D1Database,
 	newspaper: string,
 	activeUrls: string[],
-	withinDays = 3,
+	withinDays = 1,
 ): Promise<{ removed: number; restored: number }> {
 	if (activeUrls.length === 0) {
 		return { removed: 0, restored: 0 };
 	}
 
 	const now = toKstIso(new Date());
+	const cutoffDate = toKstIso(new Date(Date.now() - withinDays * 86_400_000));
 	const placeholders = activeUrls.map(() => "?").join(", ");
 
 	const removeResult = await db
@@ -184,11 +186,11 @@ export async function markRemovedArticles(
 			`UPDATE articles
 			 SET removed_at = ?
 			 WHERE newspaper = ?
-			   AND datetime(published_at) >= datetime('now', '-${withinDays} days')
+			   AND published_at >= ?
 			   AND url NOT IN (${placeholders})
 			   AND removed_at IS NULL`,
 		)
-		.bind(now, newspaper, ...activeUrls)
+		.bind(now, newspaper, cutoffDate, ...activeUrls)
 		.run();
 
 	const restoreResult = await db
