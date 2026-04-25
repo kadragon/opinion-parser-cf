@@ -166,12 +166,11 @@ export class ChosunScraper implements NewspaperScraper {
 	}
 
 	private extractFusionContentCache(html: string): unknown | null {
-		const marker = "Fusion.contentCache=";
-		const start = html.indexOf(marker);
-		if (start === -1) return null;
+		const match = html.match(/Fusion\.contentCache\s*=\s*\{/);
+		if (!match || match.index === undefined) return null;
 
 		// Brace-scan to extract the JSON object robustly, handling nested braces
-		const text = html.slice(start + marker.length);
+		const text = html.slice(match.index + match[0].indexOf("{"));
 		let depth = 0;
 		let inString = false;
 		let escaped = false;
@@ -265,7 +264,7 @@ export class ChosunScraper implements NewspaperScraper {
 					title: this.cleanTitle(title),
 					url: fullUrl,
 					summary: prologue ? cleanText(prologue).slice(0, 200) : null,
-					published_at: createDate ? parseDate(createDate) : parseDate(new Date().toISOString()),
+					published_at: createDate ? parseDate(createDate) : toKstIso(new Date()),
 					image_url: null,
 				});
 			}
