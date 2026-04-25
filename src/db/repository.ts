@@ -8,8 +8,9 @@ export async function insertArticles(db: D1Database, articles: ScrapedArticle[])
 	}
 
 	const statement = db.prepare(
-		`INSERT OR IGNORE INTO articles (newspaper, title, url, summary, published_at, image_url)
-		 VALUES (?, ?, ?, ?, ?, ?)`,
+		`INSERT INTO articles (newspaper, title, url, summary, published_at, image_url)
+		 VALUES (?, ?, ?, ?, ?, ?)
+		 ON CONFLICT(url) DO UPDATE SET summary = excluded.summary WHERE articles.summary IS NULL AND excluded.summary IS NOT NULL`,
 	);
 
 	const batch = articles.map((article) =>

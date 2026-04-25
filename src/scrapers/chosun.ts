@@ -1,10 +1,16 @@
-import { cleanText, decodeEntities, fetchWithRetry, parseDate } from "./base";
+import { cleanText, decodeEntities, fetchWithRetry, parseDate, toKstIso } from "./base";
 import type { NewspaperScraper, ScrapedArticle } from "./types";
 
 const CHOSUN_BASE = "https://www.chosun.com";
 const EDITORIAL_PATH = "/opinion/editorial/";
-const API_URL = `${CHOSUN_BASE}/pf/api/v3/content/fetch/story-feed-sections?query=${encodeURIComponent(
-	JSON.stringify({ uri: EDITORIAL_PATH, offset: 0, size: 20 }),
+const API_URL = `${CHOSUN_BASE}/pf/api/v3/content/fetch/story-feed?query=${encodeURIComponent(
+	JSON.stringify({
+		excludeContentTypes: "gallery, video",
+		expandRelated: true,
+		includeContentTypes: "story",
+		includeSections: EDITORIAL_PATH,
+		size: 20,
+	}),
 )}`;
 const EDITORIAL_PAGE_URL = `${CHOSUN_BASE}${EDITORIAL_PATH}`;
 const GOOGLE_NEWS_RSS_URL =
@@ -93,14 +99,14 @@ export class ChosunScraper implements NewspaperScraper {
 		const path = item.canonical_url ?? item.website_url;
 		if (!title || !path) return null;
 
-		if (!path.includes("/opinion/") && !path.includes("/editorial/")) {
+		if (!path.includes("/opinion/editorial/")) {
 			return null;
 		}
 
 		const url = path.startsWith("http") ? path : `${CHOSUN_BASE}${path}`;
 		const summary = item.description?.basic ?? null;
 		const dateStr = item.first_publish_date ?? item.display_date ?? item.publish_date;
-		const publishedAt = dateStr ? parseDate(dateStr) : new Date().toISOString();
+		const publishedAt = dateStr ? parseDate(dateStr) : toKstIso(new Date());
 		const imageUrl = item.promo_items?.basic?.url ?? null;
 
 		return {
@@ -125,9 +131,14 @@ export class ChosunScraper implements NewspaperScraper {
 	}
 
 	private parseEmbeddedJson(html: string): ScrapedArticle[] {
-		const articles: ScrapedArticle[] = [];
+		// Strategy A: Fusion.contentCache (Arc CMS — contains story-feed content_elements)
+		const cacheJson = this.extractFusionContentCache(html);
+		if (cacheJson) {
+			const extracted = this.extractFromContentCache(cacheJson);
+			if (extracted.length > 0) return extracted;
+		}
 
-		// Look for __NEXT_DATA__ or Fusion.globalContent or similar embedded JSON
+		// Strategy B: __NEXT_DATA__, Fusion.globalContent, __PRELOADED_STATE__
 		const jsonPatterns = [
 			/<script[^>]*id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/i,
 			/<script[^>]*>window\.__PRELOADED_STATE__\s*=\s*([\s\S]*?)<\/script>/i,
@@ -151,7 +162,81 @@ export class ChosunScraper implements NewspaperScraper {
 			}
 		}
 
-		return articles;
+		return [];
+	}
+
+	private extractFusionContentCache(html: string): unknown | null {
+		const match = html.match(/Fusion\.contentCache\s*=\s*\{/);
+		if (!match || match.index === undefined) return null;
+
+		// Brace-scan to extract the JSON object robustly, handling nested braces
+		const text = html.slice(match.index + match[0].indexOf("{"));
+		let depth = 0;
+		let inString = false;
+		let escaped = false;
+		let end = -1;
+
+		for (let i = 0; i < text.length; i++) {
+			const ch = text[i];
+			if (escaped) {
+				escaped = false;
+				continue;
+			}
+			if (ch === "\\") {
+				escaped = true;
+				continue;
+			}
+			if (ch === '"') {
+				inString = !inString;
+				continue;
+			}
+			if (inString) continue;
+			if (ch === "{") {
+				depth++;
+			} else if (ch === "}") {
+				depth--;
+				if (depth === 0) {
+					end = i;
+					break;
+				}
+			}
+		}
+
+		if (end === -1) return null;
+
+		try {
+			return JSON.parse(text.slice(0, end + 1));
+		} catch {
+			return null;
+		}
+	}
+
+	private extractFromContentCache(cache: unknown): ScrapedArticle[] {
+		if (!cache || typeof cache !== "object") return [];
+		const obj = cache as Record<string, unknown>;
+
+		for (const feedValue of Object.values(obj)) {
+			if (!feedValue || typeof feedValue !== "object") continue;
+			const feedObj = feedValue as Record<string, unknown>;
+
+			for (const queryValue of Object.values(feedObj)) {
+				if (!queryValue || typeof queryValue !== "object") continue;
+				const dataWrapper = queryValue as Record<string, unknown>;
+				const data = dataWrapper.data as Record<string, unknown> | undefined;
+				const elements = data?.content_elements;
+
+				if (Array.isArray(elements) && elements.length > 0) {
+					const articles: ScrapedArticle[] = [];
+					for (const item of elements) {
+						const article = this.parseArcArticle(item as ArcArticle);
+						if (article) articles.push(article);
+					}
+					if (articles.length > 0) return articles;
+				}
+			}
+		}
+
+		return [];
 	}
 
 	private extractArticlesFromJson(obj: unknown): ScrapedArticle[] {
@@ -179,7 +264,7 @@ export class ChosunScraper implements NewspaperScraper {
 					title: this.cleanTitle(title),
 					url: fullUrl,
 					summary: prologue ? cleanText(prologue).slice(0, 200) : null,
-					published_at: createDate ? parseDate(createDate) : parseDate(new Date().toISOString()),
+					published_at: createDate ? parseDate(createDate) : toKstIso(new Date()),
 					image_url: null,
 				});
 			}
@@ -250,8 +335,9 @@ export class ChosunScraper implements NewspaperScraper {
 				newspaper: this.name,
 				title: this.cleanTitle(title),
 				url,
+				// anchor fallback has no preview text — degraded mode, null is acceptable
 				summary: null,
-				published_at: new Date().toISOString(),
+				published_at: toKstIso(new Date()),
 				image_url: null,
 			});
 		}
@@ -290,8 +376,9 @@ export class ChosunScraper implements NewspaperScraper {
 				newspaper: this.name,
 				title: this.cleanTitle(title),
 				url,
+				// RSS fallback has no preview text — degraded mode, null is acceptable
 				summary: null,
-				published_at: pubDate ? parseDate(pubDate) : new Date().toISOString(),
+				published_at: pubDate ? parseDate(pubDate) : toKstIso(new Date()),
 				image_url: null,
 			});
 		}
