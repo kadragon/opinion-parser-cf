@@ -1,20 +1,20 @@
 import { Hono } from "hono";
 import { getBookmarks, toggleBookmark } from "../db/repository";
 import { requireClientToken } from "../middleware/validators";
-import type { Env } from "../types";
+import type { Env, Variables } from "../types";
 
-const app = new Hono<{ Bindings: Env }>();
+const app = new Hono<{ Bindings: Env; Variables: Variables }>();
 
 app.use("*", requireClientToken());
 
 app.get("/", async (c) => {
-	const clientToken = c.req.header("X-Client-Token")!;
+	const clientToken = c.get("clientToken");
 	const bookmarks = await getBookmarks(c.env.DB, clientToken);
 	return c.json(bookmarks);
 });
 
 app.post("/", async (c) => {
-	const clientToken = c.req.header("X-Client-Token")!;
+	const clientToken = c.get("clientToken");
 
 	let body: { articleId?: number };
 	try {

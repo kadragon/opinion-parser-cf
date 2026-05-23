@@ -4,6 +4,10 @@ export interface Env {
 	ALLOWED_ORIGIN?: string;
 }
 
+export interface Variables {
+	clientToken: string;
+}
+
 export interface Article {
 	id: number;
 	newspaper: string;
