@@ -20,7 +20,9 @@ export class HaniContentParser implements ArticleContentParser {
 			try {
 				const paragraphs = extractFromNextData(JSON.parse(nextDataMatch[1]));
 				if (paragraphs.length > 0) return paragraphs;
-			} catch {}
+			} catch {
+				/* fall through to HTML extraction */
+			}
 		}
 
 		const articleMatch = html.match(/<article[^>]*>([\s\S]*?)<\/article>/);

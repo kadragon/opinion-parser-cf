@@ -2,13 +2,14 @@ import { newspapers } from "../newspapers/registry";
 import { fetchWithRetry } from "../scrapers/base";
 import type { ArticleContentParser, ParsedArticle } from "./types";
 
+const contentParsers = newspapers.map((n) => n.contentParser);
+
 function findParser(url: string): ArticleContentParser | null {
 	try {
 		const hostname = new URL(url).hostname;
-		const parser = newspapers
-			.map((n) => n.contentParser)
-			.find((p) => hostname === p.domain || hostname.endsWith(`.${p.domain}`));
-		return parser ?? null;
+		return (
+			contentParsers.find((p) => hostname === p.domain || hostname.endsWith(`.${p.domain}`)) ?? null
+		);
 	} catch {
 		return null;
 	}

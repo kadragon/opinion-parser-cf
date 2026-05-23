@@ -211,7 +211,9 @@ export async function markRemovedArticles(
 	};
 }
 
-export async function reconcileArticles(
+// Not atomic: insertArticles commits before markRemovedArticles runs.
+// If markRemovedArticles throws, inserted rows remain until the next cron tick.
+export async function applyScrapeResults(
 	db: D1Database,
 	newspaper: string,
 	articles: ScrapedArticle[],

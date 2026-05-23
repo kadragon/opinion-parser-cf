@@ -8,13 +8,13 @@ const app = new Hono<{ Bindings: Env }>();
 app.use("*", requireClientToken());
 
 app.get("/", async (c) => {
-	const clientToken = c.req.header("X-Client-Token") as string;
+	const clientToken = c.req.header("X-Client-Token")!;
 	const bookmarks = await getBookmarks(c.env.DB, clientToken);
 	return c.json(bookmarks);
 });
 
 app.post("/", async (c) => {
-	const clientToken = c.req.header("X-Client-Token") as string;
+	const clientToken = c.req.header("X-Client-Token")!;
 
 	let body: { articleId?: number };
 	try {

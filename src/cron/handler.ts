@@ -1,4 +1,4 @@
-import { reconcileArticles } from "../db/repository";
+import { applyScrapeResults } from "../db/repository";
 import { getAllScrapers } from "../scrapers/index";
 
 export async function handleCron(db: D1Database): Promise<{
@@ -24,7 +24,7 @@ export async function handleCron(db: D1Database): Promise<{
 	const settled = await Promise.allSettled(
 		scrapers.map(async (scraper) => {
 			const articles = await scraper.scrape();
-			const { inserted, removed, restored } = await reconcileArticles(db, scraper.name, articles);
+			const { inserted, removed, restored } = await applyScrapeResults(db, scraper.name, articles);
 			return { newspaper: scraper.name, inserted, removed, restored };
 		}),
 	);
