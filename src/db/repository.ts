@@ -210,3 +210,16 @@ export async function markRemovedArticles(
 		restored: restoreResult.meta.changes ?? 0,
 	};
 }
+
+// Not atomic: insertArticles commits before markRemovedArticles runs.
+// If markRemovedArticles throws, inserted rows remain until the next cron tick.
+export async function applyScrapeResults(
+	db: D1Database,
+	newspaper: string,
+	articles: ScrapedArticle[],
+): Promise<{ inserted: number; removed: number; restored: number }> {
+	const inserted = await insertArticles(db, articles);
+	const activeUrls = articles.map((a) => a.url);
+	const { removed, restored } = await markRemovedArticles(db, newspaper, activeUrls);
+	return { inserted, removed, restored };
+}
