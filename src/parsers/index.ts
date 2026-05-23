@@ -1,23 +1,14 @@
+import { newspapers } from "../newspapers/registry";
 import { fetchWithRetry } from "../scrapers/base";
-import { ChosunContentParser } from "./chosun";
-import { DongaContentParser } from "./donga";
-import { HaniContentParser } from "./hani";
-import { JoongangContentParser } from "./joongang";
-import { KhanContentParser } from "./khan";
 import type { ArticleContentParser, ParsedArticle } from "./types";
-
-const parsers: ArticleContentParser[] = [
-	new ChosunContentParser(),
-	new DongaContentParser(),
-	new HaniContentParser(),
-	new JoongangContentParser(),
-	new KhanContentParser(),
-];
 
 function findParser(url: string): ArticleContentParser | null {
 	try {
 		const hostname = new URL(url).hostname;
-		return parsers.find((p) => hostname === p.domain || hostname.endsWith(`.${p.domain}`)) ?? null;
+		const parser = newspapers
+			.map((n) => n.contentParser)
+			.find((p) => hostname === p.domain || hostname.endsWith(`.${p.domain}`));
+		return parser ?? null;
 	} catch {
 		return null;
 	}
