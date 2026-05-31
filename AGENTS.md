@@ -12,6 +12,7 @@ A Cloudflare Workers app (Hono + D1) that scrapes Korean newspaper opinion colum
 | `docs/delegation.md` | Before delegating to sub-agents |
 | `docs/eval-criteria.md` | When evaluating completed features |
 | `docs/runbook.md` | For build, test, deploy commands and troubleshooting |
+| `DESIGN.md` | Before working on UI/UX, styles, or frontend components |
 
 ## Golden Principles
 
@@ -43,7 +44,7 @@ Read `docs/delegation.md` for full routing table. Summary of mandatory gates:
 - **Adding a newspaper scraper:** implement `ScraperBase` interface in `src/scrapers/`, add matching parser in `src/parsers/`, register in `src/cron/handler.ts`. One scraper = one parser, always paired.
 - **DB schema changes:** create a new migration file in `migrations/` (`bun run wrangler d1 migrations apply opinion-parser-db --local`). Never edit existing migration files.
 - **Wrangler config** (`wrangler.toml`) and lock files (`bun.lock`) are protected — the PreToolUse hook blocks edits.
-- **Frontend** lives in `src/frontend/` and is built separately with `bun run build:frontend`. It is a static SPA; all API calls use `fetch` to `/api/`.
+- **Frontend** lives in `src/frontend/` and is built separately with `bun run build:frontend`. It is a static SPA; all API calls use `fetch` to `/api/`. Always refer to `DESIGN.md` for UI/UX changes, color tokens, spacing, and visual styling to maintain brand consistency.
 - **Tests** live in `test/` mirroring `src/` structure. Use `@cloudflare/vitest-pool-workers` for Workers environment tests.
 
 ## Context Management
