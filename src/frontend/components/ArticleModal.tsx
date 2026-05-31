@@ -37,21 +37,15 @@ export function ArticleModal({ articleUrl, newspaper, onClose }: ArticleModalPro
 	}, [articleUrl]);
 
 	useEffect(() => {
+		const modal = modalRef.current;
+		if (modal) {
+			modal.showModal();
+		}
 		document.body.style.overflow = "hidden";
-
-		const handleKeyDown = (e: KeyboardEvent) => {
-			if (e.key === "Escape") onClose();
-		};
-		document.addEventListener("keydown", handleKeyDown);
 
 		return () => {
 			document.body.style.overflow = "";
-			document.removeEventListener("keydown", handleKeyDown);
 		};
-	}, [onClose]);
-
-	useEffect(() => {
-		modalRef.current?.focus();
 	}, []);
 
 	const handleOverlayClick = (e: React.MouseEvent) => {
@@ -69,7 +63,7 @@ export function ArticleModal({ articleUrl, newspaper, onClose }: ArticleModalPro
 			onClick={handleOverlayClick}
 			onKeyDown={handleOverlayKeyDown}
 		>
-			<dialog className="article-modal" ref={modalRef} open aria-modal="true">
+			<dialog className="article-modal" ref={modalRef} onClose={onClose} aria-modal="true">
 				<button className="article-modal-close" onClick={onClose} aria-label="닫기" type="button">
 					<svg
 						width="20"

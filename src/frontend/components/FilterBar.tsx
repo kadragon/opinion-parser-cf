@@ -55,19 +55,20 @@ export function FilterBar({ filters, onFilterChange }: FilterBarProps) {
 
 	return (
 		<nav className="controls" aria-label="기사 필터">
-			<div className="newspaper-filters" role="radiogroup" aria-label="신문사 필터">
+			<fieldset className="newspaper-filters" aria-label="신문사 필터">
 				{NEWSPAPERS.map((np) => (
 					<button
 						key={np.key}
 						className={`filter-btn${activeNewspaper === np.key ? " active" : ""}`}
 						data-paper={np.key}
+						aria-pressed={activeNewspaper === np.key}
 						onClick={() => handleNewspaperClick(np.key)}
 						type="button"
 					>
 						{np.label}
 					</button>
 				))}
-			</div>
+			</fieldset>
 			<div className="search-row">
 				<input
 					type="search"

@@ -38,8 +38,16 @@ function AppContent() {
 				theme={theme}
 				onToggleTheme={toggleTheme}
 			/>
+			<section className="hero-section">
+				<div className="hero-inner">
+					<h2 className="hero-title">Meet Opinion Parser.</h2>
+					<p className="hero-subtitle">
+						주요 신문사의 사설과 칼럼을 한눈에 조회하고 북마크하며 트렌드를 파악하세요.
+					</p>
+				</div>
+			</section>
 			<FilterBar filters={filters} onFilterChange={setFilters} />
-			<main className="content" id="main-content" aria-live="polite">
+			<main className="content" id="main-content">
 				<ArticleList
 					articles={displayedArticles}
 					loading={loading}
