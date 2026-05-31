@@ -55,7 +55,7 @@ export function FilterBar({ filters, onFilterChange }: FilterBarProps) {
 
 	return (
 		<nav className="controls" aria-label="기사 필터">
-			<div className="newspaper-filters">
+			<fieldset className="newspaper-filters" aria-label="신문사 필터">
 				{NEWSPAPERS.map((np) => (
 					<button
 						key={np.key}
@@ -68,7 +68,7 @@ export function FilterBar({ filters, onFilterChange }: FilterBarProps) {
 						{np.label}
 					</button>
 				))}
-			</div>
+			</fieldset>
 			<div className="search-row">
 				<input
 					type="search"

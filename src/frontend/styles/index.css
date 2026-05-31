@@ -242,7 +242,10 @@ body {
 	display: flex;
 	gap: 6px;
 	flex-wrap: wrap;
-	margin-bottom: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 16px 0;
+	min-width: 0;
 }
 
 /* Notion Pill Tab style */
@@ -566,7 +569,7 @@ body {
 	width: 100%;
 	max-width: 720px;
 	max-height: 85vh;
-	overflow-y: auto;
+	overflow: hidden;
 	position: relative;
 	box-shadow: var(--shadow-modal);
 	outline: none;

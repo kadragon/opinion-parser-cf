@@ -45,9 +45,6 @@ export function ArticleModal({ articleUrl, newspaper, onClose }: ArticleModalPro
 
 		return () => {
 			document.body.style.overflow = "";
-			if (modal?.open) {
-				modal.close();
-			}
 		};
 	}, []);
 
