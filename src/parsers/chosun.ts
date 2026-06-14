@@ -1,4 +1,10 @@
-import { extractDate, extractFromNextData, extractParagraphs, extractTitle } from "./shared";
+import {
+	extractDate,
+	extractFromNextData,
+	extractFusionGlobalContent,
+	extractParagraphs,
+	extractTitle,
+} from "./shared";
 import type { ArticleContentParser, ParsedArticle } from "./types";
 
 export class ChosunContentParser implements ArticleContentParser {
@@ -15,6 +21,11 @@ export class ChosunContentParser implements ArticleContentParser {
 	}
 
 	private extractBody(html: string): string[] {
+		// Strategy 1: Arc/Fusion SPA — body in Fusion.globalContent.content_elements
+		const arc = extractFusionGlobalContent(html);
+		if (arc.length > 0) return arc;
+
+		// Strategy 2: Next.js SPA — body in __NEXT_DATA__ embedded JSON
 		const nextDataMatch = html.match(/<script[^>]*id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
 		if (nextDataMatch) {
 			try {
