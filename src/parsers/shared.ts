@@ -36,7 +36,8 @@ export function extractBalancedJson(html: string, startIndex: number): unknown |
 	if (end === -1) return null;
 	try {
 		return JSON.parse(text.slice(0, end + 1));
-	} catch {
+	} catch (err) {
+		console.error("[extractBalancedJson] JSON.parse failed on extracted boundary:", err);
 		return null;
 	}
 }
@@ -47,11 +48,19 @@ export function extractFusionGlobalContent(html: string): string[] {
 
 	const braceStart = match.index + match[0].length - 1;
 	const obj = extractBalancedJson(html, braceStart);
-	if (!obj || typeof obj !== "object") return [];
+	if (!obj || typeof obj !== "object") {
+		console.error("[extractFusionGlobalContent] Fusion.globalContent found but JSON parse failed");
+		return [];
+	}
 
 	const record = obj as Record<string, unknown>;
 	const elements = record.content_elements;
-	if (!Array.isArray(elements)) return [];
+	if (!Array.isArray(elements)) {
+		console.error(
+			"[extractFusionGlobalContent] content_elements missing or not an array in Arc object",
+		);
+		return [];
+	}
 
 	const result: string[] = [];
 	for (const el of elements) {
