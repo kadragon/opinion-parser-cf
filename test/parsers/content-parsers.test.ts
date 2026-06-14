@@ -99,6 +99,41 @@ describe("ChosunContentParser", () => {
 		});
 	});
 
+	describe("extractBody — Fusion.globalContent strategy (Arc SPA)", () => {
+		it("extracts text elements from Fusion.globalContent content_elements", () => {
+			const globalContent = {
+				_id: "TEST123",
+				content_elements: [
+					{ type: "text", content: "첫 문단 텍스트" },
+					{ type: "image", url: "img.jpg" },
+					{ type: "text", content: "<b>둘째</b> 문단" },
+					{ type: "text", content: "" },
+				],
+			};
+			const html = `<html>
+				<head>
+					${OG_TITLE("테스트 사설")}
+					${PUBLISHED_TIME("2026-06-13T15:00:00+09:00")}
+				</head>
+				<body>
+					<script>Fusion.globalContent=${JSON.stringify(globalContent)};</script>
+				</body>
+			</html>`;
+			const result = parser.parse(html);
+			expect(result.title).toBe("테스트 사설");
+			expect(result.publishedAt).toBe("2026-06-13T15:00:00+09:00");
+			expect(result.body).toEqual(["첫 문단 텍스트", "둘째 문단"]);
+		});
+
+		it("falls back when globalContent absent (uses __NEXT_DATA__)", () => {
+			const data = {
+				props: { pageProps: { article: { content: "<p>넥스트 데이터 본문</p>" } } },
+			};
+			const html = `<html><body><script id="__NEXT_DATA__">${JSON.stringify(data)}</script></body></html>`;
+			expect(parser.parse(html).body).toEqual(["넥스트 데이터 본문"]);
+		});
+	});
+
 	describe("extractBody — article fallback", () => {
 		it("extracts p tags from article element", () => {
 			const html = `<html><body>

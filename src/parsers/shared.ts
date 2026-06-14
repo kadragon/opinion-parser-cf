@@ -1,5 +1,80 @@
 import { cleanText, parseDate } from "../scrapers/base";
 
+export function extractBalancedJson(html: string, startIndex: number): unknown | null {
+	const text = html.slice(startIndex);
+	let depth = 0;
+	let inString = false;
+	let escaped = false;
+	let end = -1;
+
+	for (let i = 0; i < text.length; i++) {
+		const ch = text[i];
+		if (escaped) {
+			escaped = false;
+			continue;
+		}
+		if (ch === "\\") {
+			escaped = true;
+			continue;
+		}
+		if (ch === '"') {
+			inString = !inString;
+			continue;
+		}
+		if (inString) continue;
+		if (ch === "{") {
+			depth++;
+		} else if (ch === "}") {
+			depth--;
+			if (depth === 0) {
+				end = i;
+				break;
+			}
+		}
+	}
+
+	if (end === -1) return null;
+	try {
+		return JSON.parse(text.slice(0, end + 1));
+	} catch (err) {
+		console.error("[extractBalancedJson] JSON.parse failed on extracted boundary:", err);
+		return null;
+	}
+}
+
+export function extractFusionGlobalContent(html: string): string[] {
+	const match = html.match(/Fusion\.globalContent\s*=\s*\{/);
+	if (!match || match.index === undefined) return [];
+
+	const braceStart = match.index + match[0].length - 1;
+	const obj = extractBalancedJson(html, braceStart);
+	if (!obj || typeof obj !== "object") {
+		console.error("[extractFusionGlobalContent] Fusion.globalContent found but JSON parse failed");
+		return [];
+	}
+
+	const record = obj as Record<string, unknown>;
+	const elements = record.content_elements;
+	if (!Array.isArray(elements)) {
+		console.error(
+			"[extractFusionGlobalContent] content_elements missing or not an array in Arc object",
+		);
+		return [];
+	}
+
+	const result: string[] = [];
+	for (const el of elements) {
+		if (!el || typeof el !== "object") continue;
+		const elem = el as Record<string, unknown>;
+		if (elem.type !== "text") continue;
+		const content = elem.content;
+		if (typeof content !== "string") continue;
+		const text = cleanText(content);
+		if (text.length > 0) result.push(text);
+	}
+	return result;
+}
+
 export function extractTitle(html: string): string {
 	const ogMatch =
 		html.match(/<meta[^>]*property="og:title"[^>]*content="([^"]*)"/) ??
