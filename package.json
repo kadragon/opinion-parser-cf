@@ -18,21 +18,21 @@
 		"typecheck:frontend": "tsc --noEmit -p tsconfig.frontend.json"
 	},
 	"dependencies": {
-		"hono": "^4.13.3",
+		"hono": "^4.13.5",
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.9",
+		"@biomejs/biome": "^2.5.10",
 		"@cloudflare/vitest-pool-workers": "^0.22.0",
-		"@cloudflare/workers-types": "^5.20260819.1",
+		"@cloudflare/workers-types": "^5.20260826.1",
 		"@types/react": "^19.2.18",
-		"@types/react-dom": "^19.2.4",
-		"@vitejs/plugin-react": "^6.0.5",
+		"@types/react-dom": "^19.2.5",
+		"@vitejs/plugin-react": "^6.1.0",
 		"lefthook": "^2.1.10",
 		"typescript": "^7.0.2",
-		"vite": "^8.2.1",
+		"vite": "^8.2.2",
 		"vitest": "^4.1.11",
-		"wrangler": "^4.124.0"
+		"wrangler": "^4.126.0"
 	}
 }
